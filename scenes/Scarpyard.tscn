@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwga53glp4bmk"]
 
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="1_5qmt8"]
+[ext_resource type="PackedScene" uid="uid://cadotjj30ar4m" path="res://scenes/Landscape.tscn" id="1_uur04"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="2_uur04"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4duur"]
@@ -26,6 +27,8 @@ size = Vector3(256, 1, 256)
 
 [node name="MechanicsGym" type="Node3D" unique_id=1468441563]
 
+[node name="Landscape" parent="." unique_id=2039633298 instance=ExtResource("1_uur04")]
+
 [node name="Environment" type="Node3D" parent="." unique_id=102310706]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Environment" unique_id=606443276]
@@ -42,7 +45,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_a141m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Floor" unique_id=1894721305]
-transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 0, 0, 0)
+transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 0, -10, 0)
 mesh = SubResource("BoxMesh_3dnxu")
 
 [node name="1Mcubes" type="Node3D" parent="Environment" unique_id=1809547852]

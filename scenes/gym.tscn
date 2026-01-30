@@ -17,8 +17,6 @@ background_mode = 2
 sky = SubResource("Sky_5hyia")
 tonemap_mode = 2
 ssao_enabled = true
-ssao_intensity = 4.31
-ssao_power = 2.703751
 glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a141m"]

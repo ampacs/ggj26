@@ -13,13 +13,17 @@ extends CharacterBody3D
 @export var tilt_upper_limit := PI / 3.0
 @export var tilt_lower_limit := -PI / 6.0
 
+@export var stick_look_speed := 3.0
+@export var stick_deadzone := 0.15
+@export var invert_y := false
+
 var _camera_input_direction := Vector2.ZERO
 var _last_movement_direction := Vector3.BACK
 var _gravity := -30.0
 
 @onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _camera: Camera3D = %Camera3D
-@onready var _skin: MeshInstance3D = $ReplaceWithPlayerScene
+@onready var _skin: Node3D = $ReplaceWithPlayerScene
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
@@ -38,13 +42,35 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
+	var stick := Input.get_vector(
+		"look_left_%s" % [playerId],
+		"look_right_%s" % [playerId],
+		"look_up_%s" % [playerId],
+		"look_down_%s" % [playerId]
+	)
+	
+	if stick.length() < stick_deadzone:
+		stick = Vector2.ZERO
+	else:
+		stick = stick.normalized() * ((stick.length() - stick_deadzone) / (1.0 - stick_deadzone))
+
+	if invert_y:
+		stick.y = -stick.y
+	
+	_camera_input_direction += stick * stick_look_speed
+		
 	_camera_pivot.rotation.x += _camera_input_direction.y * delta
 	_camera_pivot.rotation.x = clamp(_camera_pivot.rotation.x, tilt_lower_limit, tilt_upper_limit)
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 
 	_camera_input_direction = Vector2.ZERO
 
-	var raw_input := Input.get_vector("move_left_%s" % [playerId], "move_right_%s" % [playerId], "move_up_%s" % [playerId], "move_down_%s" % [playerId])
+	var raw_input := Input.get_vector(
+		"move_left_%s" % [playerId],
+		"move_right_%s" % [playerId],
+		"move_up_%s" % [playerId],
+		"move_down_%s" % [playerId]
+	)
 	var forward := _camera.global_basis.z
 	var right := _camera.global_basis.x
 	var move_direction := forward * raw_input.y + right * raw_input.x

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dery4wjtorty"
-path="res://.godot/imported/SM_Streetsign_A.fbx-d21ef5435e6c160a6b6dc583545c9f8b.scn"
+path="res://.godot/imported/SM_Streetsign_A.fbx-999af2e7fa88dd440b89ec1fbb621c09.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_Streetsign_A.fbx"
-dest_files=["res://.godot/imported/SM_Streetsign_A.fbx-d21ef5435e6c160a6b6dc583545c9f8b.scn"]
+source_file="res://assets/Props/SM_Streetsign_A.fbx"
+dest_files=["res://.godot/imported/SM_Streetsign_A.fbx-999af2e7fa88dd440b89ec1fbb621c09.scn"]
 
 [params]
 

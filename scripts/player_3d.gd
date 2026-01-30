@@ -18,7 +18,7 @@ var _last_movement_direction := Vector3.BACK
 var _gravity := -30.0
 
 @onready var _camera_pivot: Node3D = $CameraPivot
-@onready var _camera: Camera3D = $CameraPivot/Camera3D
+@onready var _camera: Camera3D = %Camera3D
 @onready var _skin: MeshInstance3D = $ReplaceWithPlayerScene
 
 func _input(event: InputEvent) -> void:

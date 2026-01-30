@@ -8,6 +8,8 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
+
 [node name="Player3D" type="CharacterBody3D" unique_id=328629696]
 script = ExtResource("1_52vux")
 
@@ -26,5 +28,11 @@ shape = SubResource("CapsuleShape3D_52vux")
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1529839449]
 transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 1.5, 0)
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1743740690]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -10)
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=2035408755]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+shape = SubResource("SphereShape3D_52vux")
+spring_length = 8.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1743740690]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)

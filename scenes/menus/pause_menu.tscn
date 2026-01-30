@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3c7kiwduxnok"]
 
 [ext_resource type="Script" uid="uid://6y3s4nroxfig" path="res://scripts/menus/pause_menu.gd" id="1_7unhi"]
-[ext_resource type="PackedScene" uid="uid://b02sa1rlr3084" path="res://scenes/menus/quit_button.tscn" id="2_gsnt3"]
+[ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_7unhi"]
 
 [node name="PauseMenu" type="Control" unique_id=201641814]
 process_mode = 3
@@ -20,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=747206467]
 layout_mode = 1
@@ -29,15 +30,26 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -252.0
-offset_top = -102.5
+offset_top = -51.75
 offset_right = 252.0
-offset_bottom = 96.0
+offset_bottom = 51.75
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1863193488]
 layout_mode = 2
-size_flags_horizontal = 0
 
-[node name="QuitButton" parent="PanelContainer/VBoxContainer" unique_id=928682169 instance=ExtResource("2_gsnt3")]
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=537909774]
 layout_mode = 2
+size_flags_vertical = 0
+text = "Resume"
+
+[node name="Restart" type="Button" parent="PanelContainer/VBoxContainer" unique_id=914369649]
+layout_mode = 2
+text = "Restart"
+
+[node name="Quit" parent="PanelContainer/VBoxContainer" unique_id=314820531 instance=ExtResource("2_7unhi")]
+layout_mode = 2
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]

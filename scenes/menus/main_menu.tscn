@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c316m6ovwsluh"]
 
 [ext_resource type="Script" uid="uid://ddpbstf1dc27w" path="res://scripts/menus/main_menu.gd" id="1_l6cm7"]
-[ext_resource type="PackedScene" uid="uid://b02sa1rlr3084" path="res://scenes/menus/quit_button.tscn" id="2_ovrgc"]
+[ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_ovrgc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
 bg_color = Color(0.0069299857, 0.19395924, 0.26782337, 1)
@@ -24,8 +24,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -246.0
 offset_top = 166.0
-offset_right = 252.0
-offset_bottom = 286.0
+offset_right = 251.0
+offset_bottom = 315.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
@@ -36,7 +36,8 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_vue75")
 text = "Start game"
 
-[node name="QuitButton" parent="VBoxContainer" unique_id=928682169 instance=ExtResource("2_ovrgc")]
+[node name="Quit" parent="VBoxContainer" unique_id=314820531 instance=ExtResource("2_ovrgc")]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

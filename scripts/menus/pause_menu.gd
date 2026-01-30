@@ -20,3 +20,10 @@ func resume() -> void:
 func pause() -> void:
 	get_tree().paused = true
 	visible = true
+
+func _on_resume_pressed() -> void:
+	resume()
+
+func _on_restart_pressed() -> void:
+	resume()
+	get_tree().reload_current_scene()

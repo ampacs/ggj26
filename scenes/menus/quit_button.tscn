@@ -1,25 +1,15 @@
-[gd_scene format=3 uid="uid://b02sa1rlr3084"]
+[gd_scene format=3 uid="uid://c8rp34rlhm6ny"]
 
-[ext_resource type="Script" uid="uid://bkb13o5cni1c0" path="res://scripts/menus/quit_button.gd" id="1_5d205"]
+[ext_resource type="Script" uid="uid://r78ub0yf4qn0" path="res://scripts/menus/quit_button.gd" id="1_5ic3m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpnce"]
 bg_color = Color(0.0069299857, 0.19395924, 0.26782337, 1)
 
-[node name="QuitButton" type="Control" unique_id=928682169]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_5d205")
-
-[node name="Quit" type="Button" parent="." unique_id=1375499948]
-layout_mode = 0
-offset_right = 501.0
-offset_bottom = 62.0
-theme_override_font_sizes/font_size = 30
+[node name="Quit" type="Button" unique_id=314820531]
+offset_right = 365.0
+offset_bottom = 64.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_kpnce")
 text = "Quit"
+script = ExtResource("1_5ic3m")
 
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

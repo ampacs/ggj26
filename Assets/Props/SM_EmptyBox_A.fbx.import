@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bh5ab5yralurx"
-path="res://.godot/imported/SM_EmptyBox_A.fbx-5b81baacd8e8262d8cbf8b42f3f363ae.scn"
+path="res://.godot/imported/SM_EmptyBox_A.fbx-6a136841f51dfc1223dccc1cf2945c7f.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_EmptyBox_A.fbx"
-dest_files=["res://.godot/imported/SM_EmptyBox_A.fbx-5b81baacd8e8262d8cbf8b42f3f363ae.scn"]
+source_file="res://assets/Props/SM_EmptyBox_A.fbx"
+dest_files=["res://.godot/imported/SM_EmptyBox_A.fbx-6a136841f51dfc1223dccc1cf2945c7f.scn"]
 
 [params]
 

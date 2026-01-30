@@ -23,7 +23,7 @@ var _gravity := -30.0
 
 @onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _camera: Camera3D = %Camera3D
-@onready var _skin: MeshInstance3D = $ReplaceWithPlayerScene
+@onready var _skin: Node3D = $ReplaceWithPlayerScene
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):

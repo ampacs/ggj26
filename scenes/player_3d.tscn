@@ -1,37 +1,36 @@
 [gd_scene format=3 uid="uid://chu7ea5rl4ors"]
 
 [ext_resource type="Script" uid="uid://dqpb0adq2lsi" path="res://scripts/player_3d.gd" id="1_52vux"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_rwvw1"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_52vux"]
+[ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://assets/Character/SM_Raccoon.glb" id="2_reoop"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
+radius = 0.1743164
+height = 0.6113281
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
+radius = 0.1
 
 [node name="Player3D" type="CharacterBody3D" unique_id=328629696]
 script = ExtResource("1_52vux")
 
-[node name="ReplaceWithPlayerScene" type="MeshInstance3D" parent="." unique_id=394903307]
+[node name="ReplaceWithPlayerScene" type="Node3D" parent="." unique_id=1217038547]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_rwvw1")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="ReplaceWithPlayerScene" unique_id=1768432064]
-transform = Transform3D(0.5, 0, 0, 0, 0.1, 0, 0, 0, 0.5, 0, 0.5, 0.43303394)
-mesh = SubResource("BoxMesh_52vux")
+[node name="SM_Raccoon2" parent="ReplaceWithPlayerScene" unique_id=1353521536 instance=ExtResource("2_reoop")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=62241982]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30566406, 0)
 shape = SubResource("CapsuleShape3D_52vux")
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1529839449]
-transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 1.5, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 0.5, 0)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=2035408755]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+collision_mask = 3
 shape = SubResource("SphereShape3D_52vux")
-spring_length = 8.0
+spring_length = 3.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1743740690]
 unique_name_in_owner = true

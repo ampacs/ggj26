@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dcsniattn5qvl"]
+
+[ext_resource type="PackedScene" uid="uid://dkqjyx65g8h5w" path="res://Assets/Props/SM_TrashContainer_A.fbx" id="1_x2530"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_al161"]
+
+[node name="AssetsLibrary" type="Node3D" unique_id=1981078764]
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=534950910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=321495779]
+shape = SubResource("BoxShape3D_jl2mt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=929779419]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
+mesh = SubResource("BoxMesh_al161")
+
+[node name="SM_TrashContainer_A" parent="." unique_id=808603355 instance=ExtResource("1_x2530")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2307992, 0, 6.4130764)

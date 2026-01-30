@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4yvqxpom6gdm" path="res://Assets/Props/SM_MetalContainer_A.fbx" id="4_iknf0"]
 [ext_resource type="PackedScene" uid="uid://dery4wjtorty" path="res://Assets/Props/SM_Streetsign_A.fbx" id="5_m56pb"]
 [ext_resource type="PackedScene" uid="uid://dqty06h2u5r37" path="res://Assets/Props/SM_MetalWavySheet_A.fbx" id="6_mhckc"]
+[ext_resource type="PackedScene" uid="uid://bh5ab5yralurx" path="res://Assets/Props/SM_EmptyBox_A.fbx" id="7_iknf0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
 size = Vector3(20, 1, 20)
@@ -41,3 +42,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32784462, 1.7674705, 0.7680
 
 [node name="SM_MetalWavySheet_A" parent="." unique_id=157582948 instance=ExtResource("6_mhckc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15021098, 0.07394567, 8.1863)
+
+[node name="SM_EmptyBox_A" parent="." unique_id=1573070900 instance=ExtResource("7_iknf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0903907, 0.21447524, 3.9116473)

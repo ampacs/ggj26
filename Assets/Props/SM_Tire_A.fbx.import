@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://4yvqxpom6gdm"
-path="res://.godot/imported/SM_MetalContainer_A.fbx-43b95e7eadbff85217aca71b376d3001.scn"
+uid="uid://dxqq7y36xvpl8"
+path="res://.godot/imported/SM_Tire_A.fbx-adca08c6d0f9bbabcd93716995fbcb30.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_MetalContainer_A.fbx"
-dest_files=["res://.godot/imported/SM_MetalContainer_A.fbx-43b95e7eadbff85217aca71b376d3001.scn"]
+source_file="res://Assets/Props/SM_Tire_A.fbx"
+dest_files=["res://.godot/imported/SM_Tire_A.fbx-adca08c6d0f9bbabcd93716995fbcb30.scn"]
 
 [params]
 

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://b7fa7pd6gg6wr"]
+
+[ext_resource type="Script" uid="uid://dkc0f8nlarv5" path="res://scripts/splitscreen/splitscreen_controller.gd" id="1_pkiub"]
+[ext_resource type="PackedScene" uid="uid://chu7ea5rl4ors" path="res://scenes/player_3d.tscn" id="2_i7k6m"]
+
+[node name="GameView" type="Control" unique_id=1430353953 node_paths=PackedStringArray("box", "viewports")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pkiub")
+box = NodePath("HBoxContainer")
+viewports = [NodePath("HBoxContainer/SubViewportContainer/SubViewport"), NodePath("HBoxContainer/SubViewportContainer2/SubViewport")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2104063284]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer" unique_id=440943583]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer" unique_id=1665233511]
+handle_input_locally = false
+size = Vector2i(574, 648)
+render_target_update_mode = 4
+
+[node name="Player3D" parent="HBoxContainer/SubViewportContainer/SubViewport" unique_id=328629696 instance=ExtResource("2_i7k6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="HBoxContainer" unique_id=1466761237]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer2" unique_id=754812516]
+handle_input_locally = false
+size = Vector2i(574, 648)
+render_target_update_mode = 4
+
+[node name="Player3D" parent="HBoxContainer/SubViewportContainer2/SubViewport" unique_id=1908825413 instance=ExtResource("2_i7k6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+playerId = "player2"

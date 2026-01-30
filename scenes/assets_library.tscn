@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bemg1lfejgnij" path="res://Assets/Props/SM_TrashBag_A.fbx" id="2_m56pb"]
 [ext_resource type="PackedScene" uid="uid://c6f2ug23dk8mo" path="res://Assets/Props/SM_TrashBin_A.fbx" id="3_mhckc"]
 [ext_resource type="PackedScene" uid="uid://4yvqxpom6gdm" path="res://Assets/Props/SM_MetalContainer_A.fbx" id="4_iknf0"]
+[ext_resource type="PackedScene" uid="uid://dery4wjtorty" path="res://Assets/Props/SM_Streetsign_A.fbx" id="5_m56pb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
 size = Vector3(20, 1, 20)
@@ -33,3 +34,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09995198, 0.51615536, 4.191
 
 [node name="SM_MetalContainer_A" parent="." unique_id=348491951 instance=ExtResource("4_iknf0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034168243, 0.7848243, 2.342874)
+
+[node name="SM_Streetsign_A" parent="." unique_id=704474688 instance=ExtResource("5_m56pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32784462, 1.7674705, 0.76808476)

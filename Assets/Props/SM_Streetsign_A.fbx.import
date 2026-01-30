@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://4yvqxpom6gdm"
-path="res://.godot/imported/SM_MetalContainer_A.fbx-43b95e7eadbff85217aca71b376d3001.scn"
+uid="uid://dery4wjtorty"
+path="res://.godot/imported/SM_Streetsign_A.fbx-d21ef5435e6c160a6b6dc583545c9f8b.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_MetalContainer_A.fbx"
-dest_files=["res://.godot/imported/SM_MetalContainer_A.fbx-43b95e7eadbff85217aca71b376d3001.scn"]
+source_file="res://Assets/Props/SM_Streetsign_A.fbx"
+dest_files=["res://.godot/imported/SM_Streetsign_A.fbx-d21ef5435e6c160a6b6dc583545c9f8b.scn"]
 
 [params]
 

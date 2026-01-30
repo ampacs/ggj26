@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dkqjyx65g8h5w"
-path="res://.godot/imported/SM_TrashContainer_A.fbx-5f1d17280fbd0369aabc1a6ba239cc34.scn"
+path="res://.godot/imported/SM_TrashContainer_A.fbx-a056f23ec314b2229e31b641686e4222.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_TrashContainer_A.fbx"
-dest_files=["res://.godot/imported/SM_TrashContainer_A.fbx-5f1d17280fbd0369aabc1a6ba239cc34.scn"]
+source_file="res://Assets/Props/SM_TrashContainer_A.fbx"
+dest_files=["res://.godot/imported/SM_TrashContainer_A.fbx-a056f23ec314b2229e31b641686e4222.scn"]
 
 [params]
 

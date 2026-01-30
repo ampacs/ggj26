@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dkqjyx65g8h5w" path="res://Assets/Props/SM_TrashContainer_A.fbx" id="1_x2530"]
 [ext_resource type="PackedScene" uid="uid://bemg1lfejgnij" path="res://Assets/Props/SM_TrashBag_A.fbx" id="2_jl2mt"]
+[ext_resource type="PackedScene" uid="uid://c6f2ug23dk8mo" path="res://Assets/Props/SM_TrashBin_A.fbx" id="3_al161"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
 size = Vector3(20, 1, 20)
@@ -25,3 +26,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2307992, 0, 6.4130764)
 
 [node name="SM_TrashBag_A" parent="." unique_id=2144508790 instance=ExtResource("2_jl2mt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1548047, 0.3669151, 4.923335)
+
+[node name="SM_TrashBin_A" parent="." unique_id=1612242483 instance=ExtResource("3_al161")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09995198, 0.51615536, 4.1911373)

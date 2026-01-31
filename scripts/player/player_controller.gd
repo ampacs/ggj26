@@ -100,7 +100,7 @@ func _physics_process(delta: float) -> void:
 	self.linear_velocity = self.linear_velocity.limit_length(current_speed)
 	
 	if !PlayerStatus.has_debuff("mask"):
-	var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) and _isGrounded()
+		var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) and _isGrounded()
 
 		if is_starting_jump:
 			self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)

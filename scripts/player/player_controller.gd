@@ -19,7 +19,6 @@ extends RigidBody3D
 
 var _camera_input_direction := Vector2.ZERO
 var _last_movement_direction := Vector3.BACK
-var _gravity := -30.0
 
 @onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _camera: Camera3D = %Camera3D
@@ -74,19 +73,16 @@ func _physics_process(delta: float) -> void:
 	var move_direction := forward * raw_input.y + right * raw_input.x
 	move_direction.y = 0.0
 	move_direction = move_direction.normalized()
-	if move_direction.length_squared() < 0.1:
-		return
 
-	var force := move_direction * acceleration * delta;
-	self.apply_central_force(force)
-	print(force)
+	var force := move_direction * acceleration;
+	self.apply_central_force(force * self.mass)
 
 	# var world := self.get_world_3d()
 	# world.
 
 	var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) # and is_on_floor()
 	if is_starting_jump:
-		self.apply_central_impulse(Vector3.UP * jump_impulse)
+		self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)
 
 	if move_direction.length() > 0.2:
 		_last_movement_direction = move_direction

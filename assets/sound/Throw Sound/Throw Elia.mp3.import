@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbfs6pxxi7tds"
+path="res://.godot/imported/Throw Elia.mp3-219d3accf1e1ff4ae083532c67c43f3a.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Throw Sound/Throw Elia.mp3"
+dest_files=["res://.godot/imported/Throw Elia.mp3-219d3accf1e1ff4ae083532c67c43f3a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

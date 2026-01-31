@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://w07wb4gsf8ib"
+path="res://.godot/imported/Scrumptious-_2.mp3-6e0bb8e98b73299868fac22116cf0f91.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Sound when Grab The Mask/Scrumptious-_2.mp3"
+dest_files=["res://.godot/imported/Scrumptious-_2.mp3-6e0bb8e98b73299868fac22116cf0f91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

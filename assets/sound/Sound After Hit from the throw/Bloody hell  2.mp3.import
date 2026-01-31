@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnb12b4dnxo16"
+path="res://.godot/imported/Bloody hell  2.mp3-4b629e206a2fe018452414342703e2ee.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Sound After Hit from the throw/Bloody hell  2.mp3"
+dest_files=["res://.godot/imported/Bloody hell  2.mp3-4b629e206a2fe018452414342703e2ee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

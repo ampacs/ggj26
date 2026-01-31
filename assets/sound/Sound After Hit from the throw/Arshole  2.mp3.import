@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxsxoptfhsiii"
+path="res://.godot/imported/Arshole  2.mp3-33d747862755f47320888ea4e543c6ea.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Sound After Hit from the throw/Arshole  2.mp3"
+dest_files=["res://.godot/imported/Arshole  2.mp3-33d747862755f47320888ea4e543c6ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

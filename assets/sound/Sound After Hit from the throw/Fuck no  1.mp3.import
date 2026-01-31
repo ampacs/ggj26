@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d6q6caca8dbn"
+path="res://.godot/imported/Fuck no  1.mp3-5a3d353ea5b99fcd58ad1d2e0b3740b0.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Sound After Hit from the throw/Fuck no  1.mp3"
+dest_files=["res://.godot/imported/Fuck no  1.mp3-5a3d353ea5b99fcd58ad1d2e0b3740b0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

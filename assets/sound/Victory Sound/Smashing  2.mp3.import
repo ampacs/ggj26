@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvvjox88xn6fb"
+path="res://.godot/imported/Smashing  2.mp3-934823c731291e38e02e0fe9198d9f1c.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Victory Sound/Smashing  2.mp3"
+dest_files=["res://.godot/imported/Smashing  2.mp3-934823c731291e38e02e0fe9198d9f1c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,7 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="1_5hyia"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="2_5hyia"]
 [ext_resource type="PackedScene" uid="uid://cm1eb2ch5sw3m" path="res://scenes/items/item_mask.tscn" id="2_8el2m"]
-[ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/item_throwable.tscn" id="3_8el2m"]
+[ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/throwable/throwable_can_a.tscn" id="3_8el2m"]
+[ext_resource type="PackedScene" uid="uid://cg1strmb5jvf0" path="res://scenes/items/throwable/throwable_can_b.tscn" id="5_xhcdp"]
+[ext_resource type="PackedScene" uid="uid://qxw47dr0rv6p" path="res://scenes/items/throwable/throwable_cup_a.tscn" id="6_hvubb"]
+[ext_resource type="PackedScene" uid="uid://cidt08kik7ubg" path="res://scenes/items/throwable/throwable_trashbag.tscn" id="7_j88v8"]
+[ext_resource type="PackedScene" uid="uid://cyr5sjdhwr1k7" path="res://scenes/items/throwable/throwable_trashpiece_c.tscn" id="8_jilqg"]
+[ext_resource type="PackedScene" uid="uid://cuvsyq8cdyu45" path="res://scenes/items/throwable/throwable_trashpiece_d.tscn" id="9_ij2ya"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4duur"]
 sky_top_color = Color(0.2629906, 0.43136442, 0.78330857, 1)
@@ -84,7 +89,24 @@ collision_layer = 129
 [node name="ItemMask" parent="Items" unique_id=827138187 instance=ExtResource("2_8el2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
 
+[node name="ItemThrowable" parent="Items" unique_id=2072047785 instance=ExtResource("3_8el2m")]
+
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
 
-[node name="ItemThrowable" parent="." unique_id=656425463 instance=ExtResource("3_8el2m")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1.1743643, 0.047082905, 1.5140238)
+[node name="ItemThrowableCan" parent="." unique_id=2072047785 instance=ExtResource("3_8el2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.027175, 0.047082666, 2.7668653)
+
+[node name="ItemThrowableCanB" parent="." unique_id=756460092 instance=ExtResource("5_xhcdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6212683, 0.0050319834, 3.2942004)
+
+[node name="ItemThrowableCupA" parent="." unique_id=1163215467 instance=ExtResource("6_hvubb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.505464, 0.0008233413, 5.73066)
+
+[node name="ItemThrowableCupA2" parent="." unique_id=641110174 instance=ExtResource("7_j88v8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6021602, 0.0021153986, 5.3773446)
+
+[node name="ItemThrowableTrashpieceC" parent="." unique_id=1330185995 instance=ExtResource("8_jilqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.000096, 0.022602376, 4.3194075)
+
+[node name="ItemThrowableCupA3" parent="." unique_id=1515251236 instance=ExtResource("9_ij2ya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4249105, 0.0008231029, 3.1486928)

@@ -46,6 +46,7 @@
 [ext_resource type="PackedScene" uid="uid://di0f4eigi6kbj" path="res://Assets/Props/M_Roy/SM_Wall_6.glb" id="44_7t50h"]
 [ext_resource type="PackedScene" uid="uid://buppwos26nlh7" path="res://Assets/Props/M_Roy/SM_Car_Cloth.glb" id="46_34e3g"]
 [ext_resource type="PackedScene" uid="uid://433e36tsg15" path="res://Assets/Props/M_Roy/SM_Car_Pile_1.glb" id="46_qdoe6"]
+[ext_resource type="PackedScene" uid="uid://dnpc5xw2nu4g1" path="res://Assets/Props/M_Roy/SM_Box_Crate.glb" id="47_qdoe6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -251,3 +252,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0553904, 0.28901678, 2.5697
 
 [node name="SM_Car_Cloth" parent="." unique_id=2049543611 instance=ExtResource("46_34e3g")]
 transform = Transform3D(0.21977812, 0, -0.9755499, 0, 1, 0, 0.9755499, 0, 0.21977812, 5.956982, 0.26075864, -3.7624822)
+
+[node name="SM_Box_Crate" parent="." unique_id=1529936606 instance=ExtResource("47_qdoe6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.022702, 0.040353477, 0.60020804)

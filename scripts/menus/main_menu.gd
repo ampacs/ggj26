@@ -1,5 +1,5 @@
 extends Control
-@export var scene: PackedScene;
+@export var scene: PackedScene
 
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file(scene.resource_path)

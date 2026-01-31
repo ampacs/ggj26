@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ddpbstf1dc27w" path="res://scripts/menus/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Script" uid="uid://0k8umtiuon7d" path="res://scripts/menus/start.gd" id="2_2o76q"]
 [ext_resource type="Texture2D" uid="uid://b1q7unhbadtrw" path="res://Assets/Menus/background.png" id="2_6bivr"]
+[ext_resource type="PackedScene" uid="uid://2rgj5osq15u6" path="res://scenes/Yana.tscn" id="2_8r73w"]
 [ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_ovrgc"]
 [ext_resource type="Texture2D" uid="uid://d38vbodmkq84r" path="res://Assets/Menus/Buttons/Normal/start_normal.png" id="3_imvie"]
 [ext_resource type="Texture2D" uid="uid://by2km8vup6vsk" path="res://Assets/Menus/Buttons/Selected/start_pressed.png" id="4_ng0o5"]
@@ -17,7 +18,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_l6cm7")
-scene = ExtResource("2_6bivr")
+scene = ExtResource("2_8r73w")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1578599656]
 layout_mode = 1
@@ -55,3 +56,5 @@ script = ExtResource("2_2o76q")
 
 [node name="Quit" parent="VBoxContainer" unique_id=314820531 instance=ExtResource("2_ovrgc")]
 layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

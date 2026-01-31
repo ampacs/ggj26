@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cjiyf7wb8npmf"]
 
+[ext_resource type="PackedScene" uid="uid://e4hfr4h4bdnq" path="res://Assets/Props/M_Roy/SM_Cloth.glb" id="1_34e3g"]
 [ext_resource type="PackedScene" path="res://scenes/player_3d.tscn" id="1_60wjf"]
 [ext_resource type="ArrayMesh" uid="uid://bsekk3ce8shxt" path="res://Assets/Props/SM_Box_A.res" id="2_h871s"]
 [ext_resource type="ArrayMesh" uid="uid://cu4ysq4geg3db" path="res://Assets/Props/SM_Box_B.res" id="3_f8oxg"]
@@ -44,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://dy6mp38xssn8f" path="res://Assets/Props/M_Roy/SM_Wall_4.glb" id="42_p4eoa"]
 [ext_resource type="PackedScene" uid="uid://b0fdlk5hhmwlj" path="res://Assets/Props/M_Roy/SM_Wall_5.glb" id="43_k7deq"]
 [ext_resource type="PackedScene" uid="uid://di0f4eigi6kbj" path="res://Assets/Props/M_Roy/SM_Wall_6.glb" id="44_7t50h"]
+[ext_resource type="PackedScene" uid="uid://433e36tsg15" path="res://Assets/Props/M_Roy/SM_Car_Pile_1.glb" id="46_qdoe6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -63,7 +65,7 @@ size = Vector3(20, 1, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_al161"]
 
-[node name="AssetsLibrary" type="Node3D" unique_id=1981078764]
+[node name="AssetsLibrary2" type="Node3D" unique_id=1981078764]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=61865546]
 environment = SubResource("Environment_k82ec")
@@ -79,8 +81,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_jl2mt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=929779419]
-transform = Transform3D(22.491467, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 0.27629566, 0.0071089864, -0.03187561)
+transform = Transform3D(22.491467, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, -0.41085124, -0.00433892, -0.019556046)
 mesh = SubResource("BoxMesh_al161")
+
+[node name="SM_Cloth" parent="Floor" unique_id=770003167 instance=ExtResource("1_34e3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.76378, 0.7781931, -5.8628182)
 
 [node name="Player3D" parent="." unique_id=328629696 instance=ExtResource("1_60wjf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0204763, 0.015441775, -3.5296388)
@@ -243,3 +248,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.481054, 0.10044551, 9.02135
 
 [node name="SM_Wall_6" parent="." unique_id=2041238162 instance=ExtResource("44_7t50h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.249585, 0, 7.1126413)
+
+[node name="SM_Car_Pile_1" parent="." unique_id=1295564448 instance=ExtResource("46_qdoe6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.0539875, 0.28901678, -0.05193472)

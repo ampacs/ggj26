@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://n2rjfgqwyk12"]
 
 [ext_resource type="Shader" uid="uid://wufkgaihbrd6" path="res://Shaders/VS_Standard.tres" id="1_5pa3o"]
-[ext_resource type="Texture2D" uid="uid://dpw2n5fa71mc5" path="res://Assets/Textures/T_Tileables_circles.png" id="2_5pa3o"]
+[ext_resource type="Texture2D" uid="uid://dpw2n5fa71mc5" path="res://assets/textures/T_Tileables_circles.png" id="2_5pa3o"]
 
 [resource]
 render_priority = 0

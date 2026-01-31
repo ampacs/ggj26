@@ -1,6 +1,7 @@
 class_name PlayerController extends RigidBody3D
 
 @export var playerId := "player1"
+@export var actor: Actor
 
 @export_group("Movement")
 @export var move_speed := 8.0
@@ -17,8 +18,9 @@ class_name PlayerController extends RigidBody3D
 @export var fall_gravity_multiplier := 2.25
 @export var low_jump_gravity_multiplier := 3.0
 
-@export_group("Movement debuff")
+@export_group("Debuffs")
 @export var debuff_move_speed := 2.0
+@export var stun_time: float = 3.
 
 @export_group("Physics feel")
 @export_range(0.0, 1.0) var player_friction := 0.0
@@ -36,11 +38,14 @@ var _camera_input_direction := Vector2.ZERO
 var _last_movement_direction := Vector3.BACK
 var _wall_normal: Vector3 = Vector3.ZERO
 
+var destunnedMoment: float = -INF
+
 @onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Node3D = $ReplaceWithPlayerScene
 
 var hasMaskEquipped := false
+signal onStunned
 
 func _ready() -> void:
 	contact_monitor = true
@@ -71,6 +76,11 @@ func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
 		normalizedCombined.y = 0.0
 		_wall_normal = Vector3.ZERO if normalizedCombined.length_squared() < 0.0001 else normalizedCombined.normalized()
 
+func _is_stunned() -> bool:
+	var now := Time.get_unix_time_from_system()
+
+	return now < destunnedMoment
+
 func _isGrounded() -> bool:
 	var space_state := self.get_world_3d().direct_space_state
 	var query := PhysicsRayQueryParameters3D.create(self.global_position + Vector3.UP * .5, self.global_position + Vector3(0, -.75, 0), 1 << 7)
@@ -95,7 +105,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if is_camera_motion:
 		_camera_input_direction = (event as InputEventMouseMotion).screen_relative * mouse_sensitivity
 
-func _physics_process(delta: float) -> void:	
+func _physics_process(delta: float) -> void:
 	var grounded := _isGrounded()
 
 	var stick := Input.get_vector(
@@ -120,6 +130,13 @@ func _physics_process(delta: float) -> void:
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 
 	_camera_input_direction = Vector2.ZERO
+
+	if _is_stunned():
+		var vel := self.linear_velocity
+		var hvel := Vector3(vel.x, 0.0, vel.z)
+		self.apply_central_force(hvel.normalized() * -braking_acceleration * self.mass)
+
+		return
 
 	var raw_input := Input.get_vector(
 		"move_left_%s" % [playerId],
@@ -189,5 +206,10 @@ func _physics_process(delta: float) -> void:
 func _on_actor_mask_equipper_component_equipped_mask() -> void:
 	hasMaskEquipped = true
 
-#func _on_actor_mask_equipper_component_dropped_mask() -> void:
-	#hasMaskEquipped = false
+func _on_actor_mask_equipper_component_dropped_mask() -> void:
+	hasMaskEquipped = false
+
+func stun() -> void:
+	destunnedMoment = Time.get_unix_time_from_system() + stun_time
+
+	onStunned.emit()

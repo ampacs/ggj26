@@ -103,7 +103,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060970783, 0.019153833, -5
 transform = Transform3D(-0.023193374, 0, 0.999731, 0, 1, 0, -0.999731, 0, -0.023193374, 2.0645409, -0.007842302, -1.9601593)
 
 [node name="SM_Fence" parent="SM_Fence/SM_Fence" unique_id=589736835 instance=ExtResource("10_b21u7")]
-transform = Transform3D(0.997769, 0, -0.06676155, 0, 1, 0, 0.06676155, 0, 0.997769, -0.0589633, -0.007842302, 4.1322155)
+transform = Transform3D(0.997769, 0, -0.06676155, 0, 1, 0, 0.06676155, 0, 0.997769, -0.13425064, -0.007842302, 4.030903)
 
 [node name="SM_Beer_bottles" parent="." unique_id=789964542 instance=ExtResource("11_b21u7")]
 transform = Transform3D(0.85108006, 0, 0, 0, 0.85108006, 0, 0, 0, 0.85108006, 2.8794541, 0.10310106, -6.738797)

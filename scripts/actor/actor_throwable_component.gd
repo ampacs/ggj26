@@ -64,11 +64,12 @@ func finalizeThrow() -> void:
 	var t: float = min(1., delta / (maximumThrowHoldTime - minimumThrowHoldTime))
 	var throwSpeed: float = lerp(minimumThrowSpeed, maximumThrowSpeed, t)
 	var throwAngle: float = lerp_angle(startThrowAngle, endThrowAngle, t)
+	throwAngle = deg_to_rad(throwAngle)
 
 	var lookDirection := -get_viewport().get_camera_3d().get_global_transform().basis.z
 
 	var throwDirection: Vector3 = project_on_plane(lookDirection, Vector3.UP)
-	throwDirection = throwDirection.rotated(-playerController.global_basis.x, deg_to_rad(throwAngle))
+	throwDirection = throwDirection.rotated(throwDirection.cross(Vector3.UP).normalized(), throwAngle)
 	var throwForce := throwDirection * throwSpeed;
 
 	dropItem()

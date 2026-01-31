@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://twn7ppwuw6du"
-path="res://.godot/imported/SM_EmptyCan_B.glb-7eff1f8b8790963fcfa5473ddb7509f3.scn"
+path="res://.godot/imported/SM_EmptyCan_B.glb-d2a1b542b64da412f1c439a75f709939.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_EmptyCan_B.glb"
-dest_files=["res://.godot/imported/SM_EmptyCan_B.glb-7eff1f8b8790963fcfa5473ddb7509f3.scn"]
+source_file="res://Assets/Props/SM_EmptyCan_B.glb"
+dest_files=["res://.godot/imported/SM_EmptyCan_B.glb-d2a1b542b64da412f1c439a75f709939.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/Props/SM_EmptyCan_B.res",
+"save_to_file/fallback_path": "res://Assets/Props/SM_EmptyCan_B_SM_EmptyCan_B.res",
 "save_to_file/path": "uid://duoayeltfeepf"
 }
 }

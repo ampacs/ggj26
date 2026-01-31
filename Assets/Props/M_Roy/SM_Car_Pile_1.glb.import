@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://433e36tsg15"
-path="res://.godot/imported/SM_Car_Pile_1.glb-bc4b220c36cc0b050bcb57a5579f40ee.scn"
+path="res://.godot/imported/SM_Car_Pile_1.glb-f6b81c554e7d361ef678a4592362a1f4.scn"
 
 [deps]
 
-source_file="res://assets/Props/M_Roy/SM_Car_Pile_1.glb"
-dest_files=["res://.godot/imported/SM_Car_Pile_1.glb-bc4b220c36cc0b050bcb57a5579f40ee.scn"]
+source_file="res://Assets/Props/M_Roy/SM_Car_Pile_1.glb"
+dest_files=["res://.godot/imported/SM_Car_Pile_1.glb-f6b81c554e7d361ef678a4592362a1f4.scn"]
 
 [params]
 

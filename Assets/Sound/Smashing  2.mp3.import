@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dvvjox88xn6fb"
-path="res://.godot/imported/Smashing  2.mp3-f5c90064607781a597387c41ebd1756d.mp3str"
+path="res://.godot/imported/Smashing  2.mp3-b63dd938d482cca151743b0559c67ec6.mp3str"
 
 [deps]
 
-source_file="res://assets/Sound/Smashing  2.mp3"
-dest_files=["res://.godot/imported/Smashing  2.mp3-f5c90064607781a597387c41ebd1756d.mp3str"]
+source_file="res://Assets/Sound/Smashing  2.mp3"
+dest_files=["res://.godot/imported/Smashing  2.mp3-b63dd938d482cca151743b0559c67ec6.mp3str"]
 
 [params]
 

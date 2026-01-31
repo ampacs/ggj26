@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cdabvpdyg0wbg"
-path="res://.godot/imported/Marvelous-_1.mp3-dfd1abe3b0f0fc5744706c9828c54b56.mp3str"
+path="res://.godot/imported/Marvelous-_1.mp3-c91960507f0246bcee6d9e2e8dcc05b1.mp3str"
 
 [deps]
 
-source_file="res://assets/Sound/Marvelous-_1.mp3"
-dest_files=["res://.godot/imported/Marvelous-_1.mp3-dfd1abe3b0f0fc5744706c9828c54b56.mp3str"]
+source_file="res://Assets/Sound/Marvelous-_1.mp3"
+dest_files=["res://.godot/imported/Marvelous-_1.mp3-c91960507f0246bcee6d9e2e8dcc05b1.mp3str"]
 
 [params]
 

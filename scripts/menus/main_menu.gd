@@ -1,8 +1,7 @@
 extends Control
-@export var scene: PackedScene;
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file(scene.resource_path)
+	get_tree().change_scene_to_file("res://scenes/root_scene.tscn")
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()

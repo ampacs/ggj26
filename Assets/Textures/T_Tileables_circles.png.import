@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpw2n5fa71mc5"
-path.s3tc="res://.godot/imported/T_Tileables_circles.png-09653234c9750218f95aa239a71e8198.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Tileables_circles.png-d4872fc496e64657835de9d257347f94.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Textures/T_Tileables_circles.png"
-dest_files=["res://.godot/imported/T_Tileables_circles.png-09653234c9750218f95aa239a71e8198.s3tc.ctex"]
+source_file="res://Assets/Textures/T_Tileables_circles.png"
+dest_files=["res://.godot/imported/T_Tileables_circles.png-d4872fc496e64657835de9d257347f94.s3tc.ctex"]
 
 [params]
 

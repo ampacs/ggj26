@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://jlh7mlfrd1sd"
-path="res://.godot/imported/SM_Box_B.glb-eecdc2c33bc64e4c02c721496bcce178.scn"
+path="res://.godot/imported/SM_Box_B.glb-4ee151bedb204897f94e7612fefc1d30.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_Box_B.glb"
-dest_files=["res://.godot/imported/SM_Box_B.glb-eecdc2c33bc64e4c02c721496bcce178.scn"]
+source_file="res://Assets/Props/SM_Box_B.glb"
+dest_files=["res://.godot/imported/SM_Box_B.glb-4ee151bedb204897f94e7612fefc1d30.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/Props/SM_Box_B.res",
+"save_to_file/fallback_path": "res://Assets/Props/SM_Box_B.res",
 "save_to_file/path": "uid://cu4ysq4geg3db"
 }
 }

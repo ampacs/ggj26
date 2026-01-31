@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://niusm5km2vv6"
-path="res://.godot/imported/Scrumptious-_1.mp3-2b7ffda3d53b666be9eab88f38300197.mp3str"
+path="res://.godot/imported/Scrumptious-_1.mp3-56bebe8b29ec6329a9abc2062701ec46.mp3str"
 
 [deps]
 
-source_file="res://assets/Sound/Scrumptious-_1.mp3"
-dest_files=["res://.godot/imported/Scrumptious-_1.mp3-2b7ffda3d53b666be9eab88f38300197.mp3str"]
+source_file="res://Assets/Sound/Scrumptious-_1.mp3"
+dest_files=["res://.godot/imported/Scrumptious-_1.mp3-56bebe8b29ec6329a9abc2062701ec46.mp3str"]
 
 [params]
 

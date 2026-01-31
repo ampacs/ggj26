@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://2brdrb2pk6i1"
-path="res://.godot/imported/SM_TrashBag_A.glb-41b1b1005674c9d2cfc641c3597a3b05.scn"
+uid="uid://cvgy078epd1wt"
+path="res://.godot/imported/SM_TrashBag_A.glb-f9b9a4891ec9ecffaa3ad0ffe6ef1b0f.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_TrashBag_A.glb"
-dest_files=["res://.godot/imported/SM_TrashBag_A.glb-41b1b1005674c9d2cfc641c3597a3b05.scn"]
+source_file="res://Assets/Props/SM_TrashBag_A.glb"
+dest_files=["res://.godot/imported/SM_TrashBag_A.glb-f9b9a4891ec9ecffaa3ad0ffe6ef1b0f.scn"]
 
 [params]
 
@@ -37,6 +37,18 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"meshes": {
+"SM_TrashBag_A_SM_TrashBag_A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Props/SM_TrashBag_A_SM_TrashBag_A.res",
+"save_to_file/path": "uid://duun11gfyxbhv"
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch5ks6kqxkcjg"
-path.s3tc="res://.godot/imported/T_Tileables_lines.png-84a7bf63b5de571a5c6a0376bfff4148.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Tileables_lines.png-0460ac6642855cf4e2a7b3a564cb2348.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Textures/T_Tileables_lines.png"
-dest_files=["res://.godot/imported/T_Tileables_lines.png-84a7bf63b5de571a5c6a0376bfff4148.s3tc.ctex"]
+source_file="res://Assets/Textures/T_Tileables_lines.png"
+dest_files=["res://.godot/imported/T_Tileables_lines.png-0460ac6642855cf4e2a7b3a564cb2348.s3tc.ctex"]
 
 [params]
 

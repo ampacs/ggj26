@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ctw554q2ucind"
-path="res://.godot/imported/Ouch-_1.mp3-2218c39d4263606edb06972ea53054eb.mp3str"
+path="res://.godot/imported/Ouch-_1.mp3-6679ba1fa45c9a5a01a2ea441d91b13d.mp3str"
 
 [deps]
 
-source_file="res://assets/Sound/Ouch-_1.mp3"
-dest_files=["res://.godot/imported/Ouch-_1.mp3-2218c39d4263606edb06972ea53054eb.mp3str"]
+source_file="res://Assets/Sound/Ouch-_1.mp3"
+dest_files=["res://.godot/imported/Ouch-_1.mp3-6679ba1fa45c9a5a01a2ea441d91b13d.mp3str"]
 
 [params]
 

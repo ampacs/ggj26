@@ -3,6 +3,10 @@ class_name Item extends Node3D
 @export var components: Array[ItemComponent]
 
 @export var collider: CollisionShape3D
+var originalParent: Node
+
+func _ready() -> void:
+	originalParent = self.get_parent()
 
 func get_component(type: Variant) -> ItemComponent:
 	for component in components:
@@ -19,3 +23,6 @@ func get_components(type: Variant) -> Array[ItemComponent]:
 			selectedComponents.append(component)
 
 	return selectedComponents
+
+func resetParentToOriginal() -> void:
+	self.reparent(originalParent)

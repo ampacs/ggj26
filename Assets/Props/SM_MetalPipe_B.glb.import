@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cmthbo3yeg5nh"
-path="res://.godot/imported/SM_MetalPipe_B.glb-a445c72b1046bea75eeb574e29309fa7.scn"
+path="res://.godot/imported/SM_MetalPipe_B.glb-12afb708741bad2d34131123139be71a.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_MetalPipe_B.glb"
-dest_files=["res://.godot/imported/SM_MetalPipe_B.glb-a445c72b1046bea75eeb574e29309fa7.scn"]
+source_file="res://Assets/Props/SM_MetalPipe_B.glb"
+dest_files=["res://.godot/imported/SM_MetalPipe_B.glb-12afb708741bad2d34131123139be71a.scn"]
 
 [params]
 

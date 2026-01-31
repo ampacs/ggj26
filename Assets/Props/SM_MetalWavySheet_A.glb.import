@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d1h8lsyj1fos"
-path="res://.godot/imported/SM_MetalWavySheet_A.glb-7eb2cf23ebaffe7897c830f36c9a7aa0.scn"
+path="res://.godot/imported/SM_MetalWavySheet_A.glb-2f576bb5874fda667eb1b4d31bafed31.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_MetalWavySheet_A.glb"
-dest_files=["res://.godot/imported/SM_MetalWavySheet_A.glb-7eb2cf23ebaffe7897c830f36c9a7aa0.scn"]
+source_file="res://Assets/Props/SM_MetalWavySheet_A.glb"
+dest_files=["res://.godot/imported/SM_MetalWavySheet_A.glb-2f576bb5874fda667eb1b4d31bafed31.scn"]
 
 [params]
 

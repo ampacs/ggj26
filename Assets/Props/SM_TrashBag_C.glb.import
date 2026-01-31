@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://sq04bi5wuvqh"
-path="res://.godot/imported/SM_TrashBag_C.glb-9c83b2c86cee294d2720386b327db8ec.scn"
+path="res://.godot/imported/SM_TrashBag_C.glb-f9660c217b27367f55669fee3f7eb928.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_TrashBag_C.glb"
-dest_files=["res://.godot/imported/SM_TrashBag_C.glb-9c83b2c86cee294d2720386b327db8ec.scn"]
+source_file="res://Assets/Props/SM_TrashBag_C.glb"
+dest_files=["res://.godot/imported/SM_TrashBag_C.glb-f9660c217b27367f55669fee3f7eb928.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://assets/Props/SM_TrashBag_C.res",
+"save_to_file/fallback_path": "res://Assets/Props/SM_TrashBag_C.res",
 "save_to_file/path": "uid://iqnrdl5pt80f"
 }
 }

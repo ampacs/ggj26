@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cctcfgl7scspf"
-path="res://.godot/imported/SM_WheelieBin_B.glb-4ac7ec06c95c55e5da073873d5159f10.scn"
+path="res://.godot/imported/SM_WheelieBin_B.glb-96f7fb113ab57b9f46f51a4b65ca62ba.scn"
 
 [deps]
 
-source_file="res://assets/Props/SM_WheelieBin_B.glb"
-dest_files=["res://.godot/imported/SM_WheelieBin_B.glb-4ac7ec06c95c55e5da073873d5159f10.scn"]
+source_file="res://Assets/Props/SM_WheelieBin_B.glb"
+dest_files=["res://.godot/imported/SM_WheelieBin_B.glb-96f7fb113ab57b9f46f51a4b65ca62ba.scn"]
 
 [params]
 

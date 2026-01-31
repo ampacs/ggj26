@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dck3kihw03pm5"
-path.s3tc="res://.godot/imported/T_Tileables_blocks.png-51cfbd0d225fdb8db10e55f75eeb5dca.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Tileables_blocks.png-5a68c18bfd975dfa0823e422ad403ed1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Textures/T_Tileables_blocks.png"
-dest_files=["res://.godot/imported/T_Tileables_blocks.png-51cfbd0d225fdb8db10e55f75eeb5dca.s3tc.ctex"]
+source_file="res://Assets/Textures/T_Tileables_blocks.png"
+dest_files=["res://.godot/imported/T_Tileables_blocks.png-5a68c18bfd975dfa0823e422ad403ed1.s3tc.ctex"]
 
 [params]
 

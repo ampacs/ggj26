@@ -42,6 +42,9 @@
 [ext_resource type="PackedScene" uid="uid://cax66butqkq0c" path="res://assets/prefab/Foliage/SM_Plant_F.tscn" id="40_wctrv"]
 [ext_resource type="PackedScene" uid="uid://dgs1e53vin8ia" path="res://assets/prefab/Foliage/SM_Plant_G.tscn" id="41_7qmso"]
 [ext_resource type="PackedScene" uid="uid://dtn2bw12ori78" path="res://assets/prefab/Foliage/SM_Plant_H.tscn" id="42_fgitj"]
+[ext_resource type="PackedScene" uid="uid://ddke88333ufui" path="res://assets/prefab/Foliage/Grass/SM_Grass_A.glb" id="43_7qmso"]
+[ext_resource type="PackedScene" uid="uid://dhx0rekr07whc" path="res://assets/prefab/Foliage/Grass/SM_Grass_B.glb" id="44_fgitj"]
+[ext_resource type="PackedScene" uid="uid://dil1hc4c7li3o" path="res://assets/prefab/Foliage/Grass/SM_Grass_C.glb" id="45_70nik"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -229,3 +232,12 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 0.20000002, -4)
 
 [node name="SmPlantHSmPlantH" parent="." unique_id=1422170835 instance=ExtResource("42_fgitj")]
 transform = Transform3D(0.5, 0, 0, 0, 0.48296288, 0.1294095, 0, -0.1294095, 0.48296288, -10, 0.19999997, 0)
+
+[node name="SM_Grass_A2" parent="." unique_id=1061569095 instance=ExtResource("43_7qmso")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -3)
+
+[node name="SM_Grass_B2" parent="." unique_id=66077805 instance=ExtResource("44_fgitj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2.7)
+
+[node name="SM_Grass_C2" parent="." unique_id=1523446092 instance=ExtResource("45_70nik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2.4)

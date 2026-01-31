@@ -247,7 +247,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.481054, 0.10044551, 9.02135
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.249585, 0, 7.1126413)
 
 [node name="SM_Car_Pile_1" parent="." unique_id=1295564448 instance=ExtResource("46_qdoe6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.0539875, 0.28901678, -0.05193472)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0553904, 0.28901678, 2.5697255)
 
 [node name="SM_Cloth_" parent="." unique_id=982558380 instance=ExtResource("46_34e3g")]
-transform = Transform3D(-0.5649959, 0, -0.82509375, 0, 1, 0, 0.82509375, 0, -0.5649959, -7.068871, 0.26075864, -5.4952936)
+transform = Transform3D(-0.5649959, 0, -0.82509375, 0, 1, 0, 0.82509375, 0, -0.5649959, 6.0405064, 0.26075864, -2.8736334)

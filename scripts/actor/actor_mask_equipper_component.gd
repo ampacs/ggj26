@@ -17,14 +17,12 @@ func interact(item: Item) -> void:
 		itemRigidbodyComponent.rigidbody.freeze = true
 		itemRigidbodyComponent.rigidbody.freeze_mode = RigidBody3D.FREEZE_MODE_STATIC
 
-	item.global_position = maskAnchor.global_position
+	if item.collider != null:
+		item.collider.disabled = true
+
+	item.reparent(maskAnchor, true)
+	item.position = Vector3.ZERO
 	item.rotation = Vector3.ZERO
-	# item.reparent(maskAnchor, true)
 	equippedMask = item
 
 	PlayerStatus.add_debuff(debuff)
-
-func _process(delta: float) -> void:
-	if equippedMask != null:
-		equippedMask.global_position = maskAnchor.global_position
-		equippedMask.global_basis = maskAnchor.global_basis

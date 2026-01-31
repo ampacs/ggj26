@@ -20,11 +20,12 @@ lock_rotation = true
 script = ExtResource("1_rwch6")
 jump_impulse = 7.0
 
-[node name="ItemInteractor" type="Node3D" parent="." unique_id=1506726530 node_paths=PackedStringArray("playerController")]
+[node name="ItemInteractor" type="Node3D" parent="." unique_id=1506726530 node_paths=PackedStringArray("playerController", "actor")]
 script = ExtResource("2_syd7c")
 playerController = NodePath("..")
 maximumDistance = 5.0
 interactionRadius = 1.0
+actor = NodePath("../Actor")
 
 [node name="Actor" type="Node" parent="." unique_id=144003276 node_paths=PackedStringArray("components")]
 script = ExtResource("2_1i56v")

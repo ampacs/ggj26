@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b2sp5s0c4eyhk"]
+
+[ext_resource type="ArrayMesh" uid="uid://u31awdsg8m1h" path="res://Assets/Environment/Foliage/SM_Plant_C.res" id="1_lpi4l"]
+
+[node name="SM_Plant_C" type="MeshInstance3D" unique_id=49742317]
+transform = Transform3D(0.3795843, -0.067051135, 0.10686391, 0.029014964, 0.37614277, 0.13294643, -0.12277575, -0.11840933, 0.36180848, 0, 0, 0)
+mesh = ExtResource("1_lpi4l")

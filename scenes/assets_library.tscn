@@ -25,6 +25,11 @@
 [ext_resource type="PackedScene" uid="uid://c8enixq2eepsl" path="res://Assets/Props/SM_TrashPiece_C.fbx" id="23_k82ec"]
 [ext_resource type="PackedScene" uid="uid://ccf81o58rum56" path="res://Assets/Props/SM_TrashPiece_D.fbx" id="24_cxrnp"]
 [ext_resource type="PackedScene" uid="uid://dq48odel8tev3" path="res://Assets/Props/SM_TrashPiece_E.fbx" id="25_bgkh3"]
+[ext_resource type="PackedScene" uid="uid://cukqalkvahipd" path="res://Assets/Props/walls/SM_Wall_1.fbx" id="26_omef0"]
+[ext_resource type="PackedScene" uid="uid://dkj4i0kdlkymy" path="res://Assets/Props/walls/SM_Wall_2.fbx" id="27_qgq1y"]
+[ext_resource type="PackedScene" uid="uid://bxcy3u4cj7b7j" path="res://Assets/Props/walls/SM_Wall_3.fbx" id="28_aej6r"]
+[ext_resource type="PackedScene" uid="uid://dawrcq5y6wsyu" path="res://Assets/Props/walls/SM_Wall_4.fbx" id="29_7d4sr"]
+[ext_resource type="PackedScene" uid="uid://7nxxv46rhtxt" path="res://Assets/Props/walls/SM_Wall_6.fbx" id="30_k82ec"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
 size = Vector3(20, 1, 20)
@@ -40,7 +45,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_jl2mt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=929779419]
-transform = Transform3D(19.818878, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 0.015624523, 0.0071089864, -0.03187561)
+transform = Transform3D(22.491467, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 9.364261, 0.0071089864, -0.03187561)
 mesh = SubResource("BoxMesh_al161")
 
 [node name="SM_TrashBag_C" parent="Floor" unique_id=1090437251 instance=ExtResource("1_doc8o")]
@@ -132,3 +137,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1072073, 0.031042442, 3.010
 
 [node name="SM_TrashPiece_E" parent="." unique_id=224860112 instance=ExtResource("25_bgkh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0779452, 0.036297027, 3.217722)
+
+[node name="SM_Wall_1" parent="." unique_id=1236980675 instance=ExtResource("26_omef0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.060312, -0.023865104, -5.917689)
+
+[node name="SM_Wall_2" parent="." unique_id=1032995589 instance=ExtResource("27_qgq1y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.61962, 0, -7.016674)
+
+[node name="SM_Wall_3" parent="." unique_id=1773586543 instance=ExtResource("28_aej6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.285294, 0, -6.9371195)
+
+[node name="SM_Wall_4" parent="." unique_id=966764939 instance=ExtResource("29_7d4sr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.036892, 0, -7.0126657)
+
+[node name="SM_Wall_6" parent="." unique_id=840259060 instance=ExtResource("30_k82ec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.13396, 0.006774068, -6.89944)

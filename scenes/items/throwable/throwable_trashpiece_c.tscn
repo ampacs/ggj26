@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cyr5sjdhwr1k7"]
+
+[ext_resource type="Script" uid="uid://duax5w4ms00n" path="res://scripts/items/item.gd" id="1_nrtws"]
+[ext_resource type="Script" uid="uid://tr1ch5i142xo" path="res://scripts/items/item_rigidbody_component.gd" id="2_yxyc1"]
+[ext_resource type="Script" uid="uid://4jakahk7f5d8" path="res://scripts/items/item_throwable_component.gd" id="3_sl8f3"]
+[ext_resource type="ArrayMesh" uid="uid://nw0feerq27xc" path="res://assets/props/SM_TrashPiece_D.res" id="4_nrtws"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yxyc1"]
+height = 0.083496094
+radius = 0.2446289
+
+[node name="ItemThrowableTrashpieceC" type="RigidBody3D" unique_id=2072047785 node_paths=PackedStringArray("components", "collider")]
+script = ExtResource("1_nrtws")
+components = [NodePath("ItemComponents/ItemRigidbodyComponent"), NodePath("ItemComponents/ItemThrowableComponent")]
+collider = NodePath("CollisionShape3D")
+
+[node name="ItemComponents" type="Node" parent="." unique_id=1457239777]
+
+[node name="ItemRigidbodyComponent" type="Node" parent="ItemComponents" unique_id=1991245014 node_paths=PackedStringArray("rigidbody")]
+script = ExtResource("2_yxyc1")
+rigidbody = NodePath("../..")
+
+[node name="ItemThrowableComponent" type="Node" parent="ItemComponents" unique_id=1100708541]
+script = ExtResource("3_sl8f3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=743143282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04132279, 0)
+shape = SubResource("CylinderShape3D_yxyc1")
+
+[node name="View" type="Node3D" parent="." unique_id=2016242896]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.055333465, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="View" unique_id=1818611682]
+transform = Transform3D(-8.742278e-08, 2, -8.742278e-08, 0, -8.742278e-08, -2, -2, -8.742278e-08, 3.821371e-15, 2.3778277e-09, 0.054398358, 0)
+mesh = ExtResource("4_nrtws")

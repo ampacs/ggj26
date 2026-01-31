@@ -22,6 +22,8 @@ var isThrowingAllowed := false
 var startThrowTime: float
 
 func interact(item: Item) -> void:
+	if heldItem:
+		return
 	var itemThrowableComponent: ItemThrowableComponent = item.get_component(ItemThrowableComponent)
 	if itemThrowableComponent == null:
 		return

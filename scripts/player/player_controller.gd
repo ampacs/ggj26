@@ -40,6 +40,8 @@ var _wall_normal: Vector3 = Vector3.ZERO
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Node3D = $ReplaceWithPlayerScene
 
+var hasMaskEquipped := false
+
 func _ready() -> void:
 	contact_monitor = true
 	max_contacts_reported = 8
@@ -139,7 +141,7 @@ func _physics_process(delta: float) -> void:
 		move_direction = move_direction.slide(_wall_normal)
 
 	var current_speed := move_speed
-	if PlayerStatus.has_debuff("mask"):
+	if hasMaskEquipped:
 		current_speed = debuff_move_speed
 
 	var linearVelocity: Vector3 = self.linear_velocity
@@ -173,7 +175,7 @@ func _physics_process(delta: float) -> void:
 		elif self.linear_velocity.y > 0.0 and !Input.is_action_pressed(jump_action) and low_jump_gravity_multiplier > 1.0:
 			self.apply_central_force(Vector3.DOWN * gravity * (low_jump_gravity_multiplier - 1.0) * self.mass)
 	
-	if !PlayerStatus.has_debuff("mask"):
+	if !hasMaskEquipped:
 		var is_starting_jump := Input.is_action_just_pressed(jump_action) and grounded
 
 		if is_starting_jump:
@@ -183,3 +185,9 @@ func _physics_process(delta: float) -> void:
 		_last_movement_direction = move_direction
 	var target_angle := Vector3.BACK.signed_angle_to(_last_movement_direction, Vector3.UP)
 	_skin.global_rotation.y = lerp_angle(_skin.rotation.y, target_angle, rotation_speed * delta)
+
+func _on_actor_mask_equipper_component_equipped_mask() -> void:
+	hasMaskEquipped = true
+
+#func _on_actor_mask_equipper_component_dropped_mask() -> void:
+	#hasMaskEquipped = false

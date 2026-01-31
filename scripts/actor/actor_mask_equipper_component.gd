@@ -1,5 +1,8 @@
 class_name ActorMaskEquipperComponent extends ActorComponent
 
+signal equipped_mask
+signal dropped_mask
+
 @export var maskAnchor: Node3D
 @export var maskAnchorOffsetPosition: Vector3
 @export var debuff: String = "mask"
@@ -9,7 +12,6 @@ var equippedMask: Item
 func interact(item: Item) -> void:
 	var itemMaskComponent: ItemMaskComponent = item.get_component(ItemMaskComponent)
 	if itemMaskComponent == null:
-		PlayerStatus.remove_debuff(debuff)
 		return
 
 	var itemRigidbodyComponent: ItemRigidbodyComponent = item.get_component(ItemRigidbodyComponent)
@@ -24,5 +26,4 @@ func interact(item: Item) -> void:
 	item.position = Vector3.ZERO
 	item.rotation = Vector3.ZERO
 	equippedMask = item
-
-	PlayerStatus.add_debuff(debuff)
+	equipped_mask.emit()

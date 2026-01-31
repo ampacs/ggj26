@@ -93,7 +93,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
 
-[node name="ItemThrowableCan" parent="." unique_id=2072047785 instance=ExtResource("3_8el2m")]
+[node name="ItemThrowableCan" parent="." unique_id=168798799 instance=ExtResource("3_8el2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.027175, 0.047082666, 2.7668653)
 
 [node name="ItemThrowableCanB" parent="." unique_id=756460092 instance=ExtResource("5_xhcdp")]

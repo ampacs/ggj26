@@ -49,7 +49,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_a141m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Floor" unique_id=1894721305]
-transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 33.009735, -8.026631, 12.018536)
+transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 31.126705, -6.91368, 12.185608)
 mesh = SubResource("BoxMesh_3dnxu")
 
 [node name="1Mcubes" type="Node3D" parent="Environment" unique_id=1809547852]

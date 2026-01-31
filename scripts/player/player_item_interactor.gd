@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 	var camera := get_viewport().get_camera_3d()
 	var lookDirection := get_viewport().get_camera_3d().get_global_transform().basis.z
 
-	var from := camera.position
+	var from := camera.global_position
 	var to := from + lookDirection * maximumDistance
 
 	var distanceQuery := PhysicsRayQueryParameters3D.new()
@@ -39,6 +39,7 @@ func _process(delta: float) -> void:
 		targetPosition = to
 	else:
 		targetPosition = distanceQueryResult.position
+	targetPosition = self.global_position
 
 	var shape: SphereShape3D = SphereShape3D.new()
 	shape.radius = interactionRadius
@@ -51,6 +52,7 @@ func _process(delta: float) -> void:
 	query.shape = shape
 
 	debugMesh.global_position = targetPosition
+	print(targetPosition)
 
 	var shapeQueryResults := space_state.intersect_shape(query)
 	if shapeQueryResults.is_empty():
@@ -65,13 +67,16 @@ func _process(delta: float) -> void:
 			continue
 
 		var collider: Node3D = result.collider
+		print("found closer node: %s: %s" % [distance, collider.name])
 		if collider is Item:
+			print("closer node is item")
 			closestItem = collider
 			closestItemDistance = distance
 		else:
 			var selected := false
 			for child in get_children():
 				if child is Item:
+					print("closer node child is item")
 					closestItem = child
 					closestItemDistance = distance
 					selected = true
@@ -85,11 +90,11 @@ func _process(delta: float) -> void:
 				currentParent = currentParent.get_parent()
 				continue
 
+			print("closer node parent is item")
 			closestItem = currentParent
 			closestItemDistance = distance
 			break
 
 	print(closestItem)
-	print(targetPosition)
 
 	# draw_sphere(global_transform.origin, 1.0, Color.RED)

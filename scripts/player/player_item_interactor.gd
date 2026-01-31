@@ -3,6 +3,7 @@ extends Node3D
 @export var playerController: PlayerController
 @export var maximumDistance: float
 @export var interactionRadius: float
+@export var actor: Actor
 
 var debugMesh: MeshInstance3D
 
@@ -67,16 +68,13 @@ func _process(delta: float) -> void:
 			continue
 
 		var collider: Node3D = result.collider
-		print("found closer node: %s: %s" % [distance, collider.name])
 		if collider is Item:
-			print("closer node is item")
 			closestItem = collider
 			closestItemDistance = distance
 		else:
 			var selected := false
 			for child in get_children():
 				if child is Item:
-					print("closer node child is item")
 					closestItem = child
 					closestItemDistance = distance
 					selected = true
@@ -84,17 +82,15 @@ func _process(delta: float) -> void:
 			if selected:
 				continue
 
-		var currentParent := self.get_parent()
+		var currentParent := collider.get_parent()
 		while currentParent != null:
 			if currentParent is not Item:
 				currentParent = currentParent.get_parent()
 				continue
 
-			print("closer node parent is item")
 			closestItem = currentParent
 			closestItemDistance = distance
 			break
 
-	print(closestItem)
-
-	# draw_sphere(global_transform.origin, 1.0, Color.RED)
+	if closestItem != null:
+		actor.interact(closestItem)

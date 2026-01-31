@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dn2geoe3ho217"
-path="res://.godot/imported/SM_MetalPipe_A.glb-41e0ef5fd283eb29fcd9ffceac7a7ba5.scn"
+path="res://.godot/imported/SM_MetalPipe_A.glb-e8eb64214e267a0caf9ddf1a41ce9c74.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_MetalPipe_A.glb"
-dest_files=["res://.godot/imported/SM_MetalPipe_A.glb-41e0ef5fd283eb29fcd9ffceac7a7ba5.scn"]
+source_file="res://assets/Props/SM_MetalPipe_A.glb"
+dest_files=["res://.godot/imported/SM_MetalPipe_A.glb-e8eb64214e267a0caf9ddf1a41ce9c74.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_MetalPipe_A.res",
+"save_to_file/fallback_path": "res://assets/Props/SM_MetalPipe_A.res",
 "save_to_file/path": "uid://be3r0h12myehb"
 }
 }

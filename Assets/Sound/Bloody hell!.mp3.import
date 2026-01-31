@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://shjn2kiesfdg"
-path="res://.godot/imported/Bloody hell!.mp3-ee63addcbf45a4487b2c4f8073996e22.mp3str"
+path="res://.godot/imported/Bloody hell!.mp3-f1e73487532ba15236a41c5fa8f5ce41.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Bloody hell!.mp3"
-dest_files=["res://.godot/imported/Bloody hell!.mp3-ee63addcbf45a4487b2c4f8073996e22.mp3str"]
+source_file="res://assets/Sound/Bloody hell!.mp3"
+dest_files=["res://.godot/imported/Bloody hell!.mp3-f1e73487532ba15236a41c5fa8f5ce41.mp3str"]
 
 [params]
 

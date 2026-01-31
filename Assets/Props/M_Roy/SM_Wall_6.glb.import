@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://di0f4eigi6kbj"
-path="res://.godot/imported/SM_Wall_6.glb-15c9b5d03e17834d21e782a3256444ab.scn"
+path="res://.godot/imported/SM_Wall_6.glb-5b69b810b6cbe4cc96863f707ab8ae1e.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Wall_6.glb"
-dest_files=["res://.godot/imported/SM_Wall_6.glb-15c9b5d03e17834d21e782a3256444ab.scn"]
+source_file="res://assets/Props/M_Roy/SM_Wall_6.glb"
+dest_files=["res://.godot/imported/SM_Wall_6.glb-5b69b810b6cbe4cc96863f707ab8ae1e.scn"]
 
 [params]
 

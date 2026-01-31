@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dtv8cco6elqlp"
-path="res://.godot/imported/Splendid  2.mp3-5bc7c9137bf1c317a626c53b7c7d99ac.mp3str"
+path="res://.godot/imported/Splendid  2.mp3-d87d15cafec5e4879a38ac56d92eb2c0.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Splendid  2.mp3"
-dest_files=["res://.godot/imported/Splendid  2.mp3-5bc7c9137bf1c317a626c53b7c7d99ac.mp3str"]
+source_file="res://assets/Sound/Splendid  2.mp3"
+dest_files=["res://.godot/imported/Splendid  2.mp3-d87d15cafec5e4879a38ac56d92eb2c0.mp3str"]
 
 [params]
 

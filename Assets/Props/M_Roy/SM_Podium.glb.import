@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d0m3bbmxm1nv8"
-path="res://.godot/imported/SM_Podium.glb-3516778f211fcfc90d774d8a5d8d51de.scn"
+path="res://.godot/imported/SM_Podium.glb-d63086ee833bf329040ddbce6ae0e6be.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Podium.glb"
-dest_files=["res://.godot/imported/SM_Podium.glb-3516778f211fcfc90d774d8a5d8d51de.scn"]
+source_file="res://assets/Props/M_Roy/SM_Podium.glb"
+dest_files=["res://.godot/imported/SM_Podium.glb-d63086ee833bf329040ddbce6ae0e6be.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bvumvf8x8vdrc"
-path="res://.godot/imported/SM_Beer_Crate.glb-f4718501c9ba8ac0fe1539990c576c6c.scn"
+path="res://.godot/imported/SM_Beer_Crate.glb-4fb258ee7d2d89bccb7d0ef4d7e9ae6b.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Beer_Crate.glb"
-dest_files=["res://.godot/imported/SM_Beer_Crate.glb-f4718501c9ba8ac0fe1539990c576c6c.scn"]
+source_file="res://assets/Props/M_Roy/SM_Beer_Crate.glb"
+dest_files=["res://.godot/imported/SM_Beer_Crate.glb-4fb258ee7d2d89bccb7d0ef4d7e9ae6b.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://m5ebuaqgnj2k"
-path="res://.godot/imported/SM_Garbage_bags.glb-3dfff1dbcf2a9301d065baff50e50199.scn"
+path="res://.godot/imported/SM_Garbage_bags.glb-b35ffc74db8f5c6113f3dcc943a2790c.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Garbage_bags.glb"
-dest_files=["res://.godot/imported/SM_Garbage_bags.glb-3dfff1dbcf2a9301d065baff50e50199.scn"]
+source_file="res://assets/Props/M_Roy/SM_Garbage_bags.glb"
+dest_files=["res://.godot/imported/SM_Garbage_bags.glb-b35ffc74db8f5c6113f3dcc943a2790c.scn"]
 
 [params]
 

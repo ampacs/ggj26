@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://frpl3hwt8eyx"
-path="res://.godot/imported/SM_Plank_B.glb-2ae120de5e0b387b13cd49eda4d43331.scn"
+path="res://.godot/imported/SM_Plank_B.glb-a36557dfb19d798a594b92bbc7158581.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_Plank_B.glb"
-dest_files=["res://.godot/imported/SM_Plank_B.glb-2ae120de5e0b387b13cd49eda4d43331.scn"]
+source_file="res://assets/Props/SM_Plank_B.glb"
+dest_files=["res://.godot/imported/SM_Plank_B.glb-a36557dfb19d798a594b92bbc7158581.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_Plank_B.res",
+"save_to_file/fallback_path": "res://assets/Props/SM_Plank_B.res",
 "save_to_file/path": "uid://bthrmm1n05gqu"
 }
 }

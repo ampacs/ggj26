@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ccgncqwcohw6i"
-path="res://.godot/imported/SM_Tire_A.glb-3d8bf360136c8f0935217990c8786cee.scn"
+uid="uid://d0khad3gyo2bo"
+path="res://.godot/imported/SM_Tire_A.glb-15817953490bb4e65f889924bbde6e43.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_Tire_A.glb"
-dest_files=["res://.godot/imported/SM_Tire_A.glb-3d8bf360136c8f0935217990c8786cee.scn"]
+source_file="res://assets/Props/SM_Tire_A.glb"
+dest_files=["res://.godot/imported/SM_Tire_A.glb-15817953490bb4e65f889924bbde6e43.scn"]
 
 [params]
 
@@ -37,18 +37,6 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"meshes": {
-"SM_Tire_A_SM_Tire_A": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_Tire_A_SM_Tire_A.res",
-"save_to_file/path": "uid://cdti8qq1xx1ej"
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1

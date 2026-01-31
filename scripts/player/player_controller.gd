@@ -8,8 +8,20 @@ class_name PlayerController extends RigidBody3D
 @export var rotation_speed := 12.0
 @export var jump_impulse := 12.0
 
+@export_group("Movement feel")
+@export var time_to_reach_speed := 0.12
+@export var braking_acceleration := 45.0
+@export var air_acceleration_multiplier := 0.6
+
+@export_group("Jump feel")
+@export var fall_gravity_multiplier := 2.25
+@export var low_jump_gravity_multiplier := 3.0
+
 @export_group("Movement debuff")
 @export var debuff_move_speed := 2.0
+
+@export_group("Physics feel")
+@export_range(0.0, 1.0) var player_friction := 0.0
 
 @export_group("Camera")
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
@@ -22,10 +34,40 @@ class_name PlayerController extends RigidBody3D
 
 var _camera_input_direction := Vector2.ZERO
 var _last_movement_direction := Vector3.BACK
+var _wall_normal: Vector3 = Vector3.ZERO
 
 @onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Node3D = $ReplaceWithPlayerScene
+
+func _ready() -> void:
+	contact_monitor = true
+	max_contacts_reported = 8
+	
+	if physics_material_override == null:
+		var mat := PhysicsMaterial.new()
+		mat.friction = player_friction
+		mat.rough = false
+		physics_material_override = mat
+	else:
+		physics_material_override.friction = player_friction
+		physics_material_override.rough = false
+
+func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
+	var combined: Vector3 = Vector3.ZERO
+	var count: int = state.get_contact_count()
+	for i in count:
+		var local_normal: Vector3 = state.get_contact_local_normal(i)
+		var world_normal: Vector3 = global_basis * local_normal
+		if absf(world_normal.y) < 0.5:
+			combined += world_normal
+
+	if combined.length_squared() < 0.0001:
+		_wall_normal = Vector3.ZERO
+	else:
+		var normalizedCombined := combined.normalized()
+		normalizedCombined.y = 0.0
+		_wall_normal = Vector3.ZERO if normalizedCombined.length_squared() < 0.0001 else normalizedCombined.normalized()
 
 func _isGrounded() -> bool:
 	var space_state := self.get_world_3d().direct_space_state
@@ -45,13 +87,15 @@ func _input(event: InputEvent) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	var is_camera_motion := (
-							event is InputEventMouseMotion and
-							Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED
-							)
+		event is InputEventMouseMotion and
+		Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED
+	)
 	if is_camera_motion:
 		_camera_input_direction = (event as InputEventMouseMotion).screen_relative * mouse_sensitivity
 
 func _physics_process(delta: float) -> void:	
+	var grounded := _isGrounded()
+
 	var stick := Input.get_vector(
 		"look_left_%s" % [playerId],
 		"look_right_%s" % [playerId],
@@ -86,21 +130,51 @@ func _physics_process(delta: float) -> void:
 	var move_direction := forward * raw_input.y + right * raw_input.x
 	move_direction.y = 0.0
 	move_direction = move_direction.normalized()
-
-	var force := move_direction * acceleration;
-	self.apply_central_force(force * self.mass)
-
-	# var world := self.get_world_3d()
-	# world.
 	
+	if (
+		_wall_normal != Vector3.ZERO
+		and move_direction.length_squared() > 0.0
+		and move_direction.dot(_wall_normal) < 0.0
+	):
+		move_direction = move_direction.slide(_wall_normal)
+
 	var current_speed := move_speed
 	if PlayerStatus.has_debuff("mask"):
 		current_speed = debuff_move_speed
+
+	var linearVelocity: Vector3 = self.linear_velocity
+	var horizontal_velocity: Vector3 = Vector3(linearVelocity.x, 0.0, linearVelocity.z)
+	var desired_velocity: Vector3 = move_direction * current_speed
+	var delta_velocity: Vector3 = desired_velocity - horizontal_velocity
+
+	var timeToReachMaxSpeed: float = maxf(time_to_reach_speed, 0.001)
+	var desired_accelleration: Vector3 = delta_velocity / timeToReachMaxSpeed
+
+	var has_move_input: bool = raw_input.length() > 0.05
+	var max_accelleration: float = acceleration if has_move_input else braking_acceleration
+	if !grounded:
+		max_accelleration *= air_acceleration_multiplier
+
+	desired_accelleration = desired_accelleration.limit_length(max_accelleration)
 	
-	self.linear_velocity = self.linear_velocity.limit_length(current_speed)
+	self.apply_central_force(desired_accelleration * self.mass)
+
+	var horizontal_clamped: Vector3 = horizontal_velocity.limit_length(current_speed)
+	
+	if _wall_normal != Vector3.ZERO and horizontal_clamped.dot(_wall_normal) < 0.0:
+		horizontal_clamped = horizontal_clamped.slide(_wall_normal)
+	self.linear_velocity = Vector3(horizontal_clamped.x, linearVelocity.y, horizontal_clamped.z)
+
+	var gravity : float = ProjectSettings.get_setting("physics/3d/default_gravity")
+	var jump_action := "jump_%s" % [playerId]
+	if !grounded:
+		if self.linear_velocity.y < 0.0 and fall_gravity_multiplier > 1.0:
+			self.apply_central_force(Vector3.DOWN * gravity * (fall_gravity_multiplier - 1.0) * self.mass)
+		elif self.linear_velocity.y > 0.0 and !Input.is_action_pressed(jump_action) and low_jump_gravity_multiplier > 1.0:
+			self.apply_central_force(Vector3.DOWN * gravity * (low_jump_gravity_multiplier - 1.0) * self.mass)
 	
 	if !PlayerStatus.has_debuff("mask"):
-		var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) and _isGrounded()
+		var is_starting_jump := Input.is_action_just_pressed(jump_action) and grounded
 
 		if is_starting_jump:
 			self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)

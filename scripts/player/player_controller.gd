@@ -8,6 +8,9 @@ class_name PlayerController extends RigidBody3D
 @export var rotation_speed := 12.0
 @export var jump_impulse := 12.0
 
+@export_group("Movement debuff")
+@export var debuff_move_speed := 2.0
+
 @export_group("Camera")
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
 @export var tilt_upper_limit := PI / 3.0
@@ -48,7 +51,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if is_camera_motion:
 		_camera_input_direction = (event as InputEventMouseMotion).screen_relative * mouse_sensitivity
 
-func _physics_process(delta: float) -> void:
+func _physics_process(delta: float) -> void:	
 	var stick := Input.get_vector(
 		"look_left_%s" % [playerId],
 		"look_right_%s" % [playerId],
@@ -89,10 +92,18 @@ func _physics_process(delta: float) -> void:
 
 	# var world := self.get_world_3d()
 	# world.
-
+	
+	var current_speed := move_speed
+	if PlayerStatus.has_debuff("mask"):
+		current_speed = debuff_move_speed
+	
+	self.linear_velocity = self.linear_velocity.limit_length(current_speed)
+	
+	if !PlayerStatus.has_debuff("mask"):
 	var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) and _isGrounded()
-	if is_starting_jump:
-		self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)
+
+		if is_starting_jump:
+			self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)
 
 	if move_direction.length() > 0.2:
 		_last_movement_direction = move_direction

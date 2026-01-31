@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dy6mp38xssn8f"
-path="res://.godot/imported/SM_Wall_4.glb-1c1d367ebd5da396074b4ed3d444ebc2.scn"
+path="res://.godot/imported/SM_Wall_4.glb-c4f856b5e0f9ffb32d0408a7d286aa14.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Wall_4.glb"
-dest_files=["res://.godot/imported/SM_Wall_4.glb-1c1d367ebd5da396074b4ed3d444ebc2.scn"]
+source_file="res://assets/props/M_Roy/SM_Wall_4.glb"
+dest_files=["res://.godot/imported/SM_Wall_4.glb-c4f856b5e0f9ffb32d0408a7d286aa14.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Wall_4_Cube_102.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Wall_4_Cube_102.res",
 "save_to_file/path": "uid://deta5lstbdgkk"
 }
 }

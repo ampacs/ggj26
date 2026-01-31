@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c2fniucu2gfjx"
-path="res://.godot/imported/Grab.mp3-f8796fd588d95df5f97f85da48090894.mp3str"
+path="res://.godot/imported/Grab.mp3-c58fc2ecb4e75c49045d8ccaf63f666b.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Grab Sound/Grab.mp3"
-dest_files=["res://.godot/imported/Grab.mp3-f8796fd588d95df5f97f85da48090894.mp3str"]
+source_file="res://assets/sound/Grab Sound/Grab.mp3"
+dest_files=["res://.godot/imported/Grab.mp3-c58fc2ecb4e75c49045d8ccaf63f666b.mp3str"]
 
 [params]
 

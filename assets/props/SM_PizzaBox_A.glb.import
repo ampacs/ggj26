@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dlkeor5877qmq"
-path="res://.godot/imported/SM_PizzaBox_A.glb-6de8f80d1e04a27ad2878975ea9c18e1.scn"
+path="res://.godot/imported/SM_PizzaBox_A.glb-df3ed08d88ba75c2cdec45a2f730ba15.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_PizzaBox_A.glb"
-dest_files=["res://.godot/imported/SM_PizzaBox_A.glb-6de8f80d1e04a27ad2878975ea9c18e1.scn"]
+source_file="res://assets/props/SM_PizzaBox_A.glb"
+dest_files=["res://.godot/imported/SM_PizzaBox_A.glb-df3ed08d88ba75c2cdec45a2f730ba15.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_PizzaBox_A.res",
+"save_to_file/fallback_path": "res://assets/props/SM_PizzaBox_A_SM_PizzaBox_A.res",
 "save_to_file/path": "uid://db3q1xwex6ins"
 }
 }

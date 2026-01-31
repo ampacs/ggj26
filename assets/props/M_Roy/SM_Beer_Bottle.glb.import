@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bwdmebf8tlvd3"
-path="res://.godot/imported/SM_Beer_Bottle.glb-eb48c2b39775f084951923d19de00915.scn"
+path="res://.godot/imported/SM_Beer_Bottle.glb-c6dac5c9ea4855ead63e0b46642a8a56.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Beer_Bottle.glb"
-dest_files=["res://.godot/imported/SM_Beer_Bottle.glb-eb48c2b39775f084951923d19de00915.scn"]
+source_file="res://assets/props/M_Roy/SM_Beer_Bottle.glb"
+dest_files=["res://.godot/imported/SM_Beer_Bottle.glb-c6dac5c9ea4855ead63e0b46642a8a56.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Beer_Bottle_Cube_023.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Beer_Bottle_Cube_023.res",
 "save_to_file/path": "uid://cpdgxq1ufa2hx"
 }
 }

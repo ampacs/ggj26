@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://433e36tsg15"
-path="res://.godot/imported/SM_Car_Pile_1.glb-f6b81c554e7d361ef678a4592362a1f4.scn"
+path="res://.godot/imported/SM_Car_Pile_1.glb-98871919cf49571677b2cbcfdbab5b22.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Car_Pile_1.glb"
-dest_files=["res://.godot/imported/SM_Car_Pile_1.glb-f6b81c554e7d361ef678a4592362a1f4.scn"]
+source_file="res://assets/props/M_Roy/SM_Car_Pile_1.glb"
+dest_files=["res://.godot/imported/SM_Car_Pile_1.glb-98871919cf49571677b2cbcfdbab5b22.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Car_Pile_1_Cube_103.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Car_Pile_1_Cube_103.res",
 "save_to_file/path": "uid://0iny5t3sarrm"
 }
 }

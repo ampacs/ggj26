@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yhanbmeqndu7"
-path="res://.godot/imported/trace_04_rotated.png-a72cfabe5dcda8d9831ff1a3777784de.ctex"
+path="res://.godot/imported/trace_04_rotated.png-02e1d816dd5e88a5bcb7a5674d2980c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Particles/Rotated/trace_04_rotated.png"
-dest_files=["res://.godot/imported/trace_04_rotated.png-a72cfabe5dcda8d9831ff1a3777784de.ctex"]
+source_file="res://assets/particles/Rotated/trace_04_rotated.png"
+dest_files=["res://.godot/imported/trace_04_rotated.png-02e1d816dd5e88a5bcb7a5674d2980c2.ctex"]
 
 [params]
 

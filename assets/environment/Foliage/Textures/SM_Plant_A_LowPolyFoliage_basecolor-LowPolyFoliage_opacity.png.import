@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd7jl7ycb8or8"
-path.s3tc="res://.godot/imported/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png-c79453b9631fdb342ad26d75f71cc550.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png-0319cdc5335f418d7a540eeb4a169c52.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/Environment/Foliage/Textures/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png"
-dest_files=["res://.godot/imported/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png-c79453b9631fdb342ad26d75f71cc550.s3tc.ctex"]
+source_file="res://assets/environment/Foliage/Textures/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png"
+dest_files=["res://.godot/imported/SM_Plant_A_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png-0319cdc5335f418d7a540eeb4a169c52.s3tc.ctex"]
 
 [params]
 

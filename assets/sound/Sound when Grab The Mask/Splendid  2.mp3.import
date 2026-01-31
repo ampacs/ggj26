@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dtv8cco6elqlp"
-path="res://.godot/imported/Splendid  2.mp3-c9a9affc058cdb9d83a30c9a1dd6d688.mp3str"
+path="res://.godot/imported/Splendid  2.mp3-a8820ae6c55f9f98696b5f119241c61f.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound when Grab The Mask/Splendid  2.mp3"
-dest_files=["res://.godot/imported/Splendid  2.mp3-c9a9affc058cdb9d83a30c9a1dd6d688.mp3str"]
+source_file="res://assets/sound/Sound when Grab The Mask/Splendid  2.mp3"
+dest_files=["res://.godot/imported/Splendid  2.mp3-a8820ae6c55f9f98696b5f119241c61f.mp3str"]
 
 [params]
 

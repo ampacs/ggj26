@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dbfs6pxxi7tds"
-path="res://.godot/imported/Throw Elia.mp3-13c398a253c4f28dac61cb06b52877ae.mp3str"
+path="res://.godot/imported/Throw Elia.mp3-219d3accf1e1ff4ae083532c67c43f3a.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Throw Sound/Throw Elia.mp3"
-dest_files=["res://.godot/imported/Throw Elia.mp3-13c398a253c4f28dac61cb06b52877ae.mp3str"]
+source_file="res://assets/sound/Throw Sound/Throw Elia.mp3"
+dest_files=["res://.godot/imported/Throw Elia.mp3-219d3accf1e1ff4ae083532c67c43f3a.mp3str"]
 
 [params]
 

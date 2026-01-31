@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cytddgq6wfq7s"
-path="res://.godot/imported/SM_Raccoon.glb-b54d95ff261367e9cd79f5f0e87b584f.scn"
+path="res://.godot/imported/SM_Raccoon.glb-9156bfd4ef36110f5f61c8f1dd132945.scn"
 
 [deps]
 
-source_file="res://Assets/Character/SM_Raccoon.glb"
-dest_files=["res://.godot/imported/SM_Raccoon.glb-b54d95ff261367e9cd79f5f0e87b584f.scn"]
+source_file="res://assets/character/SM_Raccoon.glb"
+dest_files=["res://.godot/imported/SM_Raccoon.glb-9156bfd4ef36110f5f61c8f1dd132945.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Character/SM_Raccoon_Icosphere.res",
+"save_to_file/fallback_path": "res://assets/character/SM_Raccoon_Icosphere.res",
 "save_to_file/path": "uid://cml72ucsmv5b4"
 }
 }

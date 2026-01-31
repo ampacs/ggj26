@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d22vsut1i8pe4"
-path="res://.godot/imported/Fuck no  2.mp3-fe4422120dc695a2a707f373e43d695f.mp3str"
+path="res://.godot/imported/Fuck no  2.mp3-14c9c0f48c6ad95e8e7b7e4b28bb0da7.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound After Hit from the throw/Fuck no  2.mp3"
-dest_files=["res://.godot/imported/Fuck no  2.mp3-fe4422120dc695a2a707f373e43d695f.mp3str"]
+source_file="res://assets/sound/Sound After Hit from the throw/Fuck no  2.mp3"
+dest_files=["res://.godot/imported/Fuck no  2.mp3-14c9c0f48c6ad95e8e7b7e4b28bb0da7.mp3str"]
 
 [params]
 

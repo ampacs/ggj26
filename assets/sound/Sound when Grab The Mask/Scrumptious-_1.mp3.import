@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://niusm5km2vv6"
-path="res://.godot/imported/Scrumptious-_1.mp3-04fedef478df47d6194b31a016ea7a97.mp3str"
+path="res://.godot/imported/Scrumptious-_1.mp3-a5f10590cabb6aa0d0669a8be99666ba.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound when Grab The Mask/Scrumptious-_1.mp3"
-dest_files=["res://.godot/imported/Scrumptious-_1.mp3-04fedef478df47d6194b31a016ea7a97.mp3str"]
+source_file="res://assets/sound/Sound when Grab The Mask/Scrumptious-_1.mp3"
+dest_files=["res://.godot/imported/Scrumptious-_1.mp3-a5f10590cabb6aa0d0669a8be99666ba.mp3str"]
 
 [params]
 

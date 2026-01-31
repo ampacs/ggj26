@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bna82hv1cslcf"
-path="res://.godot/imported/Marvelous-_2.mp3-833a2d251b96922f13788139c883957a.mp3str"
+path="res://.godot/imported/Marvelous-_2.mp3-1cc6559b65a3d5e92df001f264f5452d.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound when Grab The Mask/Marvelous-_2.mp3"
-dest_files=["res://.godot/imported/Marvelous-_2.mp3-833a2d251b96922f13788139c883957a.mp3str"]
+source_file="res://assets/sound/Sound when Grab The Mask/Marvelous-_2.mp3"
+dest_files=["res://.godot/imported/Marvelous-_2.mp3-1cc6559b65a3d5e92df001f264f5452d.mp3str"]
 
 [params]
 

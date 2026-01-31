@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c1r1fcvva6xl8"
-path="res://.godot/imported/SM_Mask.glb-966168f8638b55e98a87368f1b2a8320.scn"
+path="res://.godot/imported/SM_Mask.glb-5fc555b89cae1d1ecc378729e017a1a7.scn"
 
 [deps]
 
-source_file="res://Assets/Character/SM_Mask.glb"
-dest_files=["res://.godot/imported/SM_Mask.glb-966168f8638b55e98a87368f1b2a8320.scn"]
+source_file="res://assets/character/SM_Mask.glb"
+dest_files=["res://.godot/imported/SM_Mask.glb-5fc555b89cae1d1ecc378729e017a1a7.scn"]
 
 [params]
 

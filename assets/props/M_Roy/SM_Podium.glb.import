@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d0m3bbmxm1nv8"
-path="res://.godot/imported/SM_Podium.glb-3516778f211fcfc90d774d8a5d8d51de.scn"
+path="res://.godot/imported/SM_Podium.glb-6c31a167b1f8c8dbf63aac513fa37a5a.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Podium.glb"
-dest_files=["res://.godot/imported/SM_Podium.glb-3516778f211fcfc90d774d8a5d8d51de.scn"]
+source_file="res://assets/props/M_Roy/SM_Podium.glb"
+dest_files=["res://.godot/imported/SM_Podium.glb-6c31a167b1f8c8dbf63aac513fa37a5a.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Podium_Cylinder_013.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Podium_Cylinder_013.res",
 "save_to_file/path": "uid://bmnyryvridsy5"
 }
 }

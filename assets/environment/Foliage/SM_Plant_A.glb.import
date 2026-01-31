@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bqageqlcr1udh"
-path="res://.godot/imported/SM_Plant_A.glb-7ad118c085d1911442e1e90383d09dcf.scn"
+path="res://.godot/imported/SM_Plant_A.glb-b96af8ab9ae15579c41bcebc07c2f53c.scn"
 
 [deps]
 
-source_file="res://Assets/Environment/Foliage/SM_Plant_A.glb"
-dest_files=["res://.godot/imported/SM_Plant_A.glb-7ad118c085d1911442e1e90383d09dcf.scn"]
+source_file="res://assets/environment/Foliage/SM_Plant_A.glb"
+dest_files=["res://.godot/imported/SM_Plant_A.glb-b96af8ab9ae15579c41bcebc07c2f53c.scn"]
 
 [params]
 
@@ -52,7 +52,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Environment/Foliage/SM_Plant_A.res",
+"save_to_file/fallback_path": "res://assets/environment/Foliage/SM_Plant_A.res",
 "save_to_file/path": "uid://c6t6gcge502sj"
 }
 }

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c33gsr18lrg1x"
-path="res://.godot/imported/Arshole 1.mp3-5ceca75719e158f743b3b01baa0d3fd7.mp3str"
+path="res://.godot/imported/Arshole 1.mp3-71e32dadb19a15a06fba97b2ef3e2363.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound Effects/Arshole 1.mp3"
-dest_files=["res://.godot/imported/Arshole 1.mp3-5ceca75719e158f743b3b01baa0d3fd7.mp3str"]
+source_file="res://assets/sound_effects/Arshole 1.mp3"
+dest_files=["res://.godot/imported/Arshole 1.mp3-71e32dadb19a15a06fba97b2ef3e2363.mp3str"]
 
 [params]
 

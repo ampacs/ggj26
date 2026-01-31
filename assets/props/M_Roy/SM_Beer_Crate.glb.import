@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bvumvf8x8vdrc"
-path="res://.godot/imported/SM_Beer_Crate.glb-f4718501c9ba8ac0fe1539990c576c6c.scn"
+path="res://.godot/imported/SM_Beer_Crate.glb-977bdb2d63823c11c25e3bf4e0f69a77.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Beer_Crate.glb"
-dest_files=["res://.godot/imported/SM_Beer_Crate.glb-f4718501c9ba8ac0fe1539990c576c6c.scn"]
+source_file="res://assets/props/M_Roy/SM_Beer_Crate.glb"
+dest_files=["res://.godot/imported/SM_Beer_Crate.glb-977bdb2d63823c11c25e3bf4e0f69a77.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Beer_Crate_Cube_021.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Beer_Crate_Cube_021.res",
 "save_to_file/path": "uid://xhyx36uqyhjm"
 }
 }

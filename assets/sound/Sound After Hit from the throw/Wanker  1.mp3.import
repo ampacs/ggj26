@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://b62i1d4kwh2i2"
-path="res://.godot/imported/Wanker  1.mp3-44cc9a49f0749080e86472543f7cdcd8.mp3str"
+path="res://.godot/imported/Wanker  1.mp3-91e0f5e93499863c82c0740a31784fcc.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound After Hit from the throw/Wanker  1.mp3"
-dest_files=["res://.godot/imported/Wanker  1.mp3-44cc9a49f0749080e86472543f7cdcd8.mp3str"]
+source_file="res://assets/sound/Sound After Hit from the throw/Wanker  1.mp3"
+dest_files=["res://.godot/imported/Wanker  1.mp3-91e0f5e93499863c82c0740a31784fcc.mp3str"]
 
 [params]
 

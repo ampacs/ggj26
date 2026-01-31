@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ij2vwov0hmlu"
-path="res://.godot/imported/SM_TrashPile_B.glb-8e74119280d207ce97990d2095f2a867.scn"
+path="res://.godot/imported/SM_TrashPile_B.glb-4016a7baf68a00b3532b5dd2dda8be36.scn"
 
 [deps]
 
-source_file="res://Assets/Props/TrashPiles/SM_TrashPile_B.glb"
-dest_files=["res://.godot/imported/SM_TrashPile_B.glb-8e74119280d207ce97990d2095f2a867.scn"]
+source_file="res://assets/props/TrashPiles/SM_TrashPile_B.glb"
+dest_files=["res://.godot/imported/SM_TrashPile_B.glb-4016a7baf68a00b3532b5dd2dda8be36.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/TrashPiles/SM_TrashPile_B_Cube.res",
+"save_to_file/fallback_path": "res://assets/props/TrashPiles/SM_TrashPile_B_Cube.res",
 "save_to_file/path": "uid://cyut0tvmbm8px"
 },
 "SM_TrashPile_B_SM_TrashPile_B": {
@@ -54,7 +54,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/TrashPiles/SM_TrashPile_B.res",
+"save_to_file/fallback_path": "res://assets/props/TrashPiles/SM_TrashPile_B.res",
 "save_to_file/path": "uid://b55md725su46s"
 }
 }

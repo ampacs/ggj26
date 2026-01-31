@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dd2855jo6qck6"
-path="res://.godot/imported/U-donkey-_1.mp3-311b96639186a47439d709cb446ad527.mp3str"
+path="res://.godot/imported/U-donkey-_1.mp3-8355fc9d61864c884cc27d7d86dd5edf.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/Sound After Hit from the throw/U-donkey-_1.mp3"
-dest_files=["res://.godot/imported/U-donkey-_1.mp3-311b96639186a47439d709cb446ad527.mp3str"]
+source_file="res://assets/sound/Sound After Hit from the throw/U-donkey-_1.mp3"
+dest_files=["res://.godot/imported/U-donkey-_1.mp3-8355fc9d61864c884cc27d7d86dd5edf.mp3str"]
 
 [params]
 

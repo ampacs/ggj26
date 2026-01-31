@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://m5ebuaqgnj2k"
-path="res://.godot/imported/SM_Garbage_bags.glb-3dfff1dbcf2a9301d065baff50e50199.scn"
+path="res://.godot/imported/SM_Garbage_bags.glb-d2679c672fea683927af00e7e0cc132c.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Garbage_bags.glb"
-dest_files=["res://.godot/imported/SM_Garbage_bags.glb-3dfff1dbcf2a9301d065baff50e50199.scn"]
+source_file="res://assets/props/M_Roy/SM_Garbage_bags.glb"
+dest_files=["res://.godot/imported/SM_Garbage_bags.glb-d2679c672fea683927af00e7e0cc132c.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/M_Roy/SM_Garbage_bags_Cube_100.res",
+"save_to_file/fallback_path": "res://assets/props/M_Roy/SM_Garbage_bags_Cube_100.res",
 "save_to_file/path": "uid://b2caihhr0nko5"
 }
 }

@@ -1,0 +1,26 @@
+[gd_resource type="VisualShader" format=3 uid="uid://d2ybbmap4rjt"]
+
+[ext_resource type="Texture2D" uid="uid://ditefpwkc8xnt" path="res://Assets/Textures/T_Background.png" id="1_gc4vn"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_8aof6"]
+texture = ExtResource("1_gc4vn")
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id="VisualShaderNodeVectorDecompose_xkcfk"]
+default_input_values = [0, Quaternion(0, 0, 0, 0)]
+op_type = 2
+
+[sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_gc4vn"]
+constant = 1.0
+
+[resource]
+modes/diffuse = 3
+modes/specular = 2
+flags/depth_prepass_alpha = true
+nodes/fragment/0/position = Vector2(664, 176)
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture_8aof6")
+nodes/fragment/2/position = Vector2(-160, 200)
+nodes/fragment/3/node = SubResource("VisualShaderNodeVectorDecompose_xkcfk")
+nodes/fragment/3/position = Vector2(376, 464)
+nodes/fragment/4/node = SubResource("VisualShaderNodeFloatConstant_gc4vn")
+nodes/fragment/4/position = Vector2(392, 344)
+nodes/fragment/connections = PackedInt32Array(2, 0, 3, 0, 2, 0, 0, 0, 2, 0, 0, 1, 4, 0, 0, 3)

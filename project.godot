@@ -15,6 +15,10 @@ run/main_scene="uid://2rgj5osq15u6"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PlayerStatus="*uid://dsowsu3rv7aly"
+
 [debug]
 
 gdscript/warnings/unassigned_variable=2
@@ -185,4 +189,3 @@ interact_player2={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"

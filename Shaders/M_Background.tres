@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dtqbpdq3svon0"]
+
+[ext_resource type="Shader" uid="uid://dfgm5v8padxe0" path="res://Shaders/VS_Background.tres" id="1_tvsme"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tvsme")

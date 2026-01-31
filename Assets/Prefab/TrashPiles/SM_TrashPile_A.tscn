@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://brphfw0bm4j2t"]
-
-[ext_resource type="ArrayMesh" uid="uid://dft6sl46dcdo4" path="res://Assets/Props/TrashPiles/SM_TrashPile_A.res" id="1_ydbko"]
-
-[node name="SmTrashPileA" type="MeshInstance3D" unique_id=933689941]
-mesh = ExtResource("1_ydbko")

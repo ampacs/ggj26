@@ -1,36 +1,26 @@
 [gd_scene format=3 uid="uid://dbglff4ljymqf"]
 
-[ext_resource type="PackedScene" uid="uid://sq04bi5wuvqh" path="res://Assets/Props/SM_TrashBag_C.fbx" id="1_doc8o"]
-[ext_resource type="PackedScene" uid="uid://dkh7gxrd4pdh0" path="res://Assets/Props/SM_TrashContainer_A.fbx" id="1_mfo01"]
-[ext_resource type="PackedScene" uid="uid://bb4ygpp37216g" path="res://Assets/Props/SM_TrashBag_D.fbx" id="2_5l35f"]
-[ext_resource type="PackedScene" uid="uid://cvgy078epd1wt" path="res://Assets/Props/SM_TrashBag_A.fbx" id="2_m56pb"]
-[ext_resource type="PackedScene" uid="uid://dyrcv1a8udv0u" path="res://Assets/Props/SM_TrashBin_A.fbx" id="3_mhckc"]
-[ext_resource type="PackedScene" uid="uid://bj7wn04iexcfn" path="res://Assets/Props/SM_MetalContainer_A.fbx" id="4_iknf0"]
-[ext_resource type="PackedScene" uid="uid://ba5sc5siciwcd" path="res://Assets/Props/SM_Streetsign_A.fbx" id="5_m56pb"]
-[ext_resource type="PackedScene" uid="uid://d1h8lsyj1fos" path="res://Assets/Props/SM_MetalWavySheet_A.fbx" id="6_mhckc"]
-[ext_resource type="PackedScene" uid="uid://baj0caom82rje" path="res://Assets/Props/SM_Box_A.fbx" id="7_iknf0"]
+[ext_resource type="PackedScene" uid="uid://sq04bi5wuvqh" path="res://Assets/Props/SM_TrashBag_C.glb" id="1_doc8o"]
+[ext_resource type="PackedScene" uid="uid://dkh7gxrd4pdh0" path="res://Assets/Props/SM_TrashContainer_A.glb" id="1_mfo01"]
+[ext_resource type="PackedScene" uid="uid://bb4ygpp37216g" path="res://Assets/Props/SM_TrashBag_D.glb" id="2_5l35f"]
+[ext_resource type="PackedScene" uid="uid://cvgy078epd1wt" path="res://Assets/Props/SM_TrashBag_A.glb" id="2_m56pb"]
+[ext_resource type="PackedScene" uid="uid://dyrcv1a8udv0u" path="res://Assets/Props/SM_TrashBin_A.glb" id="3_mhckc"]
+[ext_resource type="PackedScene" uid="uid://bj7wn04iexcfn" path="res://Assets/Props/SM_MetalContainer_A.glb" id="4_iknf0"]
+[ext_resource type="PackedScene" uid="uid://ba5sc5siciwcd" path="res://Assets/Props/SM_Streetsign_A.glb" id="5_m56pb"]
+[ext_resource type="PackedScene" uid="uid://d1h8lsyj1fos" path="res://Assets/Props/SM_MetalWavySheet_A.glb" id="6_mhckc"]
+[ext_resource type="PackedScene" uid="uid://baj0caom82rje" path="res://Assets/Props/SM_Box_A.glb" id="7_iknf0"]
 [ext_resource type="PackedScene" uid="uid://b77efs8cl4rrw" path="res://scenes/AssetPrefabs/PalletTunnel.tscn" id="7_qgq1y"]
-[ext_resource type="PackedScene" uid="uid://ccgncqwcohw6i" path="res://Assets/Props/SM_Tire_A.fbx" id="8_3tbrh"]
-[ext_resource type="PackedScene" uid="uid://du7liru2iqy3y" path="res://Assets/SM_Trashbag.fbx" id="9_pvmhy"]
-[ext_resource type="PackedScene" uid="uid://br60xfqdecumg" path="res://Assets/SM_Fence.fbx" id="10_b21u7"]
-[ext_resource type="PackedScene" uid="uid://c7pu4ybk50wft" path="res://Assets/SM_Beer_bottles.fbx" id="11_b21u7"]
-[ext_resource type="PackedScene" uid="uid://q8gfiduoxm28" path="res://SM_Pile_beer_bottles.fbx" id="12_02jxt"]
-[ext_resource type="PackedScene" uid="uid://dyyfmdy6qptbk" path="res://SM_podium.fbx" id="13_p2xla"]
-[ext_resource type="PackedScene" uid="uid://bprivpak8yn10" path="res://Assets/Props/SM_EmptyCan_A.fbx" id="16_xjevo"]
-[ext_resource type="PackedScene" uid="uid://twn7ppwuw6du" path="res://Assets/Props/SM_EmptyCan_B.fbx" id="17_66d6y"]
-[ext_resource type="PackedScene" uid="uid://cuti70r0wr30e" path="res://Assets/Props/SM_EmptyCup_A.fbx" id="18_64jcb"]
-[ext_resource type="PackedScene" uid="uid://dlkeor5877qmq" path="res://Assets/Props/SM_PizzaBox_A.fbx" id="19_omef0"]
-[ext_resource type="PackedScene" uid="uid://dh8skj6enn5b" path="res://Assets/Props/SM_TrashBag_B.fbx" id="20_qgq1y"]
-[ext_resource type="PackedScene" uid="uid://cde28gwgbyiet" path="res://Assets/Props/SM_TrashPiece_A.fbx" id="21_aej6r"]
-[ext_resource type="PackedScene" uid="uid://bl7g4c3jfeohs" path="res://Assets/Props/SM_TrashPiece_B.fbx" id="22_7d4sr"]
-[ext_resource type="PackedScene" uid="uid://cyu52tffg5jtm" path="res://Assets/Props/SM_TrashPiece_C.fbx" id="23_k82ec"]
-[ext_resource type="PackedScene" uid="uid://c1uso2mixif3w" path="res://Assets/Props/SM_TrashPiece_D.fbx" id="24_cxrnp"]
-[ext_resource type="PackedScene" uid="uid://4wsfg43l862p" path="res://Assets/Props/SM_TrashPiece_E.fbx" id="25_bgkh3"]
-[ext_resource type="PackedScene" uid="uid://cukqalkvahipd" path="res://Assets/Props/walls/SM_Wall_1.fbx" id="26_omef0"]
-[ext_resource type="PackedScene" uid="uid://dkj4i0kdlkymy" path="res://Assets/Props/walls/SM_Wall_2.fbx" id="27_qgq1y"]
-[ext_resource type="PackedScene" uid="uid://bxcy3u4cj7b7j" path="res://Assets/Props/walls/SM_Wall_3.fbx" id="28_aej6r"]
-[ext_resource type="PackedScene" uid="uid://dawrcq5y6wsyu" path="res://Assets/Props/walls/SM_Wall_4.fbx" id="29_7d4sr"]
-[ext_resource type="PackedScene" uid="uid://7nxxv46rhtxt" path="res://Assets/Props/walls/SM_Wall_6.fbx" id="30_k82ec"]
+[ext_resource type="PackedScene" uid="uid://ccgncqwcohw6i" path="res://Assets/Props/SM_Tire_A.glb" id="8_3tbrh"]
+[ext_resource type="PackedScene" uid="uid://bprivpak8yn10" path="res://Assets/Props/SM_EmptyCan_A.glb" id="16_xjevo"]
+[ext_resource type="PackedScene" uid="uid://twn7ppwuw6du" path="res://Assets/Props/SM_EmptyCan_B.glb" id="17_66d6y"]
+[ext_resource type="PackedScene" uid="uid://cuti70r0wr30e" path="res://Assets/Props/SM_EmptyCup_A.glb" id="18_64jcb"]
+[ext_resource type="PackedScene" uid="uid://dlkeor5877qmq" path="res://Assets/Props/SM_PizzaBox_A.glb" id="19_omef0"]
+[ext_resource type="PackedScene" uid="uid://dh8skj6enn5b" path="res://Assets/Props/SM_TrashBag_B.glb" id="20_qgq1y"]
+[ext_resource type="PackedScene" uid="uid://cde28gwgbyiet" path="res://Assets/Props/SM_TrashPiece_A.glb" id="21_aej6r"]
+[ext_resource type="PackedScene" uid="uid://bl7g4c3jfeohs" path="res://Assets/Props/SM_TrashPiece_B.glb" id="22_7d4sr"]
+[ext_resource type="PackedScene" uid="uid://cyu52tffg5jtm" path="res://Assets/Props/SM_TrashPiece_C.glb" id="23_k82ec"]
+[ext_resource type="PackedScene" uid="uid://c1uso2mixif3w" path="res://Assets/Props/SM_TrashPiece_D.glb" id="24_cxrnp"]
+[ext_resource type="PackedScene" uid="uid://4wsfg43l862p" path="res://Assets/Props/SM_TrashPiece_E.glb" id="25_bgkh3"]
 [ext_resource type="PackedScene" path="res://scenes/player_3d.tscn" id="32_aej6r"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
@@ -103,48 +93,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9975743, 0.22956333, 3.911
 [node name="SM_Tire_A" parent="." unique_id=1897767824 instance=ExtResource("8_3tbrh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8427367, 0.14623663, 5.081157)
 
-[node name="SM_Trashbag3" parent="." unique_id=1484933722 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(-0.29784966, -2.2799304e-11, -0.04296486, 0.00074428436, 0.4647821, -0.0038869127, 0.07118997, -0.004859252, -0.37177885, -7.002449, 0.0034415945, -6.3932486)
-
-[node name="SM_Trashbag2" parent="." unique_id=475934062 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.16304715, 0, 0.42401657, -0.0058966284, 0.64438635, 0.0020629247, -0.5640059, -0.0067369966, 0.19731644, -7.9131327, -0.08353858, -6.7546835)
-
-[node name="SM_Trashbag6" parent="." unique_id=113853702 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(-0.20687506, 0.006211761, 0.20323949, 0.0013403969, 0.43226922, -0.007000016, -0.30648535, -0.0046779695, -0.22454734, 9.335979, -0.10151196, -3.8983197)
-
-[node name="SM_Trashbag5" parent="." unique_id=2049719825 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.43356195, 0.008612152, 0.112297036, -0.010619353, 0.5993096, 0.0037151598, -0.08005616, -0.0064856624, 0.57728666, 9.056171, -0.18570635, -5.1083307)
-
-[node name="SM_Trashbag4" parent="." unique_id=907393469 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.39183727, 0.011940115, -0.5527144, -1.8626451e-09, 0.8308987, 0.017057909, 0.81532604, -0.008991894, 0.42763942, 8.303291, -0.14218381, -4.710438)
-
-[node name="SM_Fence3" parent="." unique_id=589736835 instance=ExtResource("10_b21u7")]
-transform = Transform3D(0.043601967, 0, 0.999049, 0, 1, 0, -0.999049, 0, 0.043601967, -3.0514627, 0.0034692287, -7.896181)
-
-[node name="SM_Fence2" parent="." unique_id=1722271059 instance=ExtResource("10_b21u7")]
-transform = Transform3D(-0.023193374, 0, 0.999731, 0, 1, 0, -0.999731, 0, -0.023193374, -7.084395, 0.011311531, -7.9369054)
-
-[node name="SM_Fence" parent="." unique_id=16272840 instance=ExtResource("10_b21u7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.148935, 0.019153833, -5.976746)
-
-[node name="SM_Trashbag" parent="." unique_id=286695970 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.714062, 0, 0, 0, 0.8933943, 0.009471778, 0, -0.0093403505, 0.905965, -8.030998, -0.047790885, -5.6263638)
-
-[node name="SM_Beer_bottles3" parent="." unique_id=1665956373 instance=ExtResource("11_b21u7")]
-transform = Transform3D(0.5216056, 0.116820775, 0.22190285, -0.061164025, 0.5559228, -0.1488931, -0.24320129, 0.11073898, 0.51337165, 8.981771, 0.48842394, -4.471313)
-
-[node name="SM_Beer_bottles2" parent="." unique_id=1584640576 instance=ExtResource("11_b21u7")]
-transform = Transform3D(-0.566767, 0, -0.5328256, 0, 0.7778998, 0, 0.5328256, 0, -0.566767, -5.0847692, 0.093023516, -6.9755716)
-
-[node name="SM_Beer_bottles" parent="." unique_id=789964542 instance=ExtResource("11_b21u7")]
-transform = Transform3D(0.85108006, 0, 0, 0, 0.85108006, 0, 0, 0, 0.85108006, -6.208511, 0.10310106, -6.738797)
-
-[node name="SM_Pile_beer_bottles" parent="." unique_id=81150652 instance=ExtResource("12_02jxt")]
-transform = Transform3D(0.965, 0, 0, 0, 0.965, 0, 0, 0, 0.965, -2.25534, -0.014868401, -6.046878)
-
-[node name="SM_podium" parent="." unique_id=425314104 instance=ExtResource("13_p2xla")]
-transform = Transform3D(0.3325961, 0, 0, 0, 0.3325961, 0, 0, 0, 0.3325961, -4.116286, 0.32012677, -2.5545845)
-
 [node name="SM_EmptyCan_A" parent="." unique_id=693701330 instance=ExtResource("16_xjevo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4703145, 0.096045576, 3.6940022)
 
@@ -174,21 +122,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9807577, 0.031042442, 3.01
 
 [node name="SM_TrashPiece_E" parent="." unique_id=224860112 instance=ExtResource("25_bgkh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.01002, 0.036297027, 3.217722)
-
-[node name="SM_Wall_1" parent="." unique_id=1236980675 instance=ExtResource("26_omef0")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.972347, -0.023865104, -5.917689)
-
-[node name="SM_Wall_2" parent="." unique_id=1606599805 instance=ExtResource("27_qgq1y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.864328, 0, -8.972502)
-
-[node name="SM_Wall_3" parent="." unique_id=1773586543 instance=ExtResource("28_aej6r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.446594, 0, -4.7866)
-
-[node name="SM_Wall_4" parent="." unique_id=966764939 instance=ExtResource("29_7d4sr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.948927, 0, -7.0126657)
-
-[node name="SM_Wall_6" parent="." unique_id=808554075 instance=ExtResource("30_k82ec")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0781488, 0.006774068, -4.7489204)
 
 [node name="Node3D2" parent="." unique_id=1930975740 instance=ExtResource("7_qgq1y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4713745, 0.27574778, 1.5534439)

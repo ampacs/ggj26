@@ -8,6 +8,10 @@ class_name ActorThrowableComponent extends ActorComponent
 @export var itemAnchor: Node3D
 @export var itemAnchorOffsetPosition: Vector3
 
+@export_group("Collision")
+@export_range(0.0, 5.0, 0.05) var ignore_player_release_radius: float = 0.9
+@export_range(0.0, 2.0, 0.05) var ignore_player_release_max_time: float = 0.4
+
 @export_group("Throw Configuration")
 @export var minimumThrowHoldTime: float
 @export var maximumThrowHoldTime: float
@@ -30,6 +34,7 @@ func interact(item: Item) -> void:
 
 	var itemRigidbodyComponent: ItemRigidbodyComponent = item.get_component(ItemRigidbodyComponent)
 	if itemRigidbodyComponent != null:
+		_remove_player_collision_exceptions(itemRigidbodyComponent.rigidbody)
 		itemRigidbodyComponent.rigidbody.freeze = true
 		itemRigidbodyComponent.rigidbody.freeze_mode = RigidBody3D.FREEZE_MODE_STATIC
 
@@ -49,7 +54,7 @@ func startThrow() -> void:
 	startThrowTime = Time.get_unix_time_from_system()
 
 func finalizeThrow() -> void:
-	if heldItem == null || !isThrowingAllowed:
+	if heldItem == null:
 		return
 
 	var now := Time.get_unix_time_from_system()
@@ -64,15 +69,13 @@ func finalizeThrow() -> void:
 		return
 
 	var t: float = min(1., delta / (maximumThrowHoldTime - minimumThrowHoldTime))
-	var throwSpeed: float = lerp(minimumThrowSpeed, maximumThrowSpeed, t)
 	var throwAngle: float = lerp_angle(startThrowAngle, endThrowAngle, t)
-	throwAngle = deg_to_rad(throwAngle)
+	throwAngle = deg_to_rad(10)
 
 	var lookDirection := -get_viewport().get_camera_3d().get_global_transform().basis.z
 
-	var throwDirection: Vector3 = project_on_plane(lookDirection, Vector3.UP)
-	throwDirection = throwDirection.rotated(throwDirection.cross(Vector3.UP).normalized(), throwAngle)
-	var throwForce := throwDirection * throwSpeed;
+	var throwDirection := lookDirection.rotated(lookDirection.cross(Vector3.UP).normalized(), throwAngle)
+	var throwForce := throwDirection * maximumThrowSpeed;
 
 	var itemDamagerComponent: ItemDamagerComponent = heldItem.get_component(ItemDamagerComponent)
 	if itemDamagerComponent != null:
@@ -83,9 +86,12 @@ func finalizeThrow() -> void:
 	itemRigidbodyComponent.rigidbody.apply_central_impulse(throwForce)
 
 func dropItem() -> void:
+	var itemRigidbodyComponent: ItemRigidbodyComponent = heldItem.get_component(ItemRigidbodyComponent)
+	if itemRigidbodyComponent != null:
+		_ignore_player_collision_until_clear(itemRigidbodyComponent.rigidbody)
+
 	heldItem.collider.set_disabled(false)
 
-	var itemRigidbodyComponent: ItemRigidbodyComponent = heldItem.get_component(ItemRigidbodyComponent)
 	if itemRigidbodyComponent != null:
 		itemRigidbodyComponent.rigidbody.freeze = false
 		itemRigidbodyComponent.rigidbody.linear_velocity = rigidbody.linear_velocity
@@ -94,6 +100,55 @@ func dropItem() -> void:
 	heldItem = null
 	isThrowingAllowed = false
 
+func _player_collision_objects() -> Array[PhysicsBody3D]:
+	var objects: Array[PhysicsBody3D] = []
+	if rigidbody != null:
+		objects.append(rigidbody)
+	if playerController != null and playerController != rigidbody:
+		objects.append(playerController)
+	return objects
+
+func _remove_player_collision_exceptions(item_body: RigidBody3D) -> void:
+	if item_body == null:
+		return
+	for obj in _player_collision_objects():
+		if obj != null:
+			item_body.remove_collision_exception_with(obj)
+			obj.remove_collision_exception_with(item_body)
+
+func _ignore_player_collision_until_clear(item_body: RigidBody3D) -> void:
+	if item_body == null:
+		return
+
+	var objects := _player_collision_objects()
+	for obj in objects:
+		if obj != null:
+			item_body.add_collision_exception_with(obj)
+			obj.add_collision_exception_with(item_body)
+
+	_unignore_player_collision_when_safe.call_deferred(item_body, objects)
+
+func _unignore_player_collision_when_safe(item_body: RigidBody3D, objects: Array[PhysicsBody3D]) -> void:
+	if itemAnchor == null:
+		return
+
+	var start_ms := Time.get_ticks_msec()
+	while is_instance_valid(item_body) and is_instance_valid(itemAnchor):
+		var dist := item_body.global_position.distance_to(itemAnchor.global_position)
+		if dist > ignore_player_release_radius:
+			break
+		if ignore_player_release_max_time > 0.0 and (Time.get_ticks_msec() - start_ms) >= int(ignore_player_release_max_time * 1000.0):
+			break
+		await get_tree().physics_frame
+
+	if !is_instance_valid(item_body):
+		return
+
+	for obj in objects:
+		if is_instance_valid(obj):
+			item_body.remove_collision_exception_with(obj)
+			obj.remove_collision_exception_with(item_body)
+
 func _process(delta: float) -> void:
 	var pressed := Input.is_action_just_pressed("interact_%s" % playerController.playerId)
 	if pressed:
@@ -101,10 +156,7 @@ func _process(delta: float) -> void:
 
 	var released := Input.is_action_just_released("interact_%s" % playerController.playerId)
 	if released:
-		if isThrowingAllowed:
-			finalizeThrow()
-		else:
-			isThrowingAllowed = true
+		finalizeThrow()
 
 static func project_on_plane(vector: Vector3, surface_normal: Vector3) -> Vector3:
 	var axis1 := vector.cross(surface_normal).normalized()

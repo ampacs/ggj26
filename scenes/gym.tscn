@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c1v2c2qo82g0k"]
 
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="1_5hyia"]
+[ext_resource type="Material" path="res://Shaders/M_StandardWalls.tres" id="1_hvubb"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="2_5hyia"]
 [ext_resource type="PackedScene" uid="uid://cm1eb2ch5sw3m" path="res://scenes/items/item_mask.tscn" id="2_8el2m"]
 [ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/throwable/throwable_can_a.tscn" id="3_8el2m"]
@@ -52,6 +53,7 @@ shape = SubResource("BoxShape3D_a141m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Floor" unique_id=1894721305]
 transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 0, 0, 0)
+material_override = ExtResource("1_hvubb")
 mesh = SubResource("BoxMesh_3dnxu")
 
 [node name="1Mcubes" type="Node3D" parent="Environment" unique_id=1809547852]
@@ -93,7 +95,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
 
-[node name="ItemThrowableCan" parent="." unique_id=168798799 instance=ExtResource("3_8el2m")]
+[node name="ItemThrowableCan" parent="." unique_id=2072047785 instance=ExtResource("3_8el2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.027175, 0.047082666, 2.7668653)
 
 [node name="ItemThrowableCanB" parent="." unique_id=756460092 instance=ExtResource("5_xhcdp")]

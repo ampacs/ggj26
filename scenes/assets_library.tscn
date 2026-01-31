@@ -28,8 +28,11 @@
 [ext_resource type="PackedScene" uid="uid://p8mypmee6a5w" path="res://Assets/Prefab/Props/SM_WheelieBin_B.tscn" id="31_cxrnp"]
 [ext_resource type="PackedScene" uid="uid://chu7ea5rl4ors" path="res://scenes/player_3d.tscn" id="32_aej6r"]
 [ext_resource type="PackedScene" uid="uid://wtrbuge7cq3" path="res://Assets/Prefab/Throwable/SM_TrashPiece_C.tscn" id="32_r0x34"]
-[ext_resource type="ArrayMesh" uid="uid://d2vf3xgr84oy1" path="res://Assets/Props/TrashPiles/SM_MetalContainer_A.res" id="33_cxrnp"]
+[ext_resource type="PackedScene" uid="uid://4yqo8l73j4ns" path="res://Assets/Prefab/Foliage/SM_Plant_A.tscn" id="33_bgkh3"]
+[ext_resource type="ArrayMesh" uid="uid://d2vf3xgr84oy1" path="res://Assets/Props/TrashPiles/SM_TrashPile_A_SM_MetalContainer_A_001.res" id="33_cxrnp"]
 [ext_resource type="ArrayMesh" uid="uid://dahc70rdfvbke" path="res://Assets/Props/TrashPiles/SM_TrashPile_A.res" id="34_bgkh3"]
+[ext_resource type="PackedScene" uid="uid://cefu06q53id8m" path="res://Assets/Prefab/Foliage/SM_Plant_B.tscn" id="34_r0x34"]
+[ext_resource type="PackedScene" uid="uid://b2sp5s0c4eyhk" path="res://Assets/Prefab/Foliage/SM_Plant_C.tscn" id="35_b2sxo"]
 [ext_resource type="ArrayMesh" uid="uid://b55md725su46s" path="res://Assets/Props/TrashPiles/SM_TrashPile_B.res" id="35_r0x34"]
 [ext_resource type="PackedScene" uid="uid://ci06af4jy4pn5" path="res://Assets/Prefab/Props/SM_Streetsign_A.tscn" id="36_si72r"]
 
@@ -191,3 +194,12 @@ transform = Transform3D(1.685, 0, 0, 0, 1.685, 0, 0, 0, 1.685, -3.4, 0, 6.4)
 
 [node name="SM_TrashPiece_C" parent="." unique_id=1260158577 instance=ExtResource("32_r0x34")]
 transform = Transform3D(1.885, 0, 0, 0, 1.885, 0, 0, 0, 1.885, -3, 0, 6.2)
+
+[node name="SM_Plant_A" parent="." unique_id=1490636360 instance=ExtResource("33_bgkh3")]
+transform = Transform3D(0.4, 0, 0, 0, 0.38637033, 0.10352762, 0, -0.10352762, 0.38637033, -7, 0.123878896, -3)
+
+[node name="SM_Plant_B" parent="." unique_id=1856313631 instance=ExtResource("34_r0x34")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -9, 0.11373566, -3)
+
+[node name="SM_Plant_C" parent="." unique_id=49742317 instance=ExtResource("35_b2sxo")]
+transform = Transform3D(0.3795843, -0.067051135, 0.10686391, 0.029014964, 0.37614277, 0.13294643, -0.12277575, -0.11840933, 0.36180848, -8, 0.17986284, -1)

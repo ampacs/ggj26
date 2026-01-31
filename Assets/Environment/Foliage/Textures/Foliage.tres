@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://du2ywqmlfe5vg"]
+
+[ext_resource type="Texture2D" uid="uid://b2qerfiio5jn4" path="res://Assets/Environment/Foliage/Textures/SM_Plant_B_LowPolyFoliage_basecolor-LowPolyFoliage_opacity.png" id="1_nl5jv"]
+
+[resource]
+resource_name = "Foliage"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_nl5jv")
+roughness = 0.5

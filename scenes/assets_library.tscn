@@ -1,38 +1,40 @@
 [gd_scene format=3 uid="uid://dbglff4ljymqf"]
 
 [ext_resource type="ArrayMesh" uid="uid://bsekk3ce8shxt" path="res://Assets/Props/SM_Box_A.res" id="3_k82ec"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_Box_B.res" id="4_cxrnp"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_Box_C.res" id="5_bgkh3"]
+[ext_resource type="ArrayMesh" uid="uid://cu4ysq4geg3db" path="res://Assets/Props/SM_Box_B.res" id="4_cxrnp"]
+[ext_resource type="ArrayMesh" uid="uid://ddcvr7v4u8l0t" path="res://Assets/Props/SM_Box_C.res" id="5_bgkh3"]
 [ext_resource type="PackedScene" uid="uid://ba5sc5siciwcd" path="res://Assets/Props/SM_Streetsign_A.glb" id="5_m56pb"]
 [ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://Assets/Props/SM_EmptyCan_A.res" id="6_r0x34"]
 [ext_resource type="ArrayMesh" uid="uid://duoayeltfeepf" path="res://Assets/Props/SM_EmptyCan_B.res" id="7_b2sxo"]
-[ext_resource type="PackedScene" path="res://scenes/AssetPrefabs/PalletTunnel.tscn" id="7_qgq1y"]
 [ext_resource type="ArrayMesh" uid="uid://c8gboqxrvhf2" path="res://Assets/Props/SM_EmptyCup_A.res" id="8_si72r"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_FullTrashBin_A.res" id="9_hl4d5"]
+[ext_resource type="ArrayMesh" uid="uid://cvipli6xdky0b" path="res://Assets/Props/SM_FullTrashBin_A.res" id="9_hl4d5"]
 [ext_resource type="ArrayMesh" uid="uid://bwh3fe1k12mvs" path="res://Assets/Props/SM_MetalContainer_A.res" id="11_5yjuy"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_MetalPipe_A.res" id="12_c7i5d"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_MetalPipe_B.res" id="13_wctrv"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_MetalWavySheet_A_001.res" id="14_7qmso"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_MetalWavySheet_B.res" id="15_fgitj"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_OfficeBin_A.res" id="16_70nik"]
+[ext_resource type="ArrayMesh" uid="uid://be3r0h12myehb" path="res://Assets/Props/SM_MetalPipe_A.res" id="12_c7i5d"]
+[ext_resource type="ArrayMesh" uid="uid://bqqc3oew6ys5e" path="res://Assets/Props/SM_MetalPipe_B.res" id="13_wctrv"]
+[ext_resource type="ArrayMesh" uid="uid://dsiwxb5xhpp8x" path="res://Assets/Props/SM_MetalWavySheet_A_001.res" id="14_7qmso"]
+[ext_resource type="ArrayMesh" uid="uid://b4fmb7plcxgej" path="res://Assets/Props/SM_MetalWavySheet_B.res" id="15_fgitj"]
+[ext_resource type="ArrayMesh" uid="uid://cg7y121c0yf0r" path="res://Assets/Props/SM_OfficeBin_A.res" id="16_70nik"]
 [ext_resource type="ArrayMesh" uid="uid://db3q1xwex6ins" path="res://Assets/Props/SM_PizzaBox_A.res" id="17_ys8s4"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_Plank_A.res" id="18_sjevj"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_Plank_B.res" id="19_3jh73"]
+[ext_resource type="ArrayMesh" uid="uid://c8na62s86vybl" path="res://Assets/Props/SM_Plank_A.res" id="18_sjevj"]
+[ext_resource type="ArrayMesh" uid="uid://bthrmm1n05gqu" path="res://Assets/Props/SM_Plank_B.res" id="19_3jh73"]
 [ext_resource type="ArrayMesh" uid="uid://cdti8qq1xx1ej" path="res://Assets/Props/SM_Tire_A.res" id="21_rh1qa"]
 [ext_resource type="ArrayMesh" uid="uid://duun11gfyxbhv" path="res://Assets/Props/SM_TrashBag_A.res" id="22_7jxty"]
 [ext_resource type="ArrayMesh" uid="uid://c5dnh3ktygls0" path="res://Assets/Props/SM_TrashBag_B.res" id="23_rgmgy"]
 [ext_resource type="ArrayMesh" uid="uid://iqnrdl5pt80f" path="res://Assets/Props/SM_TrashBag_C.res" id="24_ywm7b"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashBinLid_A.res" id="25_bfb6y"]
+[ext_resource type="ArrayMesh" uid="uid://cmko8c6cntps1" path="res://Assets/Props/SM_TrashBinLid_A.res" id="25_bfb6y"]
 [ext_resource type="ArrayMesh" uid="uid://dqa5qwv2pt2od" path="res://Assets/Props/SM_TrashBin_A.res" id="26_vsejo"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashContainer_A.res" id="27_amfag"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashPiece_A.res" id="28_oqtig"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashPiece_B.res" id="29_y7ab4"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashPiece_C.res" id="30_c822p"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashPiece_D.res" id="31_64l5r"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_TrashPiece_E.res" id="32_1b2g7"]
-[ext_resource type="PackedScene" path="res://scenes/player_3d.tscn" id="32_aej6r"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_WheelieBin_A.res" id="33_ad24e"]
-[ext_resource type="ArrayMesh" path="res://Assets/Props/SM_WheelieBin_B.res" id="34_355x7"]
+[ext_resource type="ArrayMesh" uid="uid://cbi0slmw3t817" path="res://Assets/Props/SM_TrashContainer_A.res" id="27_amfag"]
+[ext_resource type="ArrayMesh" uid="uid://dvofhdgepildm" path="res://Assets/Props/SM_TrashPiece_A.res" id="28_oqtig"]
+[ext_resource type="ArrayMesh" uid="uid://0oyqqu04fwqa" path="res://Assets/Props/SM_TrashPiece_B.res" id="29_y7ab4"]
+[ext_resource type="ArrayMesh" uid="uid://dalt7osyobcdm" path="res://Assets/Props/SM_TrashPiece_C.res" id="30_c822p"]
+[ext_resource type="ArrayMesh" uid="uid://nw0feerq27xc" path="res://Assets/Props/SM_TrashPiece_D.res" id="31_64l5r"]
+[ext_resource type="ArrayMesh" uid="uid://c1p7xsot1nh3g" path="res://Assets/Props/SM_TrashPiece_E.res" id="32_1b2g7"]
+[ext_resource type="PackedScene" uid="uid://chu7ea5rl4ors" path="res://scenes/player_3d.tscn" id="32_aej6r"]
+[ext_resource type="ArrayMesh" uid="uid://cd61fna2bkel1" path="res://Assets/Props/SM_WheelieBin_A.res" id="33_ad24e"]
+[ext_resource type="ArrayMesh" uid="uid://dft6sl46dcdo4" path="res://Assets/Props/TrashPiles/SM_TrashPile_A_SM_TrashPile_A.res" id="33_cxrnp"]
+[ext_resource type="ArrayMesh" uid="uid://ck2w1hnpb7ywp" path="res://Assets/Props/SM_WheelieBin_B.res" id="34_355x7"]
+[ext_resource type="ArrayMesh" uid="uid://ct548s7785eaj" path="res://Assets/Props/TrashPiles/SM_Tower_A.res" id="34_bgkh3"]
+[ext_resource type="ArrayMesh" uid="uid://tiokfm1kceby" path="res://Assets/Props/TrashPiles/SM_TrashPile_B_SM_TrashPile_B.res" id="35_r0x34"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -78,10 +80,10 @@ shape = SubResource("BoxShape3D_jl2mt")
 transform = Transform3D(22.491467, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 0.27629566, 0.0071089864, -0.03187561)
 mesh = SubResource("BoxMesh_al161")
 
-[node name="Node3D" parent="." unique_id=297087048 instance=ExtResource("7_qgq1y")]
+[node name="Node3D" parent="." unique_id=297087048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6267986, 0, 1.5968523)
 
-[node name="Node3D2" parent="." unique_id=1930975740 instance=ExtResource("7_qgq1y")]
+[node name="Node3D2" parent="." unique_id=1930975740]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4713745, 0.27574778, 1.5534439)
 
 [node name="Player3D" parent="." unique_id=328629696 instance=ExtResource("32_aej6r")]
@@ -209,3 +211,15 @@ mesh = ExtResource("33_ad24e")
 [node name="SmWheelieBinB" type="MeshInstance3D" parent="." unique_id=1916011643]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0928354, 0, 3.7157137)
 mesh = ExtResource("34_355x7")
+
+[node name="SmTrashPileASmTrashPileA" type="MeshInstance3D" parent="." unique_id=1681069232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.097184, 0.7498865, -5.625695)
+mesh = ExtResource("33_cxrnp")
+
+[node name="SmTrashPileBCube" type="MeshInstance3D" parent="." unique_id=1882346192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.011917, 0.7375593, 4.5477996)
+mesh = ExtResource("34_bgkh3")
+
+[node name="SmTrashPileBSmTrashPileB" type="MeshInstance3D" parent="." unique_id=1195639860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.011917, 0.7375593, 4.5477996)
+mesh = ExtResource("35_r0x34")

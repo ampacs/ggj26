@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://du7liru2iqy3y" path="res://Assets/SM_Trashbag.fbx" id="9_pvmhy"]
 [ext_resource type="PackedScene" uid="uid://br60xfqdecumg" path="res://Assets/SM_Fence.fbx" id="10_b21u7"]
 [ext_resource type="PackedScene" uid="uid://c7pu4ybk50wft" path="res://Assets/SM_Beer_bottles.fbx" id="11_b21u7"]
+[ext_resource type="PackedScene" uid="uid://q8gfiduoxm28" path="res://SM_Pile_beer_bottles.fbx" id="12_02jxt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl2mt"]
 size = Vector3(20, 1, 20)
@@ -26,7 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_jl2mt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=929779419]
-transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, -0.0009961128, 0.0071080327, -0.0063900948)
+transform = Transform3D(19.818878, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, -0.0009961128, 0.0071080327, -0.0063900948)
 mesh = SubResource("BoxMesh_al161")
 
 [node name="SM_TrashContainer_A" parent="." unique_id=808603355 instance=ExtResource("1_mfo01")]
@@ -68,8 +69,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060970783, 0.019153833, -5
 [node name="SM_Fence" parent="SM_Fence" unique_id=1722271059 instance=ExtResource("10_b21u7")]
 transform = Transform3D(-0.023193374, 0, 0.999731, 0, 1, 0, -0.999731, 0, -0.023193374, 2.0645409, -0.007842302, -1.9601593)
 
+[node name="SM_Fence" parent="SM_Fence/SM_Fence" unique_id=589736835 instance=ExtResource("10_b21u7")]
+transform = Transform3D(0.997769, 0, -0.06676155, 0, 1, 0, 0.06676155, 0, 0.997769, -0.0589633, -0.007842302, 4.1322155)
+
 [node name="SM_Beer_bottles" parent="." unique_id=789964542 instance=ExtResource("11_b21u7")]
 transform = Transform3D(0.85108006, 0, 0, 0, 0.85108006, 0, 0, 0, 0.85108006, 2.8794541, 0.10310106, -6.738797)
 
 [node name="SM_Beer_bottles" parent="SM_Beer_bottles" unique_id=1584640576 instance=ExtResource("11_b21u7")]
 transform = Transform3D(-0.6659385, 0, -0.6260581, 0, 0.9140148, 0, 0.6260581, 0, -0.6659385, 1.3203714, -0.011840887, -0.27820492)
+
+[node name="SM_Pile_beer_bottles" parent="." unique_id=81150652 instance=ExtResource("12_02jxt")]
+transform = Transform3D(0.965, 0, 0, 0, 0.965, 0, 0, 0, 0.965, 6.832625, -0.014868401, -6.046878)

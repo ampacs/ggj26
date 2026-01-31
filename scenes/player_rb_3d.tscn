@@ -13,10 +13,11 @@ height = 0.6113281
 radius = 0.1
 
 [node name="Player3D" type="RigidBody3D" unique_id=1246661715]
+mass = 15.0
 can_sleep = false
 lock_rotation = true
 script = ExtResource("1_rwch6")
-acceleration = 200.0
+jump_impulse = 7.0
 
 [node name="Actor" type="Node" parent="." unique_id=144003276 node_paths=PackedStringArray("components")]
 script = ExtResource("2_1i56v")

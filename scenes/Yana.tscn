@@ -178,5 +178,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.073616, 4.866277, 0.545877
 
 [node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1908825413]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.045214, 0, 4.4677563)
+move_speed = 2.0
 
 [editable path="GameView"]

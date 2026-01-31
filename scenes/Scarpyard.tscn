@@ -86,7 +86,100 @@ transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.95, -27.5)
 [node name="Maze" type="Node3D" parent="Environment/1Mcubes" unique_id=511403856]
 
 [node name="Wall" parent="Environment/1Mcubes/Maze" unique_id=983458689 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.334114)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 10.5)
+
+[node name="Wall2" parent="Environment/1Mcubes/Maze" unique_id=1614792587 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4537535, 0, 10.5)
+
+[node name="Wall3" parent="Environment/1Mcubes/Maze" unique_id=1165956684 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4250946, 0, 10.5)
+
+[node name="Wall4" parent="Environment/1Mcubes/Maze" unique_id=1189767541 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.531989, 0, 10.5)
+
+[node name="Wall5" parent="Environment/1Mcubes/Maze" unique_id=76321847 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4857426, 0, 10.5)
+
+[node name="Wall6" parent="Environment/1Mcubes/Maze" unique_id=2125504229 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.457084, 0, 10.5)
+
+[node name="Wall7" parent="Environment/1Mcubes/Maze" unique_id=409517026 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4800205, 0, 10.5)
+
+[node name="Wall8" parent="Environment/1Mcubes/Maze" unique_id=388572322 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.526267, 0, 10.5)
+
+[node name="Wall9" parent="Environment/1Mcubes/Maze" unique_id=214517173 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5549259, 0, 10.5)
+
+[node name="Wall10" parent="Environment/1Mcubes/Maze" unique_id=1255745645 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.400988, 0, 10.5)
+
+[node name="Wall11" parent="Environment/1Mcubes/Maze" unique_id=1265351413 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.447234, 0, 10.5)
+
+[node name="Wall12" parent="Environment/1Mcubes/Maze" unique_id=79888445 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.475893, 0, 10.5)
+
+[node name="Wall13" parent="Environment/1Mcubes/Maze" unique_id=2142061974 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 16.47668)
+
+[node name="Wall14" parent="Environment/1Mcubes/Maze" unique_id=2069748088 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4537535, 0, 16.47668)
+
+[node name="Wall15" parent="Environment/1Mcubes/Maze" unique_id=718825658 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4250946, 0, 16.47668)
+
+[node name="Wall16" parent="Environment/1Mcubes/Maze" unique_id=1721332923 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.531989, 0, 16.47668)
+
+[node name="Wall17" parent="Environment/1Mcubes/Maze" unique_id=1016852783 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4857426, 0, 16.47668)
+
+[node name="Wall18" parent="Environment/1Mcubes/Maze" unique_id=1960081957 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.457084, 0, 16.47668)
+
+[node name="Wall19" parent="Environment/1Mcubes/Maze" unique_id=1216942479 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4800205, 0, 16.47668)
+
+[node name="Wall20" parent="Environment/1Mcubes/Maze" unique_id=1469040917 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.526267, 0, 16.47668)
+
+[node name="Wall21" parent="Environment/1Mcubes/Maze" unique_id=1796734703 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5549259, 0, 16.47668)
+
+[node name="Wall22" parent="Environment/1Mcubes/Maze" unique_id=1548430949 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.400988, 0, 16.47668)
+
+[node name="Wall23" parent="Environment/1Mcubes/Maze" unique_id=1725716934 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.447234, 0, 16.47668)
+
+[node name="Wall24" parent="Environment/1Mcubes/Maze" unique_id=815829388 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.475893, 0, 16.47668)
+
+[node name="Wall25" parent="Environment/1Mcubes/Maze" unique_id=1426678342 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 1.5, 0, 22.436905)
+
+[node name="Wall26" parent="Environment/1Mcubes/Maze" unique_id=1590786093 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 2.4537535, 0, 22.436905)
+
+[node name="Wall27" parent="Environment/1Mcubes/Maze" unique_id=1306232852 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 3.4250946, 0, 22.436905)
+
+[node name="Wall28" parent="Environment/1Mcubes/Maze" unique_id=1188149515 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 6.531989, 0, 22.436905)
+
+[node name="Wall31" parent="Environment/1Mcubes/Maze" unique_id=746671177 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -3.4800205, 0, 22.436905)
+
+[node name="Wall32" parent="Environment/1Mcubes/Maze" unique_id=1027840796 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -2.526267, 0, 22.436905)
+
+[node name="Wall33" parent="Environment/1Mcubes/Maze" unique_id=93387974 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -1.5549259, 0, 22.436905)
+
+[node name="Wall36" parent="Environment/1Mcubes/Maze" unique_id=515524183 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -6.475893, 0, 22.436905)
 
 [node name="2Mcubes" type="Node3D" parent="Environment" unique_id=1735982692]
 

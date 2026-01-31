@@ -4,7 +4,8 @@
 [ext_resource type="Script" uid="uid://tr1ch5i142xo" path="res://scripts/items/item_rigidbody_component.gd" id="2_ojstx"]
 [ext_resource type="Script" uid="uid://4jakahk7f5d8" path="res://scripts/items/item_throwable_component.gd" id="3_eq13u"]
 [ext_resource type="Script" uid="uid://dgou7y5hgtgmo" path="res://scripts/items/item_damager_component.gd" id="4_80c46"]
-[ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://assets/props/SM_EmptyCan_A.res" id="4_ihbpe"]
+[ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://assets/props/SM_EmptyCan_A_SM_EmptyCan_A.res" id="4_ihbpe"]
+[ext_resource type="PackedScene" uid="uid://denpao5s0iv7v" path="res://assets/vfx/smoke_puffs.tscn" id="6_yjn7s"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_4gqip"]
 height = 0.21768188
@@ -43,3 +44,7 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.11
 [node name="MeshInstance3D" type="MeshInstance3D" parent="View" unique_id=1818611682]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 mesh = ExtResource("4_ihbpe")
+
+[node name="SmokePuffs" parent="." unique_id=961067408 instance=ExtResource("6_yjn7s")]
+
+[connection signal="onDestroyed" from="ItemComponents/ItemDamagerComponent" to="SmokePuffs" method="trigger"]

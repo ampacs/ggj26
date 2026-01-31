@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://denpao5s0iv7v"]
 
-[ext_resource type="Texture2D" uid="uid://djx7j0f6haixh" path="res://Assets/Particles/smoke_07.png" id="1_7be0v"]
+[ext_resource type="Texture2D" uid="uid://djx7j0f6haixh" path="res://assets/particles/smoke_07.png" id="1_7be0v"]
+[ext_resource type="Script" uid="uid://hp5ln5b1wpgj" path="res://scripts/particles/gpu_particles_3d_controller.gd" id="2_jgp8s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u3mbh"]
 blend_mode = 1
@@ -50,8 +51,11 @@ color_ramp = SubResource("GradientTexture1D_u3mbh")
 
 [node name="SmokePuffs" type="GPUParticles3D" unique_id=961067408]
 material_override = SubResource("StandardMaterial3D_u3mbh")
+emitting = false
 amount = 3
 lifetime = 0.25
+one_shot = true
 explosiveness = 1.0
 process_material = SubResource("ParticleProcessMaterial_31m52")
 draw_pass_1 = SubResource("QuadMesh_g2h4r")
+script = ExtResource("2_jgp8s")

@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bsdxo2f42kn8n"]
+
+[ext_resource type="Shader" uid="uid://wufkgaihbrd6" path="res://Shaders/VS_Standard.tres" id="1_rgcfj"]
+[ext_resource type="Texture2D" uid="uid://c88j3oj0lf6om" path="res://demo/assets/textures/rock023_alb_ht.png" id="2_e6mlh"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_rgcfj")
+shader_parameter/ColorParameter = Color(0, 0.8115439, 0.4611172, 1)
+shader_parameter/TextureParameterTriplanar = ExtResource("2_e6mlh")
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5

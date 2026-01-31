@@ -174,3 +174,4 @@ pause_game={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

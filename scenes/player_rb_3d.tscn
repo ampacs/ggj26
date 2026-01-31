@@ -19,7 +19,11 @@ mass = 15.0
 can_sleep = false
 lock_rotation = true
 script = ExtResource("1_rwch6")
+acceleration = 40.0
 jump_impulse = 7.0
+time_to_reach_speed = 0.01
+air_acceleration_multiplier = 1.1
+low_jump_gravity_multiplier = 6.0
 
 [node name="ItemInteractor" type="Node3D" parent="." unique_id=1506726530 node_paths=PackedStringArray("playerController", "actor")]
 script = ExtResource("2_syd7c")
@@ -58,7 +62,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 transform = Transform3D(1, 0, 0, 0, 0.96592605, -0.2588191, 0, 0.2588191, 0.96592605, 0, 0.48901072, 0.15322125)
 
 [node name="ItemAnchor" type="Node3D" parent="ReplaceWithPlayerScene/SM_Raccoon2" unique_id=888059819]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22238043, 0.37465537, 0.16682634)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00065638125, 0.37465537, 0.2053045)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=62241982]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30566406, 0)

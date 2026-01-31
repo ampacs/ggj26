@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://e4hfr4h4bdnq"
-path="res://.godot/imported/SM_Cloth.glb-b1805e76ab4044d03dfc86387cfe2f1c.scn"
+uid="uid://om1dlex4wlgo"
+path="res://.godot/imported/SM_Cloth_.glb-3b5e70f795f98012762153f4ebec94d8.scn"
 
 [deps]
 
-source_file="res://Assets/Props/M_Roy/SM_Cloth.glb"
-dest_files=["res://.godot/imported/SM_Cloth.glb-b1805e76ab4044d03dfc86387cfe2f1c.scn"]
+source_file="res://Assets/Props/M_Roy/SM_Cloth_.glb"
+dest_files=["res://.godot/imported/SM_Cloth_.glb-3b5e70f795f98012762153f4ebec94d8.scn"]
 
 [params]
 

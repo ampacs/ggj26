@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bj7wn04iexcfn"
-path="res://.godot/imported/SM_MetalContainer_A.glb-3675a9d23cc96104dae4773d1d6d7d50.scn"
+path="res://.godot/imported/SM_MetalContainer_A.glb-c100622c9f872578793d69282d160fd5.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_MetalContainer_A.glb"
-dest_files=["res://.godot/imported/SM_MetalContainer_A.glb-3675a9d23cc96104dae4773d1d6d7d50.scn"]
+source_file="res://assets/Props/SM_MetalContainer_A.glb"
+dest_files=["res://.godot/imported/SM_MetalContainer_A.glb-c100622c9f872578793d69282d160fd5.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_MetalContainer_A_SM_MetalContainer_A.res",
+"save_to_file/fallback_path": "res://assets/Props/SM_MetalContainer_A.res",
 "save_to_file/path": "uid://bwh3fe1k12mvs"
 }
 }

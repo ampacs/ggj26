@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://wnqfmev6k356"
-path="res://.godot/imported/SM_WheelieBin_A.glb-e03a327f6f753661afc9251198ac80ce.scn"
+path="res://.godot/imported/SM_WheelieBin_A.glb-2d52d4660a1e84076146e2e5aeaa3fb3.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_WheelieBin_A.glb"
-dest_files=["res://.godot/imported/SM_WheelieBin_A.glb-e03a327f6f753661afc9251198ac80ce.scn"]
+source_file="res://assets/Props/SM_WheelieBin_A.glb"
+dest_files=["res://.godot/imported/SM_WheelieBin_A.glb-2d52d4660a1e84076146e2e5aeaa3fb3.scn"]
 
 [params]
 
@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_WheelieBin_A_SM_WheelieBin_A.res",
+"save_to_file/fallback_path": "res://assets/Props/SM_WheelieBin_A.res",
 "save_to_file/path": "uid://cd61fna2bkel1"
 }
 }

@@ -45,31 +45,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_a141m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Floor" unique_id=1894721305]
-transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, 0, -10, 0)
+transform = Transform3D(256, 0, 0, 0, 1, 0, 0, 0, 256, -0.107378006, -10.000084, 0.0016613007)
 mesh = SubResource("BoxMesh_3dnxu")
 
 [node name="1Mcubes" type="Node3D" parent="Environment" unique_id=1809547852]
 
-[node name="1cubic" parent="Environment/1Mcubes" unique_id=1328690961 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 3.5)
+[node name="Wall NORTH" parent="Environment/1Mcubes" unique_id=1328690961 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(22, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 30)
 
-[node name="1cubic3" parent="Environment/1Mcubes" unique_id=1995818406 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 3.5)
+[node name="Corner 1" parent="Environment/1Mcubes" unique_id=41756034 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(5.1763816, 0, 0.9659258, 0, 5, 0, -19.318516, 0, 0.25881907, 8, 0, 20)
+
+[node name="Corner 2" parent="Environment/1Mcubes" unique_id=938789376 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(-5.176381, 0, 0.9659258, 0, 5, 0, -19.318516, 0, -0.25881904, -8, 0, 20)
+
+[node name="Corner 3" parent="Environment/1Mcubes" unique_id=1614325483 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(-5.176381, 0, 0.9659258, 0, 5, 0, -19.318516, 0, -0.25881904, 8, 0, -20)
+
+[node name="Corner 4" parent="Environment/1Mcubes" unique_id=621551727 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(5.1763816, 0, 0.96592575, 0, 5, 0, -19.318516, 0, 0.25881904, -8, 0, -20)
+
+[node name="Wall SOUTH" parent="Environment/1Mcubes" unique_id=1499780378 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(22, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, -30)
+
+[node name="Wall EAST" parent="Environment/1Mcubes" unique_id=1263086551 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 5, 0, 0, 0, 60, -10.5, 0, 0)
+
+[node name="Wall WEST" parent="Environment/1Mcubes" unique_id=654239402 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 5, 0, 0, 0, 60, 10.5, 0, 0)
+
+[node name="Map center" parent="Environment/1Mcubes" unique_id=1995818406 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, -0.5, 0)
+
+[node name="Base P1" parent="Environment/1Mcubes" unique_id=1825699820 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.95, 27.5)
+
+[node name="Base P2" parent="Environment/1Mcubes" unique_id=1405443676 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.95, -27.5)
+
+[node name="Maze" type="Node3D" parent="Environment/1Mcubes" unique_id=511403856]
+
+[node name="Wall" parent="Environment/1Mcubes/Maze" unique_id=983458689 instance=ExtResource("1_5qmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.334114)
 
 [node name="2Mcubes" type="Node3D" parent="Environment" unique_id=1735982692]
 
-[node name="1cubic2" parent="Environment/2Mcubes" unique_id=1798055394 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3, 0, 5)
-
-[node name="1cubic5" parent="Environment/2Mcubes" unique_id=592584425 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3, 0, 7)
-
 [node name="4Mcubes" type="Node3D" parent="Environment" unique_id=2028219104]
 
-[node name="1cubic4" parent="Environment/4Mcubes" unique_id=847007972 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2, 0, 10)
-
-[node name="1cubic5" parent="Environment/4Mcubes" unique_id=454767688 instance=ExtResource("1_5qmt8")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2, 0, 14)
-
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_uur04")]
+
+[editable path="GameView"]

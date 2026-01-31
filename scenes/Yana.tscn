@@ -176,12 +176,11 @@ transform = Transform3D(-2.1855695e-07, 0, 1, 0, 3, 0, -5, 0, -4.371139e-08, 7.6
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("3_wppml")]
 
-[node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer/SubViewport" parent_id_path=PackedInt32Array(1430353953, 1665233511) index="0" unique_id=328629696]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.073616, 4.866277, 0.545877)
+[node name="Player3D2" parent="GameView/HBoxContainer/SubViewportContainer/SubViewport" parent_id_path=PackedInt32Array(1430353953, 1665233511) index="0" unique_id=1246661715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.548668, 0, -7.139205)
 
-[node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1908825413]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.045214, 0, 4.4677563)
-move_speed = 2.0
+[node name="Player3D2" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1241094078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.224304, 0, 4.9258842)
 
 [node name="SmBackgroundCylinder" type="MeshInstance3D" parent="." unique_id=771819065]
 transform = Transform3D(0.525333, 0, -0.1833105, 0, 0.4582798, 0, 0.1833105, 0, 0.525333, 31.671524, 0, -7.1768227)

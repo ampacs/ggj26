@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="2_2cirn"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="3_h8xtk"]
 [ext_resource type="PackedScene" uid="uid://dp7rcb4c0f3yw" path="res://Assets/Props/M_Roy/SM_Wall3.glb" id="4_o7lpm"]
-[ext_resource type="ArrayMesh" uid="uid://bwh3fe1k12mvs" path="res://Assets/Props/SM_MetalContainer_A.res" id="5_y0qf7"]
+[ext_resource type="ArrayMesh" uid="uid://bwh3fe1k12mvs" path="res://Assets/Props/SM_MetalContainer_A_SM_MetalContainer_A.res" id="5_y0qf7"]
 [ext_resource type="ArrayMesh" uid="uid://dsiwxb5xhpp8x" path="res://Assets/Props/SM_MetalWavySheet_A_001.res" id="6_sxf7r"]
 [ext_resource type="ArrayMesh" uid="uid://cbi0slmw3t817" path="res://Assets/Props/SM_TrashContainer_A.res" id="7_r12iq"]
 [ext_resource type="ArrayMesh" uid="uid://cd61fna2bkel1" path="res://Assets/Props/SM_WheelieBin_A.res" id="8_8283u"]
@@ -158,12 +158,11 @@ transform = Transform3D(-2.1855695e-07, 0, 1, 0, 3, 0, -5, 0, -4.371139e-08, 7.6
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("3_h8xtk")]
 
-[node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer/SubViewport" parent_id_path=PackedInt32Array(1430353953, 1665233511) index="0" unique_id=328629696]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.073616, 4.866277, 0.545877)
+[node name="Player3D2" parent="GameView/HBoxContainer/SubViewportContainer/SubViewport" parent_id_path=PackedInt32Array(1430353953, 1665233511) index="0" unique_id=1246661715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.436157, 0, -6.8145003)
 
-[node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1908825413]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.045214, 0, 4.4677563)
-move_speed = 2.0
+[node name="Player3D2" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1241094078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.47493, 0, 6.2103286)
 
 [node name="SM_Wall3" parent="." unique_id=502107099 instance=ExtResource("4_o7lpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.547752, 0.011796936, 6.923512)

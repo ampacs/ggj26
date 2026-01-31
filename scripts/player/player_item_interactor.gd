@@ -68,6 +68,7 @@ func _process(delta: float) -> void:
 			continue
 
 		var collider: Node3D = result.collider
+		print(collider.name)
 		if collider is Item:
 			closestItem = collider
 			closestItemDistance = distance
@@ -84,6 +85,7 @@ func _process(delta: float) -> void:
 
 		var currentParent := collider.get_parent()
 		while currentParent != null:
+			print("\t" , currentParent.name)
 			if currentParent is not Item:
 				currentParent = currentParent.get_parent()
 				continue

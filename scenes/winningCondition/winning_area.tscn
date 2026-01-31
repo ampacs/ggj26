@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dbxv8fmh6wxii"]
+[gd_scene format=3 uid="uid://dbltvd5wmcqwv"]
 
-[ext_resource type="Script" path="res://scripts/winning_area.gd" id="1_immml"]
+[ext_resource type="Script" uid="uid://51flbrr6y4am" path="res://scripts/winning_area.gd" id="1_immml"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_uonxl"]
 height = 0.47460938
@@ -17,7 +17,6 @@ debug_color = Color(1.92523e-07, 0.6007618, 0.697567, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=223723836]
 transform = Transform3D(1, 0, 0, 0, 0.25, 0, 0, 0, 1, 0.032, 0.012663603, 0)
-visible = false
 mesh = SubResource("CylinderMesh_immml")
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

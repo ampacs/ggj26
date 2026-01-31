@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://vox71nc31f15"]
+
+[ext_resource type="PackedScene" uid="uid://dbltvd5wmcqwv" path="res://scenes/winningCondition/winning_area.tscn" id="1_etui7"]
+[ext_resource type="Script" uid="uid://rs51qd7ognq5" path="res://scripts/winningCondition/winning_condition.gd" id="1_o2e2i"]
+[ext_resource type="PackedScene" uid="uid://c8qiegdfb16rw" path="res://scenes/winningCondition/final_game_menu.tscn" id="2_o2e2i"]
+
+[node name="WinningCondition" type="Node3D" unique_id=1118259956]
+script = ExtResource("1_o2e2i")
+
+[node name="WinningArea" parent="." unique_id=1839369566 instance=ExtResource("1_etui7")]
+
+[node name="FinalGameMenu" parent="." unique_id=1364435161 instance=ExtResource("2_o2e2i")]
+
+[connection signal="game_won" from="WinningArea" to="." method="_on_winning_area_game_won"]

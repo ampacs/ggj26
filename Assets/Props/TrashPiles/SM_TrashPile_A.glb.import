@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://by130tlu54xq0"
+uid="uid://bwuk8w3q8uj2m"
 path="res://.godot/imported/SM_TrashPile_A.glb-4f22fd05d2c3c0f618866e2e030d012b.scn"
 
 [deps]
@@ -45,35 +45,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_TrashPile_A_SM_MetalContainer_A_001.res",
-"save_to_file/path": "uid://8ejaaqoevamo"
-},
-"SM_TrashPile_A_SM_Streetsign_A_001": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_TrashPile_A_SM_Streetsign_A_001.res",
-"save_to_file/path": "uid://dnlf7ou8hulld"
-},
-"SM_TrashPile_A_SM_Streetsign_A_002": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_TrashPile_A_SM_Streetsign_A_002.res",
-"save_to_file/path": "uid://cc1ypjfg5m3fu"
-},
-"SM_TrashPile_A_SM_Streetsign_A_003": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_TrashPile_A_SM_Streetsign_A_003.res",
-"save_to_file/path": "uid://fgyyaek62tqa"
+"save_to_file/fallback_path": "res://Assets/Props/TrashPiles/SM_TrashPile_A_SM_MetalContainer_A_001.res",
+"save_to_file/path": "uid://d2vf3xgr84oy1"
 },
 "SM_TrashPile_A_SM_TrashPile_A": {
 "generate/lightmap_uv": 0,
@@ -81,8 +54,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/TrashPiles/SM_TrashPile_A_SM_TrashPile_A.res",
-"save_to_file/path": "uid://dft6sl46dcdo4"
+"save_to_file/fallback_path": "res://Assets/Props/TrashPiles/SM_TrashPile_A.res",
+"save_to_file/path": "uid://dahc70rdfvbke"
 }
 }
 }

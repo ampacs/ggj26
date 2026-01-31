@@ -1,5 +1,15 @@
 [gd_resource type="VisualShader" format=3 uid="uid://wufkgaihbrd6"]
 
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_p48u3"]
+parameter_name = "Specular2"
+default_value_enabled = true
+default_value = 0.5
+
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_xwae7"]
+parameter_name = "Rim"
+default_value_enabled = true
+default_value = -10.0
+
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_myd8p"]
 parameter_name = "ColorParameter"
 default_value_enabled = true
@@ -11,14 +21,41 @@ parameter_name = "TextureParameterTriplanar"
 [sub_resource type="VisualShaderNodeColorOp" id="VisualShaderNodeColorOp_7vbf7"]
 operator = 4
 
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_myd8p"]
+parameter_name = "Roughness"
+default_value_enabled = true
+
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_7vbf7"]
+parameter_name = "FloatParameter2"
+default_value_enabled = true
+default_value = 0.3
+
+[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_bmdo7"]
+parameter_name = "Specular"
+default_value_enabled = true
+default_value = 1.0
+
 [resource]
+modes/diffuse = 3
+modes/specular = 1
+flags/world_vertex_coords = true
 preview_params/TextureParameterTriplanar = "Resource(\"uid://ddprscrpsofah\", \"res://demo/assets/textures/ground037_alb_ht.png\")"
 preview_params/triplanar_scale = "Vector3(0.1, 0.1, 0.1)"
-nodes/fragment/0/position = Vector2(560, 272)
+nodes/fragment/0/position = Vector2(888, 328)
 nodes/fragment/3/node = SubResource("VisualShaderNodeColorParameter_myd8p")
 nodes/fragment/3/position = Vector2(-216, 128)
 nodes/fragment/5/node = SubResource("VisualShaderNodeTextureParameterTriplanar_myd8p")
-nodes/fragment/5/position = Vector2(-264, 352)
+nodes/fragment/5/position = Vector2(-216, 376)
 nodes/fragment/6/node = SubResource("VisualShaderNodeColorOp_7vbf7")
-nodes/fragment/6/position = Vector2(160, 216)
-nodes/fragment/connections = PackedInt32Array(3, 0, 6, 0, 6, 0, 0, 0, 5, 0, 6, 1)
+nodes/fragment/6/position = Vector2(128, 224)
+nodes/fragment/7/node = SubResource("VisualShaderNodeFloatParameter_myd8p")
+nodes/fragment/7/position = Vector2(-200, 736)
+nodes/fragment/8/node = SubResource("VisualShaderNodeFloatParameter_7vbf7")
+nodes/fragment/8/position = Vector2(661.9302, 1925.6375)
+nodes/fragment/9/node = SubResource("VisualShaderNodeFloatParameter_bmdo7")
+nodes/fragment/9/position = Vector2(368, 720)
+nodes/fragment/10/node = SubResource("VisualShaderNodeFloatParameter_p48u3")
+nodes/fragment/10/position = Vector2(1565.3411, 1961.594)
+nodes/fragment/11/node = SubResource("VisualShaderNodeFloatParameter_xwae7")
+nodes/fragment/11/position = Vector2(240, 984)
+nodes/fragment/connections = PackedInt32Array(3, 0, 6, 0, 6, 0, 0, 0, 5, 0, 6, 1, 7, 0, 0, 3, 9, 0, 0, 4, 11, 0, 0, 11)

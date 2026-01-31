@@ -78,41 +78,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0903907, 0.22956333, 3.9116
 [node name="SM_Tire_A" parent="." unique_id=1897767824 instance=ExtResource("8_3tbrh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2452283, 0.14623663, 5.081157)
 
-[node name="SM_Trashbag" parent="." unique_id=286695970 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.714062, 0, 0, 0, 0.8933943, 0.009471778, 0, -0.0093403505, 0.905965, 1.0569665, -0.047790885, -5.6263638)
+[node name="SM_Trashbag3" parent="." unique_id=1484933722 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(-0.29784966, -2.2799304e-11, -0.04296486, 0.00074428436, 0.4647821, -0.0038869127, 0.07118997, -0.004859252, -0.37177885, 2.0855157, 0.0034415945, -6.3932486)
 
-[node name="SM_Trashbag" parent="SM_Trashbag" unique_id=475934062 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.22833753, 0, 0.5938092, 0, 0.7212788, 0, -0.62254715, 0, 0.21779698, 0.16506386, -0.02680631, -1.2457104)
+[node name="SM_Trashbag2" parent="." unique_id=475934062 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(0.16304715, 0, 0.42401657, -0.0058966284, 0.64438635, 0.0020629247, -0.5640059, -0.0067369966, 0.19731644, 1.1748323, -0.08353858, -6.7546835)
 
-[node name="SM_Trashbag" parent="SM_Trashbag/SM_Trashbag" unique_id=1484933722 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(-0.32786542, 4.656613e-10, 0.5497673, 0, 0.7212786, 0, -0.576374, -2.3283064e-10, -0.31273037, 0.096084595, 0.12910315, 2.1108067)
+[node name="SM_Trashbag6" parent="." unique_id=113853702 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(-0.20687506, 0.006211761, 0.20323949, 0.0013403969, 0.43226922, -0.007000016, -0.30648535, -0.0046779695, -0.22454734, 18.423944, -0.10151196, -3.8983197)
 
-[node name="SM_Trashbag2" parent="SM_Trashbag" unique_id=907393469 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.5487441, 0.0167214, -0.77404267, -0.009540275, 0.93005055, 0.014087401, 0.8998548, -0.00033654366, 0.47217166, 22.87517, -0.11636237, 1.0097952)
+[node name="SM_Trashbag5" parent="." unique_id=2049719825 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(0.43356195, 0.008612152, 0.112297036, -0.010619353, 0.5993096, 0.0037151598, -0.08005616, -0.0064856624, 0.57728666, 18.144136, -0.18570635, -5.1083307)
 
-[node name="SM_Trashbag" parent="SM_Trashbag/SM_Trashbag2" unique_id=2049719825 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(0.22833753, 0, 0.5938092, 0, 0.7212788, 0, -0.62254715, 0, 0.21779698, 0.16506386, -0.02680631, -1.2457104)
+[node name="SM_Trashbag4" parent="." unique_id=907393469 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(0.39183727, 0.011940115, -0.5527144, -1.8626451e-09, 0.8308987, 0.017057909, 0.81532604, -0.008991894, 0.42763942, 17.391256, -0.14218381, -4.710438)
 
-[node name="SM_Trashbag" parent="SM_Trashbag/SM_Trashbag2/SM_Trashbag" unique_id=113853702 instance=ExtResource("9_pvmhy")]
-transform = Transform3D(-0.32786542, 4.656613e-10, 0.5497673, 0, 0.7212786, 0, -0.576374, -2.3283064e-10, -0.31273037, 0.096084595, 0.12910315, 2.1108067)
+[node name="SM_Fence3" parent="." unique_id=589736835 instance=ExtResource("10_b21u7")]
+transform = Transform3D(0.043601967, 0, 0.999049, 0, 1, 0, -0.999049, 0, 0.043601967, 6.0365024, 0.0034692287, -7.896181)
+
+[node name="SM_Fence2" parent="." unique_id=1722271059 instance=ExtResource("10_b21u7")]
+transform = Transform3D(-0.023193374, 0, 0.999731, 0, 1, 0, -0.999731, 0, -0.023193374, 2.00357, 0.011311531, -7.9369054)
 
 [node name="SM_Fence" parent="." unique_id=16272840 instance=ExtResource("10_b21u7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060970783, 0.019153833, -5.976746)
 
-[node name="SM_Fence" parent="SM_Fence" unique_id=1722271059 instance=ExtResource("10_b21u7")]
-transform = Transform3D(-0.023193374, 0, 0.999731, 0, 1, 0, -0.999731, 0, -0.023193374, 2.0645409, -0.007842302, -1.9601593)
+[node name="SM_Trashbag" parent="." unique_id=286695970 instance=ExtResource("9_pvmhy")]
+transform = Transform3D(0.714062, 0, 0, 0, 0.8933943, 0.009471778, 0, -0.0093403505, 0.905965, 1.0569665, -0.047790885, -5.6263638)
 
-[node name="SM_Fence" parent="SM_Fence/SM_Fence" unique_id=589736835 instance=ExtResource("10_b21u7")]
-transform = Transform3D(0.997769, 0, -0.06676155, 0, 1, 0, 0.06676155, 0, 0.997769, -0.13425064, -0.007842302, 4.030903)
+[node name="SM_Beer_bottles3" parent="." unique_id=1665956373 instance=ExtResource("11_b21u7")]
+transform = Transform3D(0.5216056, 0.116820775, 0.22190285, -0.061164025, 0.5559228, -0.1488931, -0.24320129, 0.11073898, 0.51337165, 18.069736, 0.48842394, -4.471313)
+
+[node name="SM_Beer_bottles2" parent="." unique_id=1584640576 instance=ExtResource("11_b21u7")]
+transform = Transform3D(-0.566767, 0, -0.5328256, 0, 0.7778998, 0, 0.5328256, 0, -0.566767, 4.003196, 0.093023516, -6.9755716)
 
 [node name="SM_Beer_bottles" parent="." unique_id=789964542 instance=ExtResource("11_b21u7")]
 transform = Transform3D(0.85108006, 0, 0, 0, 0.85108006, 0, 0, 0, 0.85108006, 2.8794541, 0.10310106, -6.738797)
-
-[node name="SM_Beer_bottles" parent="SM_Beer_bottles" unique_id=1584640576 instance=ExtResource("11_b21u7")]
-transform = Transform3D(-0.6659385, 0, -0.6260581, 0, 0.9140148, 0, 0.6260581, 0, -0.6659385, 1.3203714, -0.011840887, -0.27820492)
-
-[node name="SM_Beer_bottles" parent="SM_Beer_bottles/SM_Beer_bottles" unique_id=1665956373 instance=ExtResource("11_b21u7")]
-transform = Transform3D(-0.7026824, -0.011907555, 0.24419689, -0.078627124, 0.71464574, -0.19140396, -0.23149878, -0.20658161, -0.6762167, -10.969777, 0.50829226, -14.7313385)
 
 [node name="SM_Pile_beer_bottles" parent="." unique_id=81150652 instance=ExtResource("12_02jxt")]
 transform = Transform3D(0.965, 0, 0, 0, 0.965, 0, 0, 0, 0.965, 6.832625, -0.014868401, -6.046878)

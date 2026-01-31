@@ -37,6 +37,8 @@ shadow_enabled = true
 
 [node name="Floor" type="StaticBody3D" parent="Environment" unique_id=756057865]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+collision_layer = 129
+collision_mask = 129
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Floor" unique_id=431830293]
 shape = SubResource("BoxShape3D_a141m")

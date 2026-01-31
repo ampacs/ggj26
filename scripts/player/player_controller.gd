@@ -24,6 +24,17 @@ var _last_movement_direction := Vector3.BACK
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Node3D = $ReplaceWithPlayerScene
 
+func _isGrounded() -> bool:
+	var space_state := self.get_world_3d().direct_space_state
+	# var look  get_viewport().get_camera_3d()
+	var query := PhysicsRayQueryParameters3D.create(self.global_position + Vector3.UP * .5, self.global_position + Vector3(0, -.75, 0), 1 << 7)
+	query.collide_with_areas = false
+	query.collide_with_bodies = true
+
+	var result := space_state.intersect_ray(query)
+
+	return !result.is_empty()
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -80,7 +91,7 @@ func _physics_process(delta: float) -> void:
 	# var world := self.get_world_3d()
 	# world.
 
-	var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) # and is_on_floor()
+	var is_starting_jump := Input.is_action_just_pressed("jump_%s" % [playerId]) and _isGrounded()
 	if is_starting_jump:
 		self.apply_central_impulse(Vector3.UP * jump_impulse * self.mass)
 

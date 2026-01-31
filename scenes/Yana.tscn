@@ -87,6 +87,10 @@ mesh = SubResource("BoxMesh_3dnxu")
 transform = Transform3D(0.9813162, 0, -0.1924021, 0, 1, 0, 0.1924021, 0, 0.9813162, 24.746037, 0.7996969, -19.875017)
 mesh = ExtResource("3_a0d3i")
 
+[node name="SmCarPile2Cube111" type="MeshInstance3D" parent="Environment/Floor" unique_id=94949656]
+transform = Transform3D(0.99977845, 0, 0.021047115, 0, 1, 0, -0.021047115, 0, 0.99977845, 27.254866, 0.91891265, 15.749092)
+mesh = ExtResource("3_a0d3i")
+
 [node name="SmCarPile2Cube110" type="MeshInstance3D" parent="Environment/Floor" unique_id=299893880]
 transform = Transform3D(-0.9999822, 0, 0.005968891, 0, 1, 0, -0.005968891, 0, -0.9999822, 23.311954, 0.7996969, -12.455055)
 mesh = ExtResource("3_a0d3i")
@@ -114,27 +118,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.045214, 0, 12.80187)
 
 [node name="5Mcubes" type="Node3D" parent="Environment" unique_id=659585127]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.139656, 0, 0)
-
-[node name="1cubic14" parent="Environment/5Mcubes" unique_id=531821247 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(7, 0, 0, 0, 3, 0, 0, 0, 1, 5.1721, 0, 23.098122)
-
-[node name="1cubic15" parent="Environment/5Mcubes" unique_id=555431475 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(-2.1855695e-07, 0, 1, 0, 3, 0, -5, 0, -4.371139e-08, 1.1581764, -9.536743e-07, 25.264141)
-
-[node name="1cubic23" parent="Environment/5Mcubes" unique_id=1536393946 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 11.205112, -3.8146973e-06, 11.974529)
-
-[node name="1cubic24" parent="Environment/5Mcubes" unique_id=1546812483 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 5.392494, -3.8146973e-06, 11.974529)
-
-[node name="1cubic25" parent="Environment/5Mcubes" unique_id=1524446865 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -1.3519936, -3.8146973e-06, 11.974529)
-
-[node name="1cubic26" parent="Environment/5Mcubes" unique_id=1893124228 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 8.854885, -3.8146973e-06, 15.775654)
-
-[node name="1cubic27" parent="Environment/5Mcubes" unique_id=1907036269 instance=ExtResource("2_7xcvg")]
-transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 1.4395332, -3.8146973e-06, 15.775654)
 
 [node name="1cubic19" parent="Environment/5Mcubes" unique_id=1971619385 instance=ExtResource("2_7xcvg")]
 transform = Transform3D(-2.1855695e-07, 0, 1, 0, 2, 0, -5, 0, -4.371139e-08, 11.612904, -9.536743e-07, 4.9668274)
@@ -284,8 +267,26 @@ transform = Transform3D(0.10443507, 0, 3.1782846, 0, 3.18, 0, -3.1782846, 0, 0.1
 [node name="SM_Wall3" parent="." unique_id=580364489 instance=ExtResource("14_mwvch")]
 transform = Transform3D(2.4059472, 0, 0, 0, 1.9249995, 0, 0, 0, 1.925, 35.03844, 0.011796936, -16.638138)
 
+[node name="SM_Wall5" parent="." unique_id=1845971142 instance=ExtResource("14_mwvch")]
+transform = Transform3D(2.4059472, 0, 0, 0, 1.9249995, 0, 0, 0, 1.925, 29.01753, 0.011796936, 23.05053)
+
+[node name="SM_Wall4" parent="." unique_id=854910685 instance=ExtResource("14_mwvch")]
+transform = Transform3D(2.4059472, 0, 0, 0, 1.5816625, 0, 0, 0, 1.925, 37.12685, 0.011796936, 11.775374)
+
 [node name="SmWall1Cube018" type="MeshInstance3D" parent="." unique_id=474434999]
 transform = Transform3D(0.5847615, 0, 0, 0, -2.2074252e-08, -0.48349106, 0, 0.505, -2.1134067e-08, 27.70159, 1.5375123, -18.185556)
+mesh = ExtResource("15_4l7rc")
+
+[node name="SmWall1Cube021" type="MeshInstance3D" parent="." unique_id=143375578]
+transform = Transform3D(0.5847615, 0, 0, 0, -2.2074252e-08, -0.48349106, 0, 0.505, -2.1134067e-08, 33.045364, 1.5375123, 23.083761)
+mesh = ExtResource("15_4l7rc")
+
+[node name="SmWall1Cube022" type="MeshInstance3D" parent="." unique_id=362984217]
+transform = Transform3D(-0.008878902, 0.50494176, -2.1131628e-08, -5.0284974e-16, -2.2074248e-08, -0.48349097, -0.58469415, -0.0076678023, 3.2089442e-10, 27.791763, 1.5375123, 24.834509)
+mesh = ExtResource("15_4l7rc")
+
+[node name="SmWall1Cube020" type="MeshInstance3D" parent="." unique_id=1472765127]
+transform = Transform3D(0.5841852, -9.798008e-10, -0.01580517, -0.02595557, -2.20525e-08, -0.35572898, 0, 0.505, -1.556475e-08, 31.652853, 1.0381447, 11.975905)
 mesh = ExtResource("15_4l7rc")
 
 [node name="SmGarbageBagsCube100" type="MeshInstance3D" parent="." unique_id=470236706]
@@ -324,16 +325,56 @@ mesh = ExtResource("17_l5hkg")
 transform = Transform3D(-0.6292119, 0, -0.7772338, 0, 1, 0, 0.7772338, 0, -0.6292119, 26.440222, 0.26075864, -27.260275)
 mesh = ExtResource("18_5jshg")
 
+[node name="SmCarClothPlane005" type="MeshInstance3D" parent="." unique_id=267675739]
+transform = Transform3D(0.52444667, 0, 0.85144335, 0, 1, 0, -0.85144335, 0, 0.52444667, 32.548233, 0.26075864, 27.512321)
+mesh = ExtResource("18_5jshg")
+
 [node name="SmBeerPileCube532" type="MeshInstance3D" parent="." unique_id=311469484]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.154236, 0.025846139, -19.293182)
+mesh = ExtResource("19_04h7r")
+
+[node name="SmBeerPileCube533" type="MeshInstance3D" parent="." unique_id=671044149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.909805, 0.025846139, 8.284983)
 mesh = ExtResource("19_04h7r")
 
 [node name="SmBeerCrateCube021" type="MeshInstance3D" parent="." unique_id=1100951559]
 transform = Transform3D(0.07832881, 0, 0.21625125, 0, 0.22999997, 0, -0.21625125, 0, 0.07832881, 33.838627, 1.9335063, -17.43644)
 mesh = ExtResource("20_chmiw")
 
+[node name="SmBoxCrateCube115" type="MeshInstance3D" parent="." unique_id=1740319892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.387264, 0.040353477, 15.743343)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBoxCrateCube116" type="MeshInstance3D" parent="." unique_id=338064695]
+transform = Transform3D(0.8327087, 0, 0.5537113, 0, 1, 0, -0.5537113, 0, 0.8327087, 34.509186, 0.040353477, 15.743343)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBoxCrateCube118" type="MeshInstance3D" parent="." unique_id=1194870327]
+transform = Transform3D(-0.507027, 0, 0.8619302, 0, 1, 0, -0.8619302, 0, -0.507027, 36.207092, 0.040353477, 16.22685)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBoxCrateCube119" type="MeshInstance3D" parent="." unique_id=1557451118]
+transform = Transform3D(-0.8994663, 0, 0.43699023, 0, 1, 0, -0.43699023, 0, -0.8994663, 35.63825, 0.040353477, 15.259832)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBoxCrateCube120" type="MeshInstance3D" parent="." unique_id=53310774]
+transform = Transform3D(-0.99551755, 0, -0.09457743, 0, 1, 0, 0.09457743, 0, -0.99551755, 35.63825, 0.9830165, 15.259832)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBoxCrateCube117" type="MeshInstance3D" parent="." unique_id=679739177]
+transform = Transform3D(0.8065994, 0, 0.5910985, 0, 1, 0, -0.5910985, 0, 0.8065994, 33.387264, 0.9666223, 15.638193)
+mesh = ExtResource("17_l5hkg")
+
+[node name="SmBeerCrateCube022" type="MeshInstance3D" parent="." unique_id=107829473]
+transform = Transform3D(0.07832881, 0, 0.21625125, 0, 0.22999997, 0, -0.21625125, 0, 0.07832881, 33.34214, 1.9335063, 15.6620865)
+mesh = ExtResource("20_chmiw")
+
 [node name="SmCarPile1Cube103" type="MeshInstance3D" parent="." unique_id=1729663332]
 transform = Transform3D(0.99961823, 0, 0, 0, 0.79176027, 0, 0, 0, 1, 30.371044, 0.28901678, -12.54554)
+mesh = ExtResource("21_cmdcp")
+
+[node name="SmCarPile1Cube104" type="MeshInstance3D" parent="." unique_id=906929454]
+transform = Transform3D(0.99961823, 0, 0, 0, 0.79176027, 0, 0, 0, 1, 24.989367, 0.28901678, 11.973858)
 mesh = ExtResource("21_cmdcp")
 
 [node name="SmPodiumCylinder013" type="MeshInstance3D" parent="." unique_id=1213934845]

@@ -123,6 +123,36 @@ transform = Transform3D(-2.1855695e-07, 0, 1, 0, 1, 0, -5, 0, -4.371139e-08, 8.6
 [node name="1cubic18" parent="Environment/5Mcubes" unique_id=2108602369 instance=ExtResource("2_7xcvg")]
 transform = Transform3D(7, 0, 0, 0, 2, 0, 0, 0, 1, 8.127361, -3.8146973e-06, 7.080902)
 
+[node name="1cubic23" parent="Environment/5Mcubes" unique_id=1536393946 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 12.807846, -3.8146973e-06, 11.974529)
+
+[node name="1cubic24" parent="Environment/5Mcubes" unique_id=1546812483 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 5.392494, -3.8146973e-06, 11.974529)
+
+[node name="1cubic25" parent="Environment/5Mcubes" unique_id=1524446865 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -1.3519936, -3.8146973e-06, 11.974529)
+
+[node name="1cubic26" parent="Environment/5Mcubes" unique_id=1893124228 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 8.854885, -3.8146973e-06, 15.775654)
+
+[node name="1cubic27" parent="Environment/5Mcubes" unique_id=1907036269 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 1.4395332, -3.8146973e-06, 15.775654)
+
+[node name="1cubic28" parent="Environment/5Mcubes" unique_id=1934797099 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 12.807846, -3.8146973e-06, -12.76734)
+
+[node name="1cubic29" parent="Environment/5Mcubes" unique_id=2140786793 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, 5.392494, -3.8146973e-06, -12.76734)
+
+[node name="1cubic30" parent="Environment/5Mcubes" unique_id=1397204469 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -1.3519936, -3.8146973e-06, -12.76734)
+
+[node name="1cubic31" parent="Environment/5Mcubes" unique_id=191259991 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 8.854885, -3.8146973e-06, -16.583288)
+
+[node name="1cubic32" parent="Environment/5Mcubes" unique_id=428990637 instance=ExtResource("2_7xcvg")]
+transform = Transform3D(4, 0, 0, 0, 3, 0, 0, 0, 1, 1.4395332, -3.8146973e-06, -16.583288)
+
 [node name="1cubic19" parent="Environment/5Mcubes" unique_id=1971619385 instance=ExtResource("2_7xcvg")]
 transform = Transform3D(-2.1855695e-07, 0, 1, 0, 2, 0, -5, 0, -4.371139e-08, 11.612904, -9.536743e-07, 4.9668274)
 
@@ -144,7 +174,7 @@ transform = Transform3D(-2.1855695e-07, 0, 1, 0, 3, 0, -5, 0, -4.371139e-08, 7.6
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("3_wppml")]
 
 [node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer/SubViewport" parent_id_path=PackedInt32Array(1430353953, 1665233511) index="0" unique_id=328629696]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.490425, 4.866277, 6.1519995)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.073616, 4.866277, 0.545877)
 
 [node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1908825413]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.045214, 0, 4.4677563)

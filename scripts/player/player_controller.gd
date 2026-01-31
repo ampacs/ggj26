@@ -1,4 +1,4 @@
-extends RigidBody3D
+class_name PlayerController extends RigidBody3D
 
 @export var playerId := "player1"
 
@@ -26,7 +26,6 @@ var _last_movement_direction := Vector3.BACK
 
 func _isGrounded() -> bool:
 	var space_state := self.get_world_3d().direct_space_state
-	# var look  get_viewport().get_camera_3d()
 	var query := PhysicsRayQueryParameters3D.create(self.global_position + Vector3.UP * .5, self.global_position + Vector3(0, -.75, 0), 1 << 7)
 	query.collide_with_areas = false
 	query.collide_with_bodies = true

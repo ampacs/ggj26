@@ -3,29 +3,32 @@
 [ext_resource type="PackedScene" uid="uid://cadotjj30ar4m" path="res://scenes/Landscape.tscn" id="1_nl21o"]
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="2_7xcvg"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="3_wppml"]
+[ext_resource type="Material" uid="uid://dtqbpdq3svon0" path="res://Shaders/M_Background.tres" id="4_wppml"]
+[ext_resource type="ArrayMesh" uid="uid://cmsr5totrpfdc" path="res://Assets/Environment/SM_Background_Cylinder.res" id="5_h1ckg"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4duur"]
-sky_top_color = Color(0.2629906, 0.43136442, 0.78330857, 1)
-sky_horizon_color = Color(0.7345609, 0.6236303, 0.78109884, 1)
-ground_bottom_color = Color(0.17335007, 0.14485988, 0.30643228, 1)
-ground_horizon_color = Color(0.73333335, 0.62352943, 0.78039217, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3dw1f"]
 
 [sub_resource type="Sky" id="Sky_5hyia"]
-sky_material = SubResource("ProceduralSkyMaterial_4duur")
+sky_material = SubResource("ProceduralSkyMaterial_3dw1f")
+process_mode = 3
 
 [sub_resource type="Environment" id="Environment_8el2m"]
 background_mode = 2
 sky = SubResource("Sky_5hyia")
-tonemap_mode = 2
-ssao_enabled = true
-glow_enabled = true
+tonemap_exposure = 2.3
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.307255, 0.39, 0.12869999, 1)
+fog_density = 0.9
+fog_sky_affect = 0.844
+fog_depth_begin = -10.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a141m"]
 size = Vector3(256, 1, 256)
 
 [sub_resource type="BoxMesh" id="BoxMesh_3dnxu"]
 
-[node name="MechanicsGym" type="Node3D" unique_id=1468441563]
+[node name="MechanicsGym2" type="Node3D" unique_id=1468441563]
 
 [node name="Landscape" parent="." unique_id=2039633298 instance=ExtResource("1_nl21o")]
 
@@ -179,5 +182,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.073616, 4.866277, 0.545877
 [node name="Player3D" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1908825413]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.045214, 0, 4.4677563)
 move_speed = 2.0
+
+[node name="SmBackgroundCylinder" type="MeshInstance3D" parent="." unique_id=771819065]
+transform = Transform3D(0.525333, 0, -0.1833105, 0, 0.4582798, 0, 0.1833105, 0, 0.525333, 31.671524, 0, -7.1768227)
+material_override = ExtResource("4_wppml")
+mesh = ExtResource("5_h1ckg")
+
+[node name="SmBackgroundCylinder2" type="MeshInstance3D" parent="." unique_id=236372250]
+transform = Transform3D(-0.6442358, 0, -0.45864722, 0, 0.7908205, 0, 0.45864722, 0, -0.6442358, 31.671524, 0, -7.1768227)
+material_override = ExtResource("4_wppml")
+mesh = ExtResource("5_h1ckg")
+
+[node name="SmBackgroundCylinder3" type="MeshInstance3D" parent="." unique_id=996126894]
+transform = Transform3D(-1.0012312, 0, 0.25815323, 0, 1.0339762, 0, -0.25815323, 0, -1.0012312, 31.671524, 0, -7.1768227)
+material_override = ExtResource("4_wppml")
+mesh = ExtResource("5_h1ckg")
 
 [editable path="GameView"]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bj7wn04iexcfn"
-path="res://.godot/imported/SM_MetalContainer_A.glb-3675a9d23cc96104dae4773d1d6d7d50.scn"
+uid="uid://cmfro4qy125gv"
+path="res://.godot/imported/SM_Background.glb-b7f86c94ba567f8be47ad5706a6510df.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_MetalContainer_A.glb"
-dest_files=["res://.godot/imported/SM_MetalContainer_A.glb-3675a9d23cc96104dae4773d1d6d7d50.scn"]
+source_file="res://Assets/Environment/SM_Background.glb"
+dest_files=["res://.godot/imported/SM_Background.glb-b7f86c94ba567f8be47ad5706a6510df.scn"]
 
 [params]
 
@@ -39,14 +39,14 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "meshes": {
-"SM_MetalContainer_A_SM_MetalContainer_A": {
+"SM_Background_Cylinder": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_MetalContainer_A.res",
-"save_to_file/path": "uid://bwh3fe1k12mvs"
+"save_to_file/fallback_path": "res://Assets/Environment/SM_Background_Cylinder.res",
+"save_to_file/path": "uid://cmsr5totrpfdc"
 }
 }
 }

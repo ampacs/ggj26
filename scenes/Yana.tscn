@@ -28,7 +28,7 @@ size = Vector3(256, 1, 256)
 
 [sub_resource type="BoxMesh" id="BoxMesh_3dnxu"]
 
-[node name="MechanicsGym" type="Node3D" unique_id=1468441563]
+[node name="MechanicsGym2" type="Node3D" unique_id=1468441563]
 
 [node name="Landscape" parent="." unique_id=2039633298 instance=ExtResource("1_nl21o")]
 

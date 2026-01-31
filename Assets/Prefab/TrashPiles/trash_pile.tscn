@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://chunpjj23a1qk"]
+
+[ext_resource type="PackedScene" uid="uid://brphfw0bm4j2t" path="res://Assets/Prefab/TrashPiles/SM_TrashPile_A.tscn" id="1_7syue"]
+
+[node name="TrashPile" type="StaticBody3D" unique_id=14329098]
+
+[node name="SmTrashPileA" parent="." unique_id=933689941 instance=ExtResource("1_7syue")]

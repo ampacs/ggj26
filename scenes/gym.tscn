@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="1_5hyia"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="2_5hyia"]
+[ext_resource type="PackedScene" uid="uid://cm1eb2ch5sw3m" path="res://scenes/items/item_mask.tscn" id="2_8el2m"]
+[ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/item_throwable.tscn" id="3_8el2m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4duur"]
 sky_top_color = Color(0.2629906, 0.43136442, 0.78330857, 1)
@@ -71,4 +73,12 @@ transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2, 0, 10)
 [node name="1cubic5" parent="Environment/4Mcubes" unique_id=454767688 instance=ExtResource("1_5hyia")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2, 0, 14)
 
+[node name="Items" type="Node" parent="." unique_id=1641200632]
+
+[node name="ItemMask" parent="Items" unique_id=827138187 instance=ExtResource("2_8el2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
+
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
+
+[node name="ItemThrowable" parent="." unique_id=656425463 instance=ExtResource("3_8el2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1743643, 0.047082905, 1.5140238)

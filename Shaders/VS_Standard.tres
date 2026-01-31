@@ -32,6 +32,10 @@ op_type = 4
 [sub_resource type="VisualShaderNodeBooleanParameter" id="VisualShaderNodeBooleanParameter_qay76"]
 parameter_name = "RandomColor"
 
+[sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_bmdo7"]
+default_input_values = [0, 1.0, 1, 0.0]
+operator = 3
+
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_myd8p"]
 parameter_name = "ColorParameter"
 default_value_enabled = true
@@ -84,4 +88,6 @@ nodes/fragment/17/node = SubResource("VisualShaderNodeSwitch_tf0or")
 nodes/fragment/17/position = Vector2(-638.55115, 256.45483)
 nodes/fragment/18/node = SubResource("VisualShaderNodeBooleanParameter_qay76")
 nodes/fragment/18/position = Vector2(-1072, 264)
-nodes/fragment/connections = PackedInt32Array(6, 0, 0, 0, 5, 0, 6, 1, 7, 0, 0, 3, 9, 0, 0, 4, 12, 0, 14, 0, 14, 1, 13, 1, 14, 0, 13, 0, 13, 0, 15, 0, 14, 2, 15, 1, 15, 0, 16, 0, 3, 0, 17, 2, 16, 0, 17, 1, 18, 0, 17, 0, 17, 0, 6, 0)
+nodes/fragment/21/node = SubResource("VisualShaderNodeFloatOp_bmdo7")
+nodes/fragment/21/position = Vector2(-1224, 736)
+nodes/fragment/connections = PackedInt32Array(6, 0, 0, 0, 5, 0, 6, 1, 7, 0, 0, 3, 9, 0, 0, 4, 12, 0, 14, 0, 14, 1, 13, 1, 14, 0, 13, 0, 13, 0, 15, 0, 14, 2, 15, 1, 15, 0, 16, 0, 3, 0, 17, 2, 16, 0, 17, 1, 18, 0, 17, 0, 17, 0, 6, 0, 21, 0, 16, 0)

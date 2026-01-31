@@ -1,6 +1,6 @@
 extends Control
 
-@onready var resume_button: Button = $PanelContainer/VBoxContainer/Resume
+@onready var resume_button: TextureButton = $VBoxContainer/Resume
 
 func _ready() -> void:
 	visible = false

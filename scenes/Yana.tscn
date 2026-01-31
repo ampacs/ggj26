@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://2rgj5osq15u6"]
 
+[ext_resource type="PackedScene" uid="uid://c3c7kiwduxnok" path="res://scenes/menus/pause_menu.tscn" id="1_3dw1f"]
 [ext_resource type="PackedScene" uid="uid://cadotjj30ar4m" path="res://scenes/Landscape.tscn" id="1_nl21o"]
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="2_7xcvg"]
 [ext_resource type="Material" uid="uid://7esklf7am4tt" path="res://Shaders/M_StandardGround.tres" id="2_pb8jf"]
@@ -193,6 +194,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.548668, 0, -7.139205)
 
 [node name="Player3D2" parent="GameView/HBoxContainer/SubViewportContainer2/SubViewport" parent_id_path=PackedInt32Array(1430353953, 754812516) index="0" unique_id=1241094078]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.224304, 0, 4.9258842)
+
+[node name="PauseMenu" parent="." unique_id=201641814 instance=ExtResource("1_3dw1f")]
 
 [node name="SmBackgroundCylinder" type="MeshInstance3D" parent="." unique_id=771819065]
 transform = Transform3D(0.525333, 0, -0.1833105, 0, 0.4582798, 0, 0.1833105, 0, 0.525333, 31.671524, 0, -7.1768227)

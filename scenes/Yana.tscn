@@ -14,8 +14,15 @@
 [ext_resource type="ArrayMesh" uid="uid://db3q1xwex6ins" path="res://assets/props/SM_PizzaBox_A_SM_PizzaBox_A.res" id="8_6grhy"]
 [ext_resource type="ArrayMesh" uid="uid://dw4t0oyqpvoh6" path="res://assets/props/SM_Streetsign_A.res" id="9_bu8vt"]
 [ext_resource type="ArrayMesh" uid="uid://ctoowd1877h5h" path="res://assets/props/M_Roy/SM_Wall_6_Cube_059.res" id="10_bu8vt"]
+[ext_resource type="PackedScene" uid="uid://cm1eb2ch5sw3m" path="res://scenes/items/item_mask.tscn" id="11_cmdcp"]
+[ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/throwable/throwable_can_a.tscn" id="12_gfq0h"]
+[ext_resource type="PackedScene" uid="uid://cg1strmb5jvf0" path="res://scenes/items/throwable/throwable_can_b.tscn" id="13_6ygc8"]
+[ext_resource type="PackedScene" uid="uid://qxw47dr0rv6p" path="res://scenes/items/throwable/throwable_cup_a.tscn" id="14_6fosp"]
+[ext_resource type="PackedScene" uid="uid://cidt08kik7ubg" path="res://scenes/items/throwable/throwable_trashbag.tscn" id="15_3iidx"]
 [ext_resource type="ArrayMesh" uid="uid://c4kwfo7uj2i8k" path="res://assets/props/M_Roy/SM_Wall_1_Cube_018.res" id="15_4l7rc"]
+[ext_resource type="PackedScene" uid="uid://cyr5sjdhwr1k7" path="res://scenes/items/throwable/throwable_trashpiece_c.tscn" id="16_isnu2"]
 [ext_resource type="ArrayMesh" uid="uid://b2caihhr0nko5" path="res://assets/props/M_Roy/SM_Garbage_bags_Cube_100.res" id="16_jaj7i"]
+[ext_resource type="PackedScene" uid="uid://cuvsyq8cdyu45" path="res://scenes/items/throwable/throwable_trashpiece_d.tscn" id="17_kd51e"]
 [ext_resource type="ArrayMesh" uid="uid://wq04lbiqycye" path="res://assets/props/M_Roy/SM_Box_Crate_Cube_112.res" id="17_l5hkg"]
 [ext_resource type="ArrayMesh" uid="uid://clt4npf8w7aag" path="res://assets/props/M_Roy/SM_Car_Cloth_Plane_004.res" id="18_5jshg"]
 [ext_resource type="ArrayMesh" uid="uid://cnoxh44nlrphb" path="res://assets/props/M_Roy/SM_Beer_Pile_Cube_532.res" id="19_04h7r"]
@@ -1540,6 +1547,29 @@ mesh = ExtResource("10_bu8vt")
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="Environment/5Mcubes" unique_id=1255006087]
 transform = Transform3D(0.033246174, 0, 0.9937258, 0, 1.225749, 0, -1.2153099, 0, 0.027184492, -3.0896082, 0.9195052, -8.600456)
 shape = SubResource("BoxShape3D_i4ei4")
+
+[node name="Items" type="Node" parent="." unique_id=1265775962]
+
+[node name="ItemMask" parent="Items" unique_id=1470653154 instance=ExtResource("11_cmdcp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.70619, 0.27048218, -8.721336)
+
+[node name="ItemThrowableCan" parent="Items" unique_id=2072047785 instance=ExtResource("12_gfq0h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.587696, 0.487323, -7.8120914)
+
+[node name="ItemThrowableCanB" parent="Items" unique_id=649791624 instance=ExtResource("13_6ygc8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.687935, 0.82771397, -9.060427)
+
+[node name="ItemThrowableCupA" parent="Items" unique_id=1101964127 instance=ExtResource("14_6fosp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.063164, 1.0112565, -7.6579175)
+
+[node name="ItemThrowableCupA2" parent="Items" unique_id=1003862710 instance=ExtResource("15_3iidx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.39089, 0.31022024, -7.6875887)
+
+[node name="ItemThrowableTrashpieceC" parent="Items" unique_id=2122261411 instance=ExtResource("16_isnu2")]
+transform = Transform3D(0.9944634, 0.10508389, 0, -0.10508389, 0.9944634, 0, 0, 0, 1, 31.700788, 0.1596694, -10.350033)
+
+[node name="ItemThrowableCupA3" parent="Items" unique_id=1011450971 instance=ExtResource("17_kd51e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.741753, 0.22608566, -8.849117)
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("3_wppml")]
 

@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://c3c7kiwduxnok"]
 
 [ext_resource type="Script" uid="uid://6y3s4nroxfig" path="res://scripts/menus/pause_menu.gd" id="1_7unhi"]
+[ext_resource type="Texture2D" uid="uid://df0dx1txmvx56" path="res://assets/menus/Buttons/Normal/resume_normal.png" id="2_2wrho"]
 [ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_7unhi"]
+[ext_resource type="Texture2D" uid="uid://b1q7unhbadtrw" path="res://assets/menus/background.png" id="2_xiui8"]
+[ext_resource type="Texture2D" uid="uid://jcgp2k1i54dg" path="res://assets/menus/Buttons/Selected/resume_pressed.png" id="3_gh0u6"]
+[ext_resource type="Texture2D" uid="uid://co2hp0435pe7r" path="res://assets/menus/Buttons/Normal/restart_normal.png" id="4_eyfc8"]
+[ext_resource type="Texture2D" uid="uid://c4uxert5f0c3x" path="res://assets/menus/Buttons/Selected/restart_pressed.png" id="5_xiui8"]
 
 [node name="PauseMenu" type="Control" unique_id=201641814]
 process_mode = 3
@@ -13,46 +18,47 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7unhi")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=950226107]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=923759469]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.17719492, 0.13202891, 0, 1)
-metadata/_edit_use_anchors_ = true
+texture = ExtResource("2_xiui8")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=747206467]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1863193488]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -252.0
-offset_top = -51.75
-offset_right = 252.0
-offset_bottom = 51.75
+offset_left = -415.0
+offset_top = -395.0
+offset_right = 415.0
+offset_bottom = 395.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1863193488]
-layout_mode = 2
-focus_mode = 2
-
-[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=537909774]
+[node name="Resume" type="TextureButton" parent="VBoxContainer" unique_id=310048487]
 layout_mode = 2
 size_flags_vertical = 0
-text = "Resume"
+texture_normal = ExtResource("2_2wrho")
+texture_pressed = ExtResource("3_gh0u6")
+texture_focused = ExtResource("3_gh0u6")
 
-[node name="Restart" type="Button" parent="PanelContainer/VBoxContainer" unique_id=914369649]
+[node name="Restart" type="TextureButton" parent="VBoxContainer" unique_id=1254291564]
 layout_mode = 2
-text = "Restart"
+texture_normal = ExtResource("4_eyfc8")
+texture_hover = ExtResource("5_xiui8")
+texture_focused = ExtResource("5_xiui8")
 
-[node name="Quit" parent="PanelContainer/VBoxContainer" unique_id=314820531 instance=ExtResource("2_7unhi")]
+[node name="Quit" parent="VBoxContainer" unique_id=314820531 instance=ExtResource("2_7unhi")]
 layout_mode = 2
 
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]

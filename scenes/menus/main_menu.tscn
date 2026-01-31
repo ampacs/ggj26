@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c316m6ovwsluh"]
 
 [ext_resource type="Script" uid="uid://ddpbstf1dc27w" path="res://scripts/menus/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://0k8umtiuon7d" path="res://scripts/menus/start.gd" id="2_2o76q"]
 [ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_ovrgc"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ovrgc"]
@@ -38,6 +39,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_vue75")
 text = "Start game"
+script = ExtResource("2_2o76q")
 
 [node name="Quit" parent="VBoxContainer" unique_id=314820531 instance=ExtResource("2_ovrgc")]
 layout_mode = 2

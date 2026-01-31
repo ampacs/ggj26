@@ -1,5 +1,7 @@
 extends Control
 
+@onready var resume_button: Button = $PanelContainer/VBoxContainer/Resume
+
 func _ready() -> void:
 	visible = false
 
@@ -20,6 +22,9 @@ func resume() -> void:
 func pause() -> void:
 	get_tree().paused = true
 	visible = true
+	
+	await get_tree().process_frame
+	resume_button.grab_focus()
 
 func _on_resume_pressed() -> void:
 	resume()

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://br5l3ygkuyniu"]
+
+[ext_resource type="ArrayMesh" uid="uid://dpn2ncrwwm2q2" path="res://assets/prefab/Foliage/SM_Plant_E_SM_Plant_E.res" id="1_utiqb"]
+
+[node name="SmPlantESmPlantE" type="MeshInstance3D" unique_id=923534644]
+transform = Transform3D(0.5, 0, 0, 0, 0.4829629, 0.12940952, 0, -0.12940952, 0.4829629, 0, 0, 0)
+mesh = ExtResource("1_utiqb")

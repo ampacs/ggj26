@@ -1,0 +1,24 @@
+[gd_resource type="VisualShader" format=3 uid="uid://wufkgaihbrd6"]
+
+[sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_myd8p"]
+parameter_name = "ColorParameter"
+default_value_enabled = true
+default_value = Color(0.66808355, 0.41189572, 0.775829, 1)
+
+[sub_resource type="VisualShaderNodeTextureParameterTriplanar" id="VisualShaderNodeTextureParameterTriplanar_myd8p"]
+parameter_name = "TextureParameterTriplanar"
+
+[sub_resource type="VisualShaderNodeColorOp" id="VisualShaderNodeColorOp_7vbf7"]
+operator = 4
+
+[resource]
+preview_params/TextureParameterTriplanar = "Resource(\"uid://ddprscrpsofah\", \"res://demo/assets/textures/ground037_alb_ht.png\")"
+preview_params/triplanar_scale = "Vector3(0.1, 0.1, 0.1)"
+nodes/fragment/0/position = Vector2(560, 272)
+nodes/fragment/3/node = SubResource("VisualShaderNodeColorParameter_myd8p")
+nodes/fragment/3/position = Vector2(-216, 128)
+nodes/fragment/5/node = SubResource("VisualShaderNodeTextureParameterTriplanar_myd8p")
+nodes/fragment/5/position = Vector2(-264, 352)
+nodes/fragment/6/node = SubResource("VisualShaderNodeColorOp_7vbf7")
+nodes/fragment/6/position = Vector2(160, 216)
+nodes/fragment/connections = PackedInt32Array(3, 0, 6, 0, 6, 0, 0, 0, 5, 0, 6, 1)

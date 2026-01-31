@@ -1,11 +1,15 @@
 [gd_scene format=3 uid="uid://c8rp34rlhm6ny"]
 
 [ext_resource type="Script" uid="uid://r78ub0yf4qn0" path="res://scripts/menus/quit_button.gd" id="1_5ic3m"]
+[ext_resource type="Texture2D" uid="uid://csdlgo2vukvff" path="res://Assets/Menus/Buttons/Normal/quit_normal.png" id="1_au8f8"]
+[ext_resource type="Texture2D" uid="uid://dm6fagjev22h5" path="res://Assets/Menus/Buttons/Selected/quit_pressed.png" id="2_ap3i6"]
 
-[node name="Quit" type="Button" unique_id=314820531]
+[node name="Quit" type="TextureButton" unique_id=1680740220]
 offset_right = 365.0
 offset_bottom = 64.0
-text = "Quit"
+texture_normal = ExtResource("1_au8f8")
+texture_pressed = ExtResource("2_ap3i6")
+texture_focused = ExtResource("2_ap3i6")
 script = ExtResource("1_5ic3m")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

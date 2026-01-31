@@ -1,27 +1,39 @@
 [gd_scene format=3 uid="uid://dbglff4ljymqf"]
 
-[ext_resource type="PackedScene" uid="uid://sq04bi5wuvqh" path="res://Assets/Props/SM_TrashBag_C.glb" id="1_doc8o"]
-[ext_resource type="PackedScene" uid="uid://dkh7gxrd4pdh0" path="res://Assets/Props/SM_TrashContainer_A.glb" id="1_mfo01"]
-[ext_resource type="PackedScene" uid="uid://bb4ygpp37216g" path="res://Assets/Props/SM_TrashBag_D.glb" id="2_5l35f"]
-[ext_resource type="PackedScene" uid="uid://cvgy078epd1wt" path="res://Assets/Props/SM_TrashBag_A.glb" id="2_m56pb"]
-[ext_resource type="PackedScene" uid="uid://dyrcv1a8udv0u" path="res://Assets/Props/SM_TrashBin_A.glb" id="3_mhckc"]
-[ext_resource type="PackedScene" uid="uid://bj7wn04iexcfn" path="res://Assets/Props/SM_MetalContainer_A.glb" id="4_iknf0"]
+[ext_resource type="ArrayMesh" uid="uid://bsekk3ce8shxt" path="res://Assets/Props/SM_Box_A.res" id="3_k82ec"]
+[ext_resource type="ArrayMesh" uid="uid://cu4ysq4geg3db" path="res://Assets/Props/SM_Box_B.res" id="4_cxrnp"]
+[ext_resource type="ArrayMesh" uid="uid://ddcvr7v4u8l0t" path="res://Assets/Props/SM_Box_C.res" id="5_bgkh3"]
 [ext_resource type="PackedScene" uid="uid://ba5sc5siciwcd" path="res://Assets/Props/SM_Streetsign_A.glb" id="5_m56pb"]
-[ext_resource type="PackedScene" uid="uid://d1h8lsyj1fos" path="res://Assets/Props/SM_MetalWavySheet_A.glb" id="6_mhckc"]
-[ext_resource type="PackedScene" uid="uid://baj0caom82rje" path="res://Assets/Props/SM_Box_A.glb" id="7_iknf0"]
+[ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://Assets/Props/SM_EmptyCan_A.res" id="6_r0x34"]
+[ext_resource type="ArrayMesh" uid="uid://duoayeltfeepf" path="res://Assets/Props/SM_EmptyCan_B.res" id="7_b2sxo"]
 [ext_resource type="PackedScene" uid="uid://b77efs8cl4rrw" path="res://scenes/AssetPrefabs/PalletTunnel.tscn" id="7_qgq1y"]
-[ext_resource type="PackedScene" uid="uid://ccgncqwcohw6i" path="res://Assets/Props/SM_Tire_A.glb" id="8_3tbrh"]
-[ext_resource type="PackedScene" uid="uid://bprivpak8yn10" path="res://Assets/Props/SM_EmptyCan_A.glb" id="16_xjevo"]
-[ext_resource type="PackedScene" uid="uid://twn7ppwuw6du" path="res://Assets/Props/SM_EmptyCan_B.glb" id="17_66d6y"]
-[ext_resource type="PackedScene" uid="uid://cuti70r0wr30e" path="res://Assets/Props/SM_EmptyCup_A.glb" id="18_64jcb"]
-[ext_resource type="PackedScene" uid="uid://dlkeor5877qmq" path="res://Assets/Props/SM_PizzaBox_A.glb" id="19_omef0"]
-[ext_resource type="PackedScene" uid="uid://dh8skj6enn5b" path="res://Assets/Props/SM_TrashBag_B.glb" id="20_qgq1y"]
-[ext_resource type="PackedScene" uid="uid://cde28gwgbyiet" path="res://Assets/Props/SM_TrashPiece_A.glb" id="21_aej6r"]
-[ext_resource type="PackedScene" uid="uid://bl7g4c3jfeohs" path="res://Assets/Props/SM_TrashPiece_B.glb" id="22_7d4sr"]
-[ext_resource type="PackedScene" uid="uid://cyu52tffg5jtm" path="res://Assets/Props/SM_TrashPiece_C.glb" id="23_k82ec"]
-[ext_resource type="PackedScene" uid="uid://c1uso2mixif3w" path="res://Assets/Props/SM_TrashPiece_D.glb" id="24_cxrnp"]
-[ext_resource type="PackedScene" uid="uid://4wsfg43l862p" path="res://Assets/Props/SM_TrashPiece_E.glb" id="25_bgkh3"]
-[ext_resource type="PackedScene" path="res://scenes/player_3d.tscn" id="32_aej6r"]
+[ext_resource type="ArrayMesh" uid="uid://c8gboqxrvhf2" path="res://Assets/Props/SM_EmptyCup_A.res" id="8_si72r"]
+[ext_resource type="ArrayMesh" uid="uid://cvipli6xdky0b" path="res://Assets/Props/SM_FullTrashBin_A.res" id="9_hl4d5"]
+[ext_resource type="PackedScene" uid="uid://cx5mvlm0ne2ed" path="res://Assets/Props/SM_MetalBarrel_A.glb" id="10_f0gft"]
+[ext_resource type="ArrayMesh" uid="uid://bwh3fe1k12mvs" path="res://Assets/Props/SM_MetalContainer_A.res" id="11_5yjuy"]
+[ext_resource type="ArrayMesh" uid="uid://be3r0h12myehb" path="res://Assets/Props/SM_MetalPipe_A.res" id="12_c7i5d"]
+[ext_resource type="ArrayMesh" uid="uid://bqqc3oew6ys5e" path="res://Assets/Props/SM_MetalPipe_B.res" id="13_wctrv"]
+[ext_resource type="ArrayMesh" uid="uid://dsiwxb5xhpp8x" path="res://Assets/Props/SM_MetalWavySheet_A_001.res" id="14_7qmso"]
+[ext_resource type="ArrayMesh" uid="uid://b4fmb7plcxgej" path="res://Assets/Props/SM_MetalWavySheet_B.res" id="15_fgitj"]
+[ext_resource type="ArrayMesh" uid="uid://cg7y121c0yf0r" path="res://Assets/Props/SM_OfficeBin_A.res" id="16_70nik"]
+[ext_resource type="ArrayMesh" uid="uid://db3q1xwex6ins" path="res://Assets/Props/SM_PizzaBox_A.res" id="17_ys8s4"]
+[ext_resource type="ArrayMesh" uid="uid://c8na62s86vybl" path="res://Assets/Props/SM_Plank_A.res" id="18_sjevj"]
+[ext_resource type="ArrayMesh" uid="uid://bthrmm1n05gqu" path="res://Assets/Props/SM_Plank_B.res" id="19_3jh73"]
+[ext_resource type="ArrayMesh" uid="uid://cdti8qq1xx1ej" path="res://Assets/Props/SM_Tire_A.res" id="21_rh1qa"]
+[ext_resource type="ArrayMesh" uid="uid://duun11gfyxbhv" path="res://Assets/Props/SM_TrashBag_A.res" id="22_7jxty"]
+[ext_resource type="ArrayMesh" uid="uid://c5dnh3ktygls0" path="res://Assets/Props/SM_TrashBag_B.res" id="23_rgmgy"]
+[ext_resource type="ArrayMesh" uid="uid://iqnrdl5pt80f" path="res://Assets/Props/SM_TrashBag_C.res" id="24_ywm7b"]
+[ext_resource type="ArrayMesh" uid="uid://cmko8c6cntps1" path="res://Assets/Props/SM_TrashBinLid_A.res" id="25_bfb6y"]
+[ext_resource type="ArrayMesh" uid="uid://dqa5qwv2pt2od" path="res://Assets/Props/SM_TrashBin_A.res" id="26_vsejo"]
+[ext_resource type="ArrayMesh" uid="uid://cbi0slmw3t817" path="res://Assets/Props/SM_TrashContainer_A.res" id="27_amfag"]
+[ext_resource type="ArrayMesh" uid="uid://dvofhdgepildm" path="res://Assets/Props/SM_TrashPiece_A.res" id="28_oqtig"]
+[ext_resource type="ArrayMesh" uid="uid://0oyqqu04fwqa" path="res://Assets/Props/SM_TrashPiece_B.res" id="29_y7ab4"]
+[ext_resource type="ArrayMesh" uid="uid://dalt7osyobcdm" path="res://Assets/Props/SM_TrashPiece_C.res" id="30_c822p"]
+[ext_resource type="ArrayMesh" uid="uid://nw0feerq27xc" path="res://Assets/Props/SM_TrashPiece_D.res" id="31_64l5r"]
+[ext_resource type="ArrayMesh" uid="uid://c1p7xsot1nh3g" path="res://Assets/Props/SM_TrashPiece_E.res" id="32_1b2g7"]
+[ext_resource type="PackedScene" uid="uid://chu7ea5rl4ors" path="res://scenes/player_3d.tscn" id="32_aej6r"]
+[ext_resource type="ArrayMesh" uid="uid://cd61fna2bkel1" path="res://Assets/Props/SM_WheelieBin_A.res" id="33_ad24e"]
+[ext_resource type="ArrayMesh" uid="uid://ck2w1hnpb7ywp" path="res://Assets/Props/SM_WheelieBin_B.res" id="34_355x7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -60,71 +72,137 @@ shape = SubResource("BoxShape3D_jl2mt")
 transform = Transform3D(22.491467, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 0.27629566, 0.0071089864, -0.03187561)
 mesh = SubResource("BoxMesh_al161")
 
-[node name="SM_TrashBag_C" parent="Floor" unique_id=1090437251 instance=ExtResource("1_doc8o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.746598, 0.9671946, 4.9998727)
-
-[node name="SM_TrashBag_D" parent="Floor" unique_id=2087351978 instance=ExtResource("2_5l35f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.336072, 0.6891256, 4.4232516)
-
-[node name="SM_TrashContainer_A" parent="." unique_id=808603355 instance=ExtResource("1_mfo01")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.857166, 0, 6.4130764)
-
-[node name="SM_TrashBag_A" parent="." unique_id=1663987759 instance=ExtResource("2_m56pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.933161, 0.3669151, 4.923335)
-
-[node name="SM_TrashBin_A" parent="." unique_id=1245042138 instance=ExtResource("3_mhckc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.988013, 0.51615536, 4.1911373)
-
-[node name="SM_MetalContainer_A" parent="." unique_id=1961899457 instance=ExtResource("4_iknf0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.053797, 0.7848243, 2.342874)
-
 [node name="Node3D" parent="." unique_id=297087048 instance=ExtResource("7_qgq1y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6267986, 0, 1.5968523)
-
-[node name="SM_Streetsign_A" parent="." unique_id=1049584826 instance=ExtResource("5_m56pb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.76012, 1.7674705, 0.76808476)
-
-[node name="SM_MetalWavySheet_A" parent="." unique_id=1656002758 instance=ExtResource("6_mhckc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.937754, 0.07394567, 8.1863)
-
-[node name="SM_Box_A" parent="." unique_id=1573070900 instance=ExtResource("7_iknf0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9975743, 0.22956333, 3.9116473)
-
-[node name="SM_Tire_A" parent="." unique_id=1897767824 instance=ExtResource("8_3tbrh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8427367, 0.14623663, 5.081157)
-
-[node name="SM_EmptyCan_A" parent="." unique_id=693701330 instance=ExtResource("16_xjevo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4703145, 0.096045576, 3.6940022)
-
-[node name="SM_EmptyCan_B" parent="." unique_id=1298619915 instance=ExtResource("17_66d6y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2310677, 0.028484259, 3.7692056)
-
-[node name="SM_EmptyCup_A" parent="." unique_id=174730914 instance=ExtResource("18_64jcb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.407857, 0.071629375, 3.5783257)
-
-[node name="SM_PizzaBox_A" parent="." unique_id=1819110971 instance=ExtResource("19_omef0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.77482, 0.14551842, 2.919903)
-
-[node name="SM_TrashBag_B" parent="." unique_id=1337539185 instance=ExtResource("20_qgq1y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0246544, 0.3669153, 4.542314)
-
-[node name="SM_TrashPiece_A" parent="." unique_id=1528115265 instance=ExtResource("21_aej6r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2314405, 0.10515492, 3.2538486)
-
-[node name="SM_TrashPiece_B" parent="." unique_id=969324833 instance=ExtResource("22_7d4sr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1590157, 0.046196055, 3.1171663)
-
-[node name="SM_TrashPiece_C" parent="." unique_id=1397045531 instance=ExtResource("23_k82ec")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2660694, 0.095712565, 2.9472344)
-
-[node name="SM_TrashPiece_D" parent="." unique_id=542770491 instance=ExtResource("24_cxrnp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9807577, 0.031042442, 3.0106356)
-
-[node name="SM_TrashPiece_E" parent="." unique_id=224860112 instance=ExtResource("25_bgkh3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.01002, 0.036297027, 3.217722)
 
 [node name="Node3D2" parent="." unique_id=1930975740 instance=ExtResource("7_qgq1y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4713745, 0.27574778, 1.5534439)
 
 [node name="Player3D" parent="." unique_id=328629696 instance=ExtResource("32_aej6r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0204763, 0.015441775, 4.0207977)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0204763, 0.015441775, -3.5296388)
+
+[node name="SmBoxA" type="MeshInstance3D" parent="." unique_id=2123072133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3349738, 0.00028200448, 1.2795198)
+mesh = ExtResource("3_k82ec")
+
+[node name="SmBoxB" type="MeshInstance3D" parent="." unique_id=168781961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1324954, 0, 1.483269)
+mesh = ExtResource("4_cxrnp")
+
+[node name="SmBoxC" type="MeshInstance3D" parent="." unique_id=176174093]
+transform = Transform3D(0.48432103, 0, -0.8748904, 0, 1, 0, 0.8748904, 0, 0.48432103, -1.6149793, 0.000402838, 2.3576586)
+mesh = ExtResource("5_bgkh3")
+
+[node name="SmEmptyCanA" type="MeshInstance3D" parent="." unique_id=1670327302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0029864, 7.419288e-05, 2.118859)
+mesh = ExtResource("6_r0x34")
+
+[node name="SmEmptyCanB" type="MeshInstance3D" parent="." unique_id=1378571842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.978163, 0.005031745, 1.9680724)
+mesh = ExtResource("7_b2sxo")
+
+[node name="SmEmptyCupA" type="MeshInstance3D" parent="." unique_id=452673999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.84579647, 0.0008231029, 2.1199493)
+mesh = ExtResource("8_si72r")
+
+[node name="SmFullTrashBinA" type="MeshInstance3D" parent="." unique_id=1365889035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4474177, -5.9604645e-08, 2.193174)
+mesh = ExtResource("9_hl4d5")
+
+[node name="SM_MetalBarrel_A2" parent="." unique_id=387626012 instance=ExtResource("10_f0gft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3452942, 0.00050646067, 4.757779)
+
+[node name="SmMetalContainerA" type="MeshInstance3D" parent="." unique_id=1997338379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.243011, 0.0011972785, -0.14469874)
+mesh = ExtResource("11_5yjuy")
+
+[node name="SmMetalPipeA" type="MeshInstance3D" parent="." unique_id=1060251130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.143262, 0.9196191, -1.028595)
+mesh = ExtResource("12_c7i5d")
+
+[node name="SmMetalPipeB" type="MeshInstance3D" parent="." unique_id=963616669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2001057, 0.93124765, -1.624289)
+mesh = ExtResource("13_wctrv")
+
+[node name="SmMetalWavySheetA001" type="MeshInstance3D" parent="." unique_id=1078077760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.907784, 1.1920929e-07, -0.84248847)
+mesh = ExtResource("14_7qmso")
+
+[node name="SmMetalWavySheetB" type="MeshInstance3D" parent="." unique_id=216350229]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9638238, 0.0055369157, -1.5526917)
+mesh = ExtResource("15_fgitj")
+
+[node name="SmOfficeBinA" type="MeshInstance3D" parent="." unique_id=65135662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4810696, 0.0015311986, 3.0230675)
+mesh = ExtResource("16_70nik")
+
+[node name="SmPizzaBoxA" type="MeshInstance3D" parent="." unique_id=63120210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.352489, 0.14551815, 1.3942599)
+mesh = ExtResource("17_ys8s4")
+
+[node name="SmPlankA" type="MeshInstance3D" parent="." unique_id=1197221269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5292201, -4.7683716e-07, 0.39222527)
+mesh = ExtResource("18_sjevj")
+
+[node name="SmPlankB" type="MeshInstance3D" parent="." unique_id=784977616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0281792, 0.0007433668, 0.25237614)
+mesh = ExtResource("19_3jh73")
+
+[node name="SM_Streetsign_A2" parent="." unique_id=1524528566 instance=ExtResource("5_m56pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9753923, -2.3841858e-07, -2.3132443)
+
+[node name="SmTireA" type="MeshInstance3D" parent="." unique_id=1105259188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.117227554, 0.0053658783, 2.6303332)
+mesh = ExtResource("21_rh1qa")
+
+[node name="SmTrashBagA" type="MeshInstance3D" parent="." unique_id=1960700888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3352313, 0.0021152794, 1.6897597)
+mesh = ExtResource("22_7jxty")
+
+[node name="SmTrashBagB" type="MeshInstance3D" parent="." unique_id=818032900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.628978, 0.0017199516, 2.1165538)
+mesh = ExtResource("23_rgmgy")
+
+[node name="SmTrashBagC" type="MeshInstance3D" parent="." unique_id=1885636008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015781, -2.3841858e-07, 1.4038297)
+mesh = ExtResource("24_ywm7b")
+
+[node name="SmTrashBinLidA" type="MeshInstance3D" parent="." unique_id=1894812119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.807488, 0.0019756034, 3.7597094)
+mesh = ExtResource("25_bfb6y")
+
+[node name="SmTrashBinA" type="MeshInstance3D" parent="." unique_id=82688117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2665148, 4.7683716e-07, 2.654001)
+mesh = ExtResource("26_vsejo")
+
+[node name="SmTrashContainerA" type="MeshInstance3D" parent="." unique_id=1811514647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.207247, 0, 2.1542475)
+mesh = ExtResource("27_amfag")
+
+[node name="SmTrashPieceA" type="MeshInstance3D" parent="." unique_id=1904576690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1104064, 0.06352722, 3.457077)
+mesh = ExtResource("28_oqtig")
+
+[node name="SmTrashPieceB" type="MeshInstance3D" parent="." unique_id=1762560235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0029597, 0.025406279, 3.3089921)
+mesh = ExtResource("29_y7ab4")
+
+[node name="SmTrashPieceC" type="MeshInstance3D" parent="." unique_id=1114195449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81803465, 0.063226834, 3.4276495)
+mesh = ExtResource("30_c822p")
+
+[node name="SmTrashPieceD" type="MeshInstance3D" parent="." unique_id=2073894178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0960045, 0.022602376, 3.7161655)
+mesh = ExtResource("31_64l5r")
+
+[node name="SmTrashPieceE" type="MeshInstance3D" parent="." unique_id=1602791173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83913994, 0.019532755, 3.2504992)
+mesh = ExtResource("32_1b2g7")
+
+[node name="SmWheelieBinA" type="MeshInstance3D" parent="." unique_id=1564399306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.736895, 0.0038083196, 3.6732597)
+mesh = ExtResource("33_ad24e")
+
+[node name="SmWheelieBinB" type="MeshInstance3D" parent="." unique_id=1916011643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0928354, 0, 3.7157137)
+mesh = ExtResource("34_355x7")

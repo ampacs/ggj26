@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtv8cco6elqlp"
+path="res://.godot/imported/Splendid  2.mp3-5bc7c9137bf1c317a626c53b7c7d99ac.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/Splendid  2.mp3"
+dest_files=["res://.godot/imported/Splendid  2.mp3-5bc7c9137bf1c317a626c53b7c7d99ac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

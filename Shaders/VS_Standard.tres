@@ -54,8 +54,7 @@ default_value = 1.0
 
 [resource]
 modes/diffuse = 3
-modes/specular = 1
-flags/world_vertex_coords = true
+modes/specular = 2
 preview_params/TextureParameterTriplanar = "Resource(\"uid://ddprscrpsofah\", \"res://demo/assets/textures/ground037_alb_ht.png\")"
 preview_params/triplanar_scale = "Vector3(0.1, 0.1, 0.1)"
 nodes/fragment/0/position = Vector2(888, 328)

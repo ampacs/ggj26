@@ -43,34 +43,34 @@ shape = SubResource("BoxShape3D_jl2mt")
 transform = Transform3D(19.818878, 0, 0, 0, 0.99094385, 0, 0, 0, 19.818878, 0.015624523, 0.0071089864, -0.03187561)
 mesh = SubResource("BoxMesh_al161")
 
-[node name="SM_TrashBag_C" parent="Floor" unique_id=1184445494 instance=ExtResource("1_doc8o")]
+[node name="SM_TrashBag_C" parent="Floor" unique_id=1090437251 instance=ExtResource("1_doc8o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3413672, 0.9671946, 4.9998727)
 
-[node name="SM_TrashBag_D" parent="Floor" unique_id=494527797 instance=ExtResource("2_5l35f")]
+[node name="SM_TrashBag_D" parent="Floor" unique_id=2087351978 instance=ExtResource("2_5l35f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7518928, 0.6891256, 4.4232516)
 
 [node name="SM_TrashContainer_A" parent="." unique_id=808603355 instance=ExtResource("1_mfo01")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2307992, 0, 6.4130764)
 
-[node name="SM_TrashBag_A" parent="." unique_id=2144508790 instance=ExtResource("2_m56pb")]
+[node name="SM_TrashBag_A" parent="." unique_id=1663987759 instance=ExtResource("2_m56pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1548047, 0.3669151, 4.923335)
 
-[node name="SM_TrashBin_A" parent="." unique_id=1612242483 instance=ExtResource("3_mhckc")]
+[node name="SM_TrashBin_A" parent="." unique_id=1245042138 instance=ExtResource("3_mhckc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09995198, 0.51615536, 4.1911373)
 
-[node name="SM_MetalContainer_A" parent="." unique_id=348491951 instance=ExtResource("4_iknf0")]
+[node name="SM_MetalContainer_A" parent="." unique_id=1961899457 instance=ExtResource("4_iknf0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034168243, 0.7848243, 2.342874)
 
-[node name="SM_Streetsign_A" parent="." unique_id=704474688 instance=ExtResource("5_m56pb")]
+[node name="SM_Streetsign_A" parent="." unique_id=1049584826 instance=ExtResource("5_m56pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32784462, 1.7674705, 0.76808476)
 
-[node name="SM_MetalWavySheet_A" parent="." unique_id=157582948 instance=ExtResource("6_mhckc")]
+[node name="SM_MetalWavySheet_A" parent="." unique_id=1656002758 instance=ExtResource("6_mhckc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15021098, 0.07394567, 8.1863)
 
 [node name="SM_EmptyBox_A" parent="." unique_id=1573070900 instance=ExtResource("7_iknf0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0903907, 0.22956333, 3.9116473)
 
-[node name="SM_Tire_A" parent="." unique_id=70574323 instance=ExtResource("8_3tbrh")]
+[node name="SM_Tire_A" parent="." unique_id=1897767824 instance=ExtResource("8_3tbrh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2452283, 0.14623663, 5.081157)
 
 [node name="SM_Trashbag" parent="." unique_id=286695970 instance=ExtResource("9_pvmhy")]
@@ -109,13 +109,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6176505, 0.096045576, 3.694
 [node name="SM_EmptyCan_B" parent="." unique_id=1298619915 instance=ExtResource("17_66d6y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8568976, 0.028484259, 3.7692056)
 
-[node name="SM_EmptyCup_A" parent="." unique_id=1888934016 instance=ExtResource("18_64jcb")]
+[node name="SM_EmptyCup_A" parent="." unique_id=174730914 instance=ExtResource("18_64jcb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6801081, 0.071629375, 3.5783257)
 
-[node name="SM_PizzaBox_A" parent="." unique_id=1083339602 instance=ExtResource("19_omef0")]
+[node name="SM_PizzaBox_A" parent="." unique_id=1819110971 instance=ExtResource("19_omef0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3131452, 0.14551842, 2.919903)
 
-[node name="SM_TrashBag_B" parent="." unique_id=676099816 instance=ExtResource("20_qgq1y")]
+[node name="SM_TrashBag_B" parent="." unique_id=1337539185 instance=ExtResource("20_qgq1y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0633109, 0.3669153, 4.542314)
 
 [node name="SM_TrashPiece_A" parent="." unique_id=1528115265 instance=ExtResource("21_aej6r")]

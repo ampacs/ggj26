@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://nwyu6bhr8qw5"
-path="res://.godot/imported/SM_PizzaBox_A.fbx-81b1a09dc2b17c79b6cb88edea9b31c1.scn"
+uid="uid://ba5sc5siciwcd"
+path="res://.godot/imported/SM_Streetsign_A.glb-77033e964b814b57fb7ea1a510da31c5.scn"
 
 [deps]
 
-source_file="res://Assets/Props/SM_PizzaBox_A.fbx"
-dest_files=["res://.godot/imported/SM_PizzaBox_A.fbx-81b1a09dc2b17c79b6cb88edea9b31c1.scn"]
+source_file="res://Assets/Props/SM_Streetsign_A.glb"
+dest_files=["res://.godot/imported/SM_Streetsign_A.glb-77033e964b814b57fb7ea1a510da31c5.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=true
+animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
@@ -39,18 +39,16 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "meshes": {
-"SM_PizzaBox_A": {
+"SM_Streetsign_A_SM_Streetsign_A": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_PizzaBox_A.res",
-"save_to_file/path": "uid://jvcc8h6h6pom"
+"save_to_file/fallback_path": "res://Assets/Props/SM_Streetsign_A.res",
+"save_to_file/path": "uid://dw4t0oyqpvoh6"
 }
 }
 }
-fbx/importer=0
-fbx/allow_geometry_helper_nodes=false
-fbx/embedded_image_handling=1
-fbx/naming_version=2
+gltf/naming_version=2
+gltf/embedded_image_handling=1

@@ -74,6 +74,10 @@ func finalizeThrow() -> void:
 	throwDirection = throwDirection.rotated(throwDirection.cross(Vector3.UP).normalized(), throwAngle)
 	var throwForce := throwDirection * throwSpeed;
 
+	var itemDamagerComponent: ItemDamagerComponent = heldItem.get_component(ItemDamagerComponent)
+	if itemDamagerComponent != null:
+		itemDamagerComponent.start_throw(playerController)
+
 	dropItem()
 
 	itemRigidbodyComponent.rigidbody.apply_central_impulse(throwForce)

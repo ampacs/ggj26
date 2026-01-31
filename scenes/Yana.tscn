@@ -32,6 +32,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cpdgxq1ufa2hx" path="res://assets/props/M_Roy/SM_Beer_Bottle_Cube_023.res" id="30_mwvch"]
 [ext_resource type="ArrayMesh" uid="uid://c8gboqxrvhf2" path="res://assets/props/SM_EmptyCup_A.res" id="31_jaj7i"]
 [ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://assets/props/SM_EmptyCan_A.res" id="32_l5hkg"]
+[ext_resource type="PackedScene" uid="uid://c1ltvjuf4oprp" path="res://assets/props/M_Roy/SM_Fence.glb" id="6_h1ckg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3dw1f"]
 

@@ -89,6 +89,8 @@ collision_layer = 129
 [node name="ItemMask" parent="Items" unique_id=827138187 instance=ExtResource("2_8el2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
 
+[node name="ItemThrowable" parent="Items" unique_id=2072047785 instance=ExtResource("3_8el2m")]
+
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
 
 [node name="ItemThrowableCan" parent="." unique_id=2072047785 instance=ExtResource("3_8el2m")]

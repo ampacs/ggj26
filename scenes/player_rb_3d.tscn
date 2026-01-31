@@ -14,11 +14,13 @@ height = 0.6113281
 [sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
 radius = 0.1
 
-[node name="Player3D" type="RigidBody3D" unique_id=1246661715]
+[node name="Player3D" type="RigidBody3D" unique_id=1246661715 node_paths=PackedStringArray("actor")]
 mass = 15.0
 can_sleep = false
 lock_rotation = true
+linear_damp = 0.1
 script = ExtResource("1_rwch6")
+actor = NodePath("Actor")
 acceleration = 40.0
 jump_impulse = 7.0
 time_to_reach_speed = 0.01
@@ -36,8 +38,9 @@ actor = NodePath("../Actor")
 script = ExtResource("2_1i56v")
 components = [NodePath("ActorMaskEquipperComponent"), NodePath("ActorThrowableComponent")]
 
-[node name="ActorMaskEquipperComponent" type="Node" parent="Actor" unique_id=847089414 node_paths=PackedStringArray("maskAnchor")]
+[node name="ActorMaskEquipperComponent" type="Node" parent="Actor" unique_id=847089414 node_paths=PackedStringArray("rigidbody", "maskAnchor")]
 script = ExtResource("3_syd7c")
+rigidbody = NodePath("../..")
 maskAnchor = NodePath("../../ReplaceWithPlayerScene/SM_Raccoon2/MaskAnchor")
 
 [node name="ActorThrowableComponent" type="Node" parent="Actor" unique_id=2096972157 node_paths=PackedStringArray("playerController", "rigidbody", "itemAnchor")]

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://duax5w4ms00n" path="res://scripts/items/item.gd" id="1_eq13u"]
 [ext_resource type="Script" uid="uid://tr1ch5i142xo" path="res://scripts/items/item_rigidbody_component.gd" id="2_ojstx"]
 [ext_resource type="Script" uid="uid://4jakahk7f5d8" path="res://scripts/items/item_throwable_component.gd" id="3_eq13u"]
+[ext_resource type="Script" uid="uid://dgou7y5hgtgmo" path="res://scripts/items/item_damager_component.gd" id="4_80c46"]
 [ext_resource type="ArrayMesh" uid="uid://bul5cte7iwrag" path="res://assets/props/SM_EmptyCan_A.res" id="4_ihbpe"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_4gqip"]
@@ -10,8 +11,10 @@ height = 0.21768188
 radius = 0.09472656
 
 [node name="ItemThrowableCan" type="RigidBody3D" unique_id=2072047785 node_paths=PackedStringArray("components", "collider")]
+contact_monitor = true
+max_contacts_reported = 32
 script = ExtResource("1_eq13u")
-components = [NodePath("ItemComponents/ItemRigidbodyComponent"), NodePath("ItemComponents/ItemThrowableComponent")]
+components = [NodePath("ItemComponents/ItemRigidbodyComponent"), NodePath("ItemComponents/ItemThrowableComponent"), NodePath("ItemComponents/ItemDamagerComponent")]
 collider = NodePath("CollisionShape3D")
 
 [node name="ItemComponents" type="Node" parent="." unique_id=1457239777]
@@ -22,6 +25,13 @@ rigidbody = NodePath("../..")
 
 [node name="ItemThrowableComponent" type="Node" parent="ItemComponents" unique_id=1100708541]
 script = ExtResource("3_eq13u")
+
+[node name="ItemDamagerComponent" type="Node" parent="ItemComponents" unique_id=1869235596 node_paths=PackedStringArray("item", "rigidbody", "collider", "view")]
+script = ExtResource("4_80c46")
+item = NodePath("../..")
+rigidbody = NodePath("../..")
+collider = NodePath("../../CollisionShape3D")
+view = NodePath("../../View")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=743143282]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.005153179, -2.2977558e-09, 0)

@@ -22,6 +22,8 @@ var isThrowingAllowed := false
 var startThrowTime: float
 
 func interact(item: Item) -> void:
+	if heldItem:
+		return
 	var itemThrowableComponent: ItemThrowableComponent = item.get_component(ItemThrowableComponent)
 	if itemThrowableComponent == null:
 		return
@@ -71,6 +73,10 @@ func finalizeThrow() -> void:
 	var throwDirection: Vector3 = project_on_plane(lookDirection, Vector3.UP)
 	throwDirection = throwDirection.rotated(throwDirection.cross(Vector3.UP).normalized(), throwAngle)
 	var throwForce := throwDirection * throwSpeed;
+
+	var itemDamagerComponent: ItemDamagerComponent = heldItem.get_component(ItemDamagerComponent)
+	if itemDamagerComponent != null:
+		itemDamagerComponent.start_throw(playerController)
 
 	dropItem()
 

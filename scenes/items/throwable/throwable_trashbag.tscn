@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cidt08kik7ubg"]
+
+[ext_resource type="Script" uid="uid://duax5w4ms00n" path="res://scripts/items/item.gd" id="1_6wq72"]
+[ext_resource type="Script" uid="uid://tr1ch5i142xo" path="res://scripts/items/item_rigidbody_component.gd" id="2_ioyjj"]
+[ext_resource type="Script" uid="uid://4jakahk7f5d8" path="res://scripts/items/item_throwable_component.gd" id="3_6w6cl"]
+[ext_resource type="ArrayMesh" uid="uid://duun11gfyxbhv" path="res://assets/props/SM_TrashBag_A_SM_TrashBag_A.res" id="4_6wq72"]
+[ext_resource type="Script" uid="uid://dgou7y5hgtgmo" path="res://scripts/items/item_damager_component.gd" id="4_ioyjj"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gtxo8"]
+height = 0.45880127
+radius = 0.19091797
+
+[node name="ItemThrowableCupA" type="RigidBody3D" unique_id=2072047785 node_paths=PackedStringArray("components", "collider")]
+contact_monitor = true
+max_contacts_reported = 32
+script = ExtResource("1_6wq72")
+components = [NodePath("ItemComponents/ItemRigidbodyComponent"), NodePath("ItemComponents/ItemThrowableComponent"), NodePath("ItemComponents/ItemDamagerComponent")]
+collider = NodePath("CollisionShape3D")
+
+[node name="ItemComponents" type="Node" parent="." unique_id=1457239777]
+
+[node name="ItemRigidbodyComponent" type="Node" parent="ItemComponents" unique_id=1991245014 node_paths=PackedStringArray("rigidbody")]
+script = ExtResource("2_ioyjj")
+rigidbody = NodePath("../..")
+
+[node name="ItemThrowableComponent" type="Node" parent="ItemComponents" unique_id=1100708541]
+script = ExtResource("3_6w6cl")
+
+[node name="ItemDamagerComponent" type="Node" parent="ItemComponents" unique_id=300582647 node_paths=PackedStringArray("item", "rigidbody", "collider", "view")]
+script = ExtResource("4_ioyjj")
+item = NodePath("../..")
+rigidbody = NodePath("../..")
+collider = NodePath("../../CollisionShape3D")
+view = NodePath("../../View")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=743143282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0007972701, 0.22817993, -0.00012207031)
+shape = SubResource("CylinderShape3D_gtxo8")
+
+[node name="View" type="Node3D" parent="." unique_id=2016242896]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.055333465, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="View" unique_id=1818611682]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 2.3778277e-09, 0.054398358, 0)
+mesh = ExtResource("4_6wq72")

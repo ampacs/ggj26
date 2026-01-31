@@ -1,11 +1,12 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://bsdxo2f42kn8n"]
 
 [ext_resource type="Shader" uid="uid://wufkgaihbrd6" path="res://Shaders/VS_Standard.tres" id="1_rgcfj"]
-[ext_resource type="Texture2D" uid="uid://dck3kihw03pm5" path="res://Assets/Textures/T_Tileables_blocks.png" id="2_t8leb"]
+[ext_resource type="Texture2D" uid="uid://ch5ks6kqxkcjg" path="res://Assets/Textures/T_Tileables_lines.png" id="2_t8leb"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_rgcfj")
+shader_parameter/RandomColor = false
 shader_parameter/ColorParameter = Color(0.37, 0.16847332, 0.088800006, 1)
 shader_parameter/TextureParameterTriplanar = ExtResource("2_t8leb")
 shader_parameter/Roughness = 0.0

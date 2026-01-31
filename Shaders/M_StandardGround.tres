@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://7esklf7am4tt"]
+
+[ext_resource type="Shader" uid="uid://wufkgaihbrd6" path="res://Shaders/VS_Standard.tres" id="1_uub4l"]
+[ext_resource type="Texture2D" uid="uid://dck3kihw03pm5" path="res://Assets/Textures/T_Tileables_blocks.png" id="2_uub4l"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_uub4l")
+shader_parameter/RandomColor = false
+shader_parameter/ColorParameter = Color(0.35, 0.28309166, 0.22049999, 1)
+shader_parameter/TextureParameterTriplanar = ExtResource("2_uub4l")
+shader_parameter/Roughness = 0.0
+shader_parameter/Specular = 0.5
+shader_parameter/triplanar_scale = Vector3(0.1, 0.1, 0.1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5

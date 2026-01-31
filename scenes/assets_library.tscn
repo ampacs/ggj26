@@ -37,6 +37,11 @@
 [ext_resource type="PackedScene" uid="uid://ld3lylhwgk5" path="res://assets/prefab/Props/SM_MaterialHandler_A.tscn" id="36_r0x34"]
 [ext_resource type="PackedScene" uid="uid://ci06af4jy4pn5" path="res://assets/prefab/Props/SM_Streetsign_A.tscn" id="36_si72r"]
 [ext_resource type="PackedScene" uid="uid://du6skq86d20dq" path="res://assets/prefab/Props/SM_Car_A.tscn" id="37_b2sxo"]
+[ext_resource type="PackedScene" uid="uid://bgpyxsv7113o6" path="res://assets/prefab/Foliage/SM_Plant_D.tscn" id="38_5yjuy"]
+[ext_resource type="PackedScene" uid="uid://br5l3ygkuyniu" path="res://assets/prefab/Foliage/SM_Plant_E.tscn" id="39_c7i5d"]
+[ext_resource type="PackedScene" uid="uid://cax66butqkq0c" path="res://assets/prefab/Foliage/SM_Plant_F.tscn" id="40_wctrv"]
+[ext_resource type="PackedScene" uid="uid://dgs1e53vin8ia" path="res://assets/prefab/Foliage/SM_Plant_G.tscn" id="41_7qmso"]
+[ext_resource type="PackedScene" uid="uid://dtn2bw12ori78" path="res://assets/prefab/Foliage/SM_Plant_H.tscn" id="42_fgitj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aej6r"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -209,3 +214,18 @@ transform = Transform3D(0.3795843, -0.067051135, 0.10686391, 0.029014964, 0.3761
 [node name="SM_MaterialHandler_A" parent="." unique_id=835469524 instance=ExtResource("36_r0x34")]
 
 [node name="SM_Car_A" parent="." unique_id=26675594 instance=ExtResource("37_b2sxo")]
+
+[node name="SmPlantDSmPlantD" parent="." unique_id=214400097 instance=ExtResource("38_5yjuy")]
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, -7, 0.19999999, -4)
+
+[node name="SmPlantESmPlantE" parent="." unique_id=923534644 instance=ExtResource("39_c7i5d")]
+transform = Transform3D(0.5, 0, 0, 0, 0.4829629, 0.12940952, 0, -0.12940952, 0.4829629, -8, 0.19999999, -5)
+
+[node name="SmPlantFSmPlantF" parent="." unique_id=510867783 instance=ExtResource("40_wctrv")]
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, -8, 0.1, -2)
+
+[node name="SmPlantGSmPlantG" parent="." unique_id=860898263 instance=ExtResource("41_7qmso")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 0.20000002, -4)
+
+[node name="SmPlantHSmPlantH" parent="." unique_id=1422170835 instance=ExtResource("42_fgitj")]
+transform = Transform3D(0.5, 0, 0, 0, 0.48296288, 0.1294095, 0, -0.1294095, 0.48296288, -10, 0.19999997, 0)

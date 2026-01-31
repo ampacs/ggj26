@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bgpyxsv7113o6"]
+
+[ext_resource type="ArrayMesh" uid="uid://dvl81et0qh7b" path="res://assets/prefab/Foliage/SM_Plant_D_SM_Plant_D.res" id="1_nkaop"]
+
+[node name="SmPlantDSmPlantD" type="MeshInstance3D" unique_id=214400097]
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 0, 0)
+mesh = ExtResource("1_nkaop")

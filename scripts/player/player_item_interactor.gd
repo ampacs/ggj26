@@ -9,12 +9,13 @@ var debugMesh: MeshInstance3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var mesh_instance := MeshInstance3D.new()
-	var sphere_mesh := SphereMesh.new()
-	sphere_mesh.radius = interactionRadius  # Set the radius
-	mesh_instance.mesh = sphere_mesh
-	get_tree().root.add_child(mesh_instance)
-	debugMesh = mesh_instance
+	# var mesh_instance := MeshInstance3D.new()
+	# var sphere_mesh := SphereMesh.new()
+	# sphere_mesh.radius = interactionRadius  # Set the radius
+	# mesh_instance.mesh = sphere_mesh
+	# get_tree().root.add_child(mesh_instance)
+	# debugMesh = mesh_instance
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -52,8 +53,8 @@ func _process(delta: float) -> void:
 	query.transform = shapeTransform
 	query.shape = shape
 
-	debugMesh.global_position = targetPosition
-	print(targetPosition)
+	# debugMesh.global_position = targetPosition
+	# print(targetPosition)
 
 	var shapeQueryResults := space_state.intersect_shape(query)
 	if shapeQueryResults.is_empty():
@@ -68,7 +69,7 @@ func _process(delta: float) -> void:
 			continue
 
 		var collider: Node3D = result.collider
-		print(collider.name)
+		# print(collider.name)
 		if collider is Item:
 			closestItem = collider
 			closestItemDistance = distance
@@ -85,7 +86,7 @@ func _process(delta: float) -> void:
 
 		var currentParent := collider.get_parent()
 		while currentParent != null:
-			print("\t" , currentParent.name)
+			# print("\t" , currentParent.name)
 			if currentParent is not Item:
 				currentParent = currentParent.get_parent()
 				continue

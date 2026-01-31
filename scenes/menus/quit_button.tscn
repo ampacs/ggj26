@@ -2,13 +2,9 @@
 
 [ext_resource type="Script" uid="uid://r78ub0yf4qn0" path="res://scripts/menus/quit_button.gd" id="1_5ic3m"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpnce"]
-bg_color = Color(0.0069299857, 0.19395924, 0.26782337, 1)
-
 [node name="Quit" type="Button" unique_id=314820531]
 offset_right = 365.0
 offset_bottom = 64.0
-theme_override_styles/hover = SubResource("StyleBoxFlat_kpnce")
 text = "Quit"
 script = ExtResource("1_5ic3m")
 

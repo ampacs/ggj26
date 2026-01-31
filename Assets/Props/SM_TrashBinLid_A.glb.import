@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Props/SM_TrashBinLid_A_SM_TrashBinLid_A.res",
+"save_to_file/fallback_path": "res://assets/Props/SM_TrashBinLid_A.res",
 "save_to_file/path": "uid://cmko8c6cntps1"
 }
 }

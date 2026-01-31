@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bu7qd6yq042lo"]
+
+[ext_resource type="Script" uid="uid://cwlehux8e6xqq" path="res://scripts/player/player_controller.gd" id="1_rwch6"]
+[ext_resource type="Script" uid="uid://bfxlbwqsy6ci7" path="res://scripts/actor/actor.gd" id="2_1i56v"]
+[ext_resource type="Script" uid="uid://cstgqb74iqhyx" path="res://scripts/actor/actor_mask_equipper_component.gd" id="3_syd7c"]
+[ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://Assets/Character/SM_Raccoon.glb" id="4_4k61p"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
+radius = 0.1743164
+height = 0.6113281
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
+radius = 0.1
+
+[node name="Player3D" type="RigidBody3D" unique_id=1246661715]
+can_sleep = false
+lock_rotation = true
+script = ExtResource("1_rwch6")
+acceleration = 200.0
+
+[node name="Actor" type="Node" parent="." unique_id=144003276 node_paths=PackedStringArray("components")]
+script = ExtResource("2_1i56v")
+components = [NodePath("ActorMaskEquipperComponent")]
+
+[node name="ActorMaskEquipperComponent" type="Node" parent="Actor" unique_id=847089414 node_paths=PackedStringArray("maskAnchor")]
+script = ExtResource("3_syd7c")
+maskAnchor = NodePath("../../ReplaceWithPlayerScene/SM_Raccoon2/MaskAnchor")
+
+[node name="ReplaceWithPlayerScene" type="Node3D" parent="." unique_id=1217038547]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="SM_Raccoon2" parent="ReplaceWithPlayerScene" unique_id=1353521536 instance=ExtResource("4_4k61p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="MaskAnchor" type="Node3D" parent="ReplaceWithPlayerScene/SM_Raccoon2" unique_id=1475020553]
+transform = Transform3D(1, 0, 0, 0, 0.96592605, -0.2588191, 0, 0.2588191, 0.96592605, 0, 0.48901072, 0.15322125)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=62241982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30566406, 0)
+shape = SubResource("CapsuleShape3D_52vux")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1529839449]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 0.5, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=2035408755]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+collision_mask = 3
+shape = SubResource("SphereShape3D_52vux")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1743740690]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+current = true

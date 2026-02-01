@@ -17,8 +17,7 @@ class_name ActorThrowableComponent extends ActorComponent
 @export var maximumThrowHoldTime: float
 @export var minimumThrowSpeed: float
 @export var maximumThrowSpeed: float
-@export var startThrowAngle: float
-@export var endThrowAngle: float
+@export var throwingAngleDegrees: float
 
 var heldItem: Item
 var isThrowingAllowed := false
@@ -69,9 +68,8 @@ func finalizeThrow() -> void:
 		return
 
 	var t: float = min(1., delta / (maximumThrowHoldTime - minimumThrowHoldTime))
-	var throwAngle: float = lerp_angle(startThrowAngle, endThrowAngle, t)
-	throwAngle = deg_to_rad(10)
-
+	
+	var throwAngle := deg_to_rad(throwingAngleDegrees)
 	var lookDirection := -get_viewport().get_camera_3d().get_global_transform().basis.z
 
 	var throwDirection := lookDirection.rotated(lookDirection.cross(Vector3.UP).normalized(), throwAngle)

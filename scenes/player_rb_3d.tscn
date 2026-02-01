@@ -53,8 +53,7 @@ minimumThrowHoldTime = 0.2
 maximumThrowHoldTime = 2.0
 minimumThrowSpeed = 4.0
 maximumThrowSpeed = 12.0
-startThrowAngle = 45.0
-endThrowAngle = 5.0
+throwingAngleDegrees = 30.0
 
 [node name="ReplaceWithPlayerScene" type="Node3D" parent="." unique_id=1217038547]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

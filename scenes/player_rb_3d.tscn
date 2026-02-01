@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cstgqb74iqhyx" path="res://scripts/actor/actor_mask_equipper_component.gd" id="3_syd7c"]
 [ext_resource type="Script" uid="uid://c0r5vtcn7fclf" path="res://scripts/actor/actor_throwable_component.gd" id="4_1i56v"]
 [ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://assets/character/SM_Raccoon.glb" id="4_4k61p"]
+[ext_resource type="PackedScene" uid="uid://bdt0i1cinxi38" path="res://assets/vfx/stunned.tscn" id="7_4k61p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
 radius = 0.1743164
@@ -85,5 +86,8 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
 current = true
 
+[node name="Stunned" parent="." unique_id=1638674721 instance=ExtResource("7_4k61p")]
+
+[connection signal="onStunned" from="." to="Stunned" method="trigger"]
 [connection signal="dropped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_dropped_mask"]
 [connection signal="equipped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_equipped_mask"]

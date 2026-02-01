@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bojhja428oxsg"]
+
+[ext_resource type="PackedScene" uid="uid://denpao5s0iv7v" path="res://assets/vfx/smoke_puffs.tscn" id="1_mnrwa"]
+[ext_resource type="Texture2D" uid="uid://bguxwp5b2td3a" path="res://assets/particles/dirt_01.png" id="2_38dax"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05f1d"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+diffuse_mode = 3
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.5172529, 0.33612424, 0.23985153, 1)
+albedo_texture = ExtResource("2_38dax")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+grow_amount = 2.11
+
+[node name="ThrowableBreaking" type="Node3D" unique_id=935105004]
+
+[node name="ThrowableBreaking" parent="." unique_id=961067408 instance=ExtResource("1_mnrwa")]
+material_override = SubResource("StandardMaterial3D_05f1d")
+emitting = true
+one_shot = false

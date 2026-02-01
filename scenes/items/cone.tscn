@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cb0kynfx30cgh"]
+
+[ext_resource type="ArrayMesh" uid="uid://bq7c52p0ohbft" path="res://assets/character/cone_Cone.res" id="1_1d8ks"]
+
+[node name="Cone" type="MeshInstance3D" unique_id=2064103652]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("1_1d8ks")

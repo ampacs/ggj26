@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://c0r5vtcn7fclf" path="res://scripts/actor/actor_throwable_component.gd" id="4_1i56v"]
 [ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://assets/character/SM_Raccoon.glb" id="4_4k61p"]
 [ext_resource type="PackedScene" uid="uid://bdt0i1cinxi38" path="res://assets/vfx/stunned.tscn" id="7_4k61p"]
+[ext_resource type="PackedScene" uid="uid://cb0kynfx30cgh" path="res://scenes/items/cone.tscn" id="7_itvw6"]
 [ext_resource type="AudioStream" uid="uid://c2fniucu2gfjx" path="res://assets/sound/Grab Sound/Grab.mp3" id="7_4k61p"]
 [ext_resource type="AudioStream" uid="uid://bla2kf3jqefjs" path="res://assets/sound/Throw Sound/Throw Sound Cartoonish.wav" id="8_0m680"]
 [ext_resource type="AudioStream" uid="uid://cdabvpdyg0wbg" path="res://assets/sound/Sound when Grab The Mask/Marvelous-_1.mp3" id="10_oiq1j"]
@@ -37,6 +38,9 @@ height = 0.6113281
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
 radius = 0.1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0m680"]
+points = PackedVector3Array(-0.00019574165, 1, -0.00019574165, 0.19498825, -1, -0.9808144, -0.00019574165, -1, -1, -0.19518405, -1, -0.9808144, -0.382733, -1, -0.92404073, -0.5555991, -1, -0.83163667, -0.7071261, -1, -0.7071261, -0.83163667, -1, -0.5555991, -0.92404073, -1, -0.382733, -0.9808144, -1, -0.19518405, -1, -1, -0.00019574165, -0.9808144, -1, 0.19498825, -0.92404073, -1, 0.38253725, -0.83163667, -1, 0.55540323, -0.7071261, -1, 0.7069303, -0.5555991, -1, 0.8314409, -0.382733, -1, 0.92384493, -0.19518405, -1, 0.9806186, -0.00019574165, -1, 1, 0.19498825, -1, 0.9806186, 0.38253725, -1, 0.92384493, 0.55540323, -1, 0.8314409, 0.7069303, -1, 0.7069303, 0.8314409, -1, 0.55540323, 0.92384493, -1, 0.38253725, 0.9806186, -1, 0.19498825, 1, -1, -0.00019574165, 0.9806186, -1, -0.19518405, 0.92384493, -1, -0.382733, 0.8314409, -1, -0.5555991, 0.7069303, -1, -0.7071261, 0.55540323, -1, -0.83163667, 0.38253725, -1, -0.92404073)
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_iuoff"]
 streams_count = 6
@@ -72,6 +76,7 @@ lock_rotation = true
 linear_damp = 0.1
 script = ExtResource("1_rwch6")
 actor = NodePath("Actor")
+move_speed = 4.0
 acceleration = 40.0
 jump_impulse = 7.0
 time_to_reach_speed = 0.01
@@ -94,16 +99,19 @@ script = ExtResource("3_syd7c")
 rigidbody = NodePath("../..")
 maskAnchor = NodePath("../../ReplaceWithPlayerScene/SM_Raccoon2/MaskAnchor")
 
-[node name="ActorThrowableComponent" type="Node" parent="Actor" unique_id=2096972157 node_paths=PackedStringArray("playerController", "rigidbody", "itemAnchor")]
+[node name="ActorThrowableComponent" type="Node" parent="Actor" unique_id=2096972157 node_paths=PackedStringArray("playerController", "rigidbody", "itemAnchor", "vision_cone")]
 script = ExtResource("4_1i56v")
 playerController = NodePath("../..")
 rigidbody = NodePath("../..")
 itemAnchor = NodePath("../../ReplaceWithPlayerScene/SM_Raccoon2/ItemAnchor")
+vision_cone = NodePath("../../CameraPivot/VisionCone")
 minimumThrowHoldTime = 0.2
 maximumThrowHoldTime = 2.0
 minimumThrowSpeed = 4.0
 maximumThrowSpeed = 12.0
 throwingAngleDegrees = 30.0
+aim_assist_angle_multiplier = 0.4
+aim_assist_min_distance = 3.0
 
 [node name="ReplaceWithPlayerScene" type="Node3D" parent="." unique_id=1217038547]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -134,6 +142,16 @@ spring_length = 3.0
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
 current = true
+
+[node name="VisionCone" type="Area3D" parent="CameraPivot" unique_id=1469409877]
+
+[node name="Cone" parent="CameraPivot/VisionCone" unique_id=2064103652 instance=ExtResource("7_itvw6")]
+transform = Transform3D(10, 0, 0, 0, -4.371139e-07, 10, 0, -10, -4.371139e-07, 0, -3.3592826e-09, 9.809216)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CameraPivot/VisionCone" unique_id=1050452471]
+transform = Transform3D(10, 0, 0, 0, -4.371139e-07, 10, 0, -10, -4.371139e-07, 0, 1.2275665e-07, 9.711549)
+shape = SubResource("ConvexPolygonShape3D_0m680")
 
 [node name="throwSfx" type="AudioStreamPlayer" parent="." unique_id=1469612477]
 stream = ExtResource("8_0m680")

@@ -29,3 +29,7 @@ func pause() -> void:
 func _on_restart_pressed() -> void:
 	resume()
 	get_tree().reload_current_scene()
+
+
+func _on_resume_pressed() -> void:
+	resume()

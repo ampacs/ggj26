@@ -5,8 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_7unhi"]
 [ext_resource type="Texture2D" uid="uid://b1q7unhbadtrw" path="res://assets/menus/background.png" id="2_xiui8"]
 [ext_resource type="Texture2D" uid="uid://jcgp2k1i54dg" path="res://assets/menus/Buttons/Selected/resume_pressed.png" id="3_gh0u6"]
-[ext_resource type="Texture2D" uid="uid://co2hp0435pe7r" path="res://assets/menus/Buttons/Normal/restart_normal.png" id="4_eyfc8"]
-[ext_resource type="Texture2D" uid="uid://c4uxert5f0c3x" path="res://assets/menus/Buttons/Selected/restart_pressed.png" id="5_xiui8"]
+[ext_resource type="PackedScene" uid="uid://yphue1yihc4m" path="res://scenes/menus/restart_button.tscn" id="5_eyfc8"]
 
 [node name="PauseMenu" type="Control" unique_id=201641814]
 process_mode = 3
@@ -51,14 +50,10 @@ texture_normal = ExtResource("2_2wrho")
 texture_pressed = ExtResource("3_gh0u6")
 texture_focused = ExtResource("3_gh0u6")
 
-[node name="Restart" type="TextureButton" parent="VBoxContainer" unique_id=1254291564]
+[node name="Restart" parent="VBoxContainer" unique_id=1923891886 instance=ExtResource("5_eyfc8")]
 layout_mode = 2
-texture_normal = ExtResource("4_eyfc8")
-texture_hover = ExtResource("5_xiui8")
-texture_focused = ExtResource("5_xiui8")
 
 [node name="Quit" parent="VBoxContainer" unique_id=314820531 instance=ExtResource("2_7unhi")]
 layout_mode = 2
 
 [connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]

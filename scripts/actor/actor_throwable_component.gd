@@ -20,6 +20,8 @@ class_name ActorThrowableComponent extends ActorComponent
 @export var startThrowAngle: float
 @export var endThrowAngle: float
 
+@onready var throw_sfx: AudioStreamPlayer = $"../../throwSfx"
+
 var heldItem: Item
 var isThrowingAllowed := false
 
@@ -59,6 +61,7 @@ func finalizeThrow() -> void:
 
 	var now := Time.get_unix_time_from_system()
 	var delta := now - startThrowTime
+	self.throw_sfx.play()
 	if delta < minimumThrowHoldTime:
 		dropItem()
 
@@ -151,6 +154,7 @@ func _unignore_player_collision_when_safe(item_body: RigidBody3D, objects: Array
 
 func _process(delta: float) -> void:
 	var pressed := Input.is_action_just_pressed("interact_%s" % playerController.playerId)
+
 	if pressed:
 		startThrow();
 

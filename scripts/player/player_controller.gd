@@ -44,6 +44,8 @@ var destunnedMoment: float = -INF
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Node3D = $ReplaceWithPlayerScene
 
+@onready var stun_sfx: AudioStreamPlayer = $stunSfx
+
 var hasMaskEquipped := false
 signal onStunned
 
@@ -210,6 +212,6 @@ func _on_actor_mask_equipper_component_dropped_mask() -> void:
 	hasMaskEquipped = false
 
 func stun() -> void:
+	self.stun_sfx.play()
 	destunnedMoment = Time.get_unix_time_from_system() + stun_time
-
 	onStunned.emit()

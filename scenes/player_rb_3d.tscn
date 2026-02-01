@@ -6,6 +6,28 @@
 [ext_resource type="Script" uid="uid://cstgqb74iqhyx" path="res://scripts/actor/actor_mask_equipper_component.gd" id="3_syd7c"]
 [ext_resource type="Script" uid="uid://c0r5vtcn7fclf" path="res://scripts/actor/actor_throwable_component.gd" id="4_1i56v"]
 [ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://assets/character/SM_Raccoon.glb" id="4_4k61p"]
+[ext_resource type="AudioStream" uid="uid://c2fniucu2gfjx" path="res://assets/sound/Grab Sound/Grab.mp3" id="7_4k61p"]
+[ext_resource type="AudioStream" uid="uid://bla2kf3jqefjs" path="res://assets/sound/Throw Sound/Throw Sound Cartoonish.wav" id="8_0m680"]
+[ext_resource type="AudioStream" uid="uid://cdabvpdyg0wbg" path="res://assets/sound/Sound when Grab The Mask/Marvelous-_1.mp3" id="10_oiq1j"]
+[ext_resource type="AudioStream" uid="uid://bna82hv1cslcf" path="res://assets/sound/Sound when Grab The Mask/Marvelous-_2.mp3" id="11_sl473"]
+[ext_resource type="AudioStream" uid="uid://niusm5km2vv6" path="res://assets/sound/Sound when Grab The Mask/Scrumptious-_1.mp3" id="12_fondu"]
+[ext_resource type="AudioStream" uid="uid://w07wb4gsf8ib" path="res://assets/sound/Sound when Grab The Mask/Scrumptious-_2.mp3" id="13_d6iv3"]
+[ext_resource type="AudioStream" uid="uid://ddmsuhtwuu3gx" path="res://assets/sound/Sound After Hit from the throw/Arshole  1.mp3" id="14_80h6y"]
+[ext_resource type="AudioStream" uid="uid://2okvet2fvsq7" path="res://assets/sound/Sound when Grab The Mask/Splendid  1.mp3" id="14_bk2qa"]
+[ext_resource type="AudioStream" uid="uid://cxsxoptfhsiii" path="res://assets/sound/Sound After Hit from the throw/Arshole  2.mp3" id="15_ftby4"]
+[ext_resource type="AudioStream" uid="uid://seh56etmxee8" path="res://assets/sound/Sound After Hit from the throw/Oi-_2.mp3" id="16_y4p1r"]
+[ext_resource type="AudioStream" uid="uid://ctw554q2ucind" path="res://assets/sound/Sound After Hit from the throw/Ouch-_1.mp3" id="17_ppti3"]
+[ext_resource type="AudioStream" uid="uid://dd2855jo6qck6" path="res://assets/sound/Sound After Hit from the throw/U-donkey-_1.mp3" id="18_77tbt"]
+[ext_resource type="AudioStream" uid="uid://b6w782yj1sc7q" path="res://assets/sound/Sound After Hit from the throw/U-donkey-_2.mp3" id="19_vbas4"]
+[ext_resource type="AudioStream" uid="uid://b62i1d4kwh2i2" path="res://assets/sound/Sound After Hit from the throw/Wanker  1.mp3" id="20_xi3ew"]
+[ext_resource type="AudioStream" uid="uid://dnb12b4dnxo16" path="res://assets/sound/Sound After Hit from the throw/Bloody hell  2.mp3" id="21_yxlsa"]
+[ext_resource type="AudioStream" uid="uid://shjn2kiesfdg" path="res://assets/sound/Sound After Hit from the throw/Bloody hell!.mp3" id="22_btf43"]
+[ext_resource type="AudioStream" uid="uid://d6q6caca8dbn" path="res://assets/sound/Sound After Hit from the throw/Fuck no  1.mp3" id="23_gbbqt"]
+[ext_resource type="AudioStream" uid="uid://d22vsut1i8pe4" path="res://assets/sound/Sound After Hit from the throw/Fuck no  2.mp3" id="24_edju2"]
+[ext_resource type="AudioStream" uid="uid://dsn2tokh57qr" path="res://assets/sound/Sound After Hit from the throw/My goodness  2.mp3" id="25_6d4ii"]
+[ext_resource type="AudioStream" uid="uid://ccujtwq1u4rrr" path="res://assets/sound/Sound After Hit from the throw/O u twat  1.mp3" id="26_70jwa"]
+[ext_resource type="AudioStream" uid="uid://dwql2g5e7tol5" path="res://assets/sound/Sound After Hit from the throw/O u twat  2.mp3" id="27_qmcby"]
+[ext_resource type="AudioStream" uid="uid://dmc02r21rilrm" path="res://assets/sound/Sound After Hit from the throw/Oh bollocks  1.mp3" id="28_2yumu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
 radius = 0.1743164
@@ -13,6 +35,33 @@ height = 0.6113281
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_52vux"]
 radius = 0.1
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_iuoff"]
+streams_count = 6
+stream_0/stream = ExtResource("10_oiq1j")
+stream_1/stream = ExtResource("11_sl473")
+stream_2/stream = ExtResource("12_fondu")
+stream_3/stream = ExtResource("13_d6iv3")
+stream_4/stream = ExtResource("14_bk2qa")
+stream_5/stream = ExtResource("13_d6iv3")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_mhi7x"]
+streams_count = 15
+stream_0/stream = ExtResource("14_80h6y")
+stream_1/stream = ExtResource("15_ftby4")
+stream_2/stream = ExtResource("21_yxlsa")
+stream_3/stream = ExtResource("22_btf43")
+stream_4/stream = ExtResource("23_gbbqt")
+stream_5/stream = ExtResource("24_edju2")
+stream_6/stream = ExtResource("25_6d4ii")
+stream_7/stream = ExtResource("26_70jwa")
+stream_8/stream = ExtResource("27_qmcby")
+stream_9/stream = ExtResource("28_2yumu")
+stream_10/stream = ExtResource("16_y4p1r")
+stream_11/stream = ExtResource("17_ppti3")
+stream_12/stream = ExtResource("18_77tbt")
+stream_13/stream = ExtResource("19_vbas4")
+stream_14/stream = ExtResource("20_xi3ew")
 
 [node name="Player3D" type="RigidBody3D" unique_id=1246661715 node_paths=PackedStringArray("actor")]
 mass = 15.0
@@ -84,6 +133,19 @@ spring_length = 3.0
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
 current = true
+
+[node name="throwSfx" type="AudioStreamPlayer" parent="." unique_id=1469612477]
+stream = ExtResource("8_0m680")
+volume_db = -15.0
+
+[node name="grabSfx" type="AudioStreamPlayer" parent="." unique_id=300932614]
+stream = ExtResource("7_4k61p")
+
+[node name="grabMaskSfx" type="AudioStreamPlayer" parent="." unique_id=130786605]
+stream = SubResource("AudioStreamRandomizer_iuoff")
+
+[node name="stunSfx" type="AudioStreamPlayer" parent="." unique_id=1208968134]
+stream = SubResource("AudioStreamRandomizer_mhi7x")
 
 [connection signal="dropped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_dropped_mask"]
 [connection signal="equipped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_equipped_mask"]

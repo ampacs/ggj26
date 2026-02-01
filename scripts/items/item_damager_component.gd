@@ -8,6 +8,8 @@ class_name ItemDamagerComponent extends ItemComponent
 @export var collider: CollisionShape3D
 @export var view: Node3D
 
+@onready var smack_sfx: AudioStreamPlayer = $"../../smackSfx"
+
 signal onDestroyed
 
 var originalPosition: Vector3
@@ -42,6 +44,7 @@ func _on_body_entered(body: Node) -> void:
 			if playerMaskActorComponent != null:
 				playerMaskActorComponent.drop()
 	else:
+		smack_sfx.play()
 		_disable()
 		resetMoment = Time.get_unix_time_from_system() + hiddenTimeBeforeReset
 		onDestroyed.emit()

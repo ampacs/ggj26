@@ -6,13 +6,16 @@ signal dropped_mask
 @export var rigidbody: RigidBody3D
 @export var maskAnchor: Node3D
 @export var maskAnchorOffsetPosition: Vector3
-@export var debuff: String = "mask"
+
+@onready var grab_mask_sfx: AudioStreamPlayer = $"../../grabMaskSfx"
+@onready var grab_sfx: AudioStreamPlayer = $"../../grabSfx"
 
 var equippedMask: Item
 
 func interact(item: Item) -> void:
 	var itemMaskComponent: ItemMaskComponent = item.get_component(ItemMaskComponent)
 	if itemMaskComponent == null:
+		self.grab_sfx.play()
 		return
 
 	var itemRigidbodyComponent: ItemRigidbodyComponent = item.get_component(ItemRigidbodyComponent)
@@ -27,6 +30,7 @@ func interact(item: Item) -> void:
 	item.position = Vector3.ZERO
 	item.rotation = Vector3.ZERO
 	equippedMask = item
+	self.grab_mask_sfx.play()
 	equipped_mask.emit()
 
 func drop() -> void:

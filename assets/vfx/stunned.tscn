@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bdt0i1cinxi38"]
+
+[ext_resource type="Texture2D" uid="uid://0t3vpx042yef" path="res://assets/particles/star_07.png" id="1_a4g50"]
+[ext_resource type="Script" uid="uid://hp5ln5b1wpgj" path="res://scripts/particles/gpu_particles_3d_controller.gd" id="2_kpy46"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o42y1"]
+transparency = 1
+diffuse_mode = 3
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.969758, 0.84909844, 0, 1)
+albedo_texture = ExtResource("1_a4g50")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_31m52"]
+_data = [Vector2(0, 0.4921875), 0.0, 0.0, 0, 0, Vector2(1, 0.5078125), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_g2h4r"]
+curve = SubResource("Curve_31m52")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u3mbh"]
+emission_shape = 6
+emission_ring_axis = Vector3(0, 1, 0)
+emission_ring_height = 0.2
+emission_ring_radius = 0.5
+emission_ring_inner_radius = 0.0
+emission_ring_cone_angle = 90.0
+angular_velocity_min = 199.99998
+angular_velocity_max = 199.99998
+orbit_velocity_min = 1.0000001
+orbit_velocity_max = 1.0000001
+orbit_velocity_curve = SubResource("CurveTexture_g2h4r")
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="QuadMesh" id="QuadMesh_31m52"]
+
+[node name="Stunned" type="GPUParticles3D" unique_id=1638674721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("StandardMaterial3D_o42y1")
+emitting = false
+amount = 3
+lifetime = 2.0
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_u3mbh")
+draw_pass_1 = SubResource("QuadMesh_31m52")
+script = ExtResource("2_kpy46")

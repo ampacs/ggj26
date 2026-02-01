@@ -1,26 +1,51 @@
 [gd_scene format=3 uid="uid://6hoto1cw2c7y"]
 
 [ext_resource type="PackedScene" uid="uid://denpao5s0iv7v" path="res://assets/vfx/smoke_puffs.tscn" id="1_o42y1"]
+[ext_resource type="Texture2D" uid="uid://bguxwp5b2td3a" path="res://assets/particles/dirt_01.png" id="2_31m52"]
+[ext_resource type="PackedScene" uid="uid://bdt0i1cinxi38" path="res://assets/vfx/stunned.tscn" id="2_u3mbh"]
+[ext_resource type="PackedScene" uid="uid://vw5fnmgen4qt" path="res://assets/vfx/throwable_breaking.tscn" id="3_31m52"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o42y1"]
-vertex_color_use_as_albedo = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2h4r"]
+transparency = 1
+blend_mode = 1
+diffuse_mode = 3
+albedo_color = Color(0.77279115, 0.5838918, 0.39133817, 1)
+albedo_texture = ExtResource("2_31m52")
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
 particles_anim_loop = false
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u3mbh"]
+[sub_resource type="Curve" id="Curve_4hvm0"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, -1), 0.0, 0.0, 0, 0]
+point_count = 2
 
-[sub_resource type="QuadMesh" id="QuadMesh_31m52"]
+[sub_resource type="CurveTexture" id="CurveTexture_resbj"]
+curve = SubResource("Curve_4hvm0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_etdel"]
+emission_shape = 1
+emission_sphere_radius = 0.5
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 19.999998
+radial_accel_max = 19.999998
+radial_accel_curve = SubResource("CurveTexture_resbj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_rck1y"]
 
 [node name="JumpVFX" type="Node3D" unique_id=118694418]
 
 [node name="SmokePuffs" parent="." unique_id=961067408 instance=ExtResource("1_o42y1")]
-emitting = false
-one_shot = true
+one_shot = false
 
-[node name="Stunned" type="GPUParticles3D" parent="." unique_id=164904840]
-material_override = SubResource("StandardMaterial3D_o42y1")
+[node name="Stunned" parent="." unique_id=1638674721 instance=ExtResource("2_u3mbh")]
 emitting = false
-process_material = SubResource("ParticleProcessMaterial_u3mbh")
-draw_pass_1 = SubResource("QuadMesh_31m52")
+
+[node name="ThrowableBreaking" parent="." unique_id=1608804793 instance=ExtResource("3_31m52")]
+material_override = SubResource("StandardMaterial3D_g2h4r")
+amount = 3
+lifetime = 0.25
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_etdel")
+draw_pass_1 = SubResource("QuadMesh_rck1y")

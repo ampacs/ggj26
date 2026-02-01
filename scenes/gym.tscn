@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://dnoamyda8dfvv" path="res://scenes/1_cubic.tscn" id="1_5hyia"]
 [ext_resource type="Material" path="res://Shaders/M_StandardWalls.tres" id="1_hvubb"]
 [ext_resource type="PackedScene" uid="uid://b7fa7pd6gg6wr" path="res://scenes/game_view.tscn" id="2_5hyia"]
-[ext_resource type="PackedScene" uid="uid://cm1eb2ch5sw3m" path="res://scenes/items/item_mask.tscn" id="2_8el2m"]
 [ext_resource type="PackedScene" uid="uid://cqg3q3ol4k466" path="res://scenes/items/throwable/throwable_can_a.tscn" id="3_8el2m"]
 [ext_resource type="PackedScene" uid="uid://cg1strmb5jvf0" path="res://scenes/items/throwable/throwable_can_b.tscn" id="5_xhcdp"]
 [ext_resource type="PackedScene" uid="uid://qxw47dr0rv6p" path="res://scenes/items/throwable/throwable_cup_a.tscn" id="6_hvubb"]
@@ -88,14 +87,11 @@ collision_layer = 129
 
 [node name="Items" type="Node" parent="." unique_id=1641200632]
 
-[node name="ItemMask" parent="Items" unique_id=827138187 instance=ExtResource("2_8el2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
-
 [node name="ItemThrowable" parent="Items" unique_id=2072047785 instance=ExtResource("3_8el2m")]
 
 [node name="GameView" parent="." unique_id=1430353953 instance=ExtResource("2_5hyia")]
 
-[node name="ItemThrowableCan" parent="." unique_id=2072047785 instance=ExtResource("3_8el2m")]
+[node name="ItemThrowableCan" parent="." unique_id=2061470834 instance=ExtResource("3_8el2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.027175, 0.047082666, 2.7668653)
 
 [node name="ItemThrowableCanB" parent="." unique_id=756460092 instance=ExtResource("5_xhcdp")]

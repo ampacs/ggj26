@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://vw5fnmgen4qt"]
+
+[node name="ThrowableBreaking" type="GPUParticles3D" unique_id=1608804793]

@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cstgqb74iqhyx" path="res://scripts/actor/actor_mask_equipper_component.gd" id="3_syd7c"]
 [ext_resource type="Script" uid="uid://c0r5vtcn7fclf" path="res://scripts/actor/actor_throwable_component.gd" id="4_1i56v"]
 [ext_resource type="PackedScene" uid="uid://cytddgq6wfq7s" path="res://assets/character/SM_Raccoon.glb" id="4_4k61p"]
+[ext_resource type="PackedScene" uid="uid://bdt0i1cinxi38" path="res://assets/vfx/stunned.tscn" id="7_4k61p"]
 [ext_resource type="AudioStream" uid="uid://c2fniucu2gfjx" path="res://assets/sound/Grab Sound/Grab.mp3" id="7_4k61p"]
 [ext_resource type="AudioStream" uid="uid://bla2kf3jqefjs" path="res://assets/sound/Throw Sound/Throw Sound Cartoonish.wav" id="8_0m680"]
 [ext_resource type="AudioStream" uid="uid://cdabvpdyg0wbg" path="res://assets/sound/Sound when Grab The Mask/Marvelous-_1.mp3" id="10_oiq1j"]
@@ -101,8 +102,7 @@ minimumThrowHoldTime = 0.2
 maximumThrowHoldTime = 2.0
 minimumThrowSpeed = 4.0
 maximumThrowSpeed = 12.0
-startThrowAngle = 45.0
-endThrowAngle = 5.0
+throwingAngleDegrees = 30.0
 
 [node name="ReplaceWithPlayerScene" type="Node3D" parent="." unique_id=1217038547]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -147,5 +147,21 @@ stream = SubResource("AudioStreamRandomizer_iuoff")
 [node name="stunSfx" type="AudioStreamPlayer" parent="." unique_id=1208968134]
 stream = SubResource("AudioStreamRandomizer_mhi7x")
 
+[node name="throwSfx" type="AudioStreamPlayer" parent="." unique_id=1469612477]
+stream = ExtResource("8_0m680")
+volume_db = -15.0
+
+[node name="grabSfx" type="AudioStreamPlayer" parent="." unique_id=300932614]
+stream = ExtResource("7_4k61p")
+
+[node name="grabMaskSfx" type="AudioStreamPlayer" parent="." unique_id=130786605]
+stream = SubResource("AudioStreamRandomizer_iuoff")
+
+[node name="stunSfx" type="AudioStreamPlayer" parent="." unique_id=1208968134]
+stream = SubResource("AudioStreamRandomizer_mhi7x")
+
+[node name="Stunned" parent="." unique_id=1638674721 instance=ExtResource("7_4k61p")]
+
+[connection signal="onStunned" from="." to="Stunned" method="trigger"]
 [connection signal="dropped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_dropped_mask"]
 [connection signal="equipped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_equipped_mask"]

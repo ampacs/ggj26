@@ -29,6 +29,7 @@
 [ext_resource type="AudioStream" uid="uid://ccujtwq1u4rrr" path="res://assets/sound/Sound After Hit from the throw/O u twat  1.mp3" id="26_70jwa"]
 [ext_resource type="AudioStream" uid="uid://dwql2g5e7tol5" path="res://assets/sound/Sound After Hit from the throw/O u twat  2.mp3" id="27_qmcby"]
 [ext_resource type="AudioStream" uid="uid://dmc02r21rilrm" path="res://assets/sound/Sound After Hit from the throw/Oh bollocks  1.mp3" id="28_2yumu"]
+[ext_resource type="PackedScene" path="res://assets/vfx/stunned.tscn" id="29_ftby4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_52vux"]
 radius = 0.1743164
@@ -147,20 +148,7 @@ stream = SubResource("AudioStreamRandomizer_iuoff")
 [node name="stunSfx" type="AudioStreamPlayer" parent="." unique_id=1208968134]
 stream = SubResource("AudioStreamRandomizer_mhi7x")
 
-[node name="throwSfx" type="AudioStreamPlayer" parent="." unique_id=1469612477]
-stream = ExtResource("8_0m680")
-volume_db = -15.0
-
-[node name="grabSfx" type="AudioStreamPlayer" parent="." unique_id=300932614]
-stream = ExtResource("7_4k61p")
-
-[node name="grabMaskSfx" type="AudioStreamPlayer" parent="." unique_id=130786605]
-stream = SubResource("AudioStreamRandomizer_iuoff")
-
-[node name="stunSfx" type="AudioStreamPlayer" parent="." unique_id=1208968134]
-stream = SubResource("AudioStreamRandomizer_mhi7x")
-
-[node name="Stunned" parent="." unique_id=1638674721 instance=ExtResource("7_4k61p")]
+[node name="Stunned" parent="." unique_id=1638674721 instance=ExtResource("29_ftby4")]
 
 [connection signal="onStunned" from="." to="Stunned" method="trigger"]
 [connection signal="dropped_mask" from="Actor/ActorMaskEquipperComponent" to="." method="_on_actor_mask_equipper_component_dropped_mask"]

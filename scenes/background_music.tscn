@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cntsu38iedowe"]
+
+[ext_resource type="AudioStream" uid="uid://33y7xyao81tb" path="res://assets/sound/background/840730__jjwoosh__chill-electronical-loop.wav" id="1_0rulj"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" unique_id=838327976]
+stream = ExtResource("1_0rulj")
+volume_db = -20.0
+autoplay = true

@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://ddpbstf1dc27w" path="res://scripts/menus/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Script" uid="uid://0k8umtiuon7d" path="res://scripts/menus/start.gd" id="2_2o76q"]
-[ext_resource type="Texture2D" uid="uid://b1q7unhbadtrw" path="res://Assets/Menus/background.png" id="2_6bivr"]
+[ext_resource type="Texture2D" uid="uid://b1q7unhbadtrw" path="res://assets/menus/background.png" id="2_6bivr"]
 [ext_resource type="PackedScene" uid="uid://2rgj5osq15u6" path="res://scenes/Yana.tscn" id="2_8r73w"]
 [ext_resource type="PackedScene" uid="uid://c8rp34rlhm6ny" path="res://scenes/menus/quit_button.tscn" id="2_ovrgc"]
-[ext_resource type="Texture2D" uid="uid://d38vbodmkq84r" path="res://Assets/Menus/Buttons/Normal/start_normal.png" id="3_imvie"]
-[ext_resource type="Texture2D" uid="uid://by2km8vup6vsk" path="res://Assets/Menus/Buttons/Selected/start_pressed.png" id="4_ng0o5"]
+[ext_resource type="Texture2D" uid="uid://d38vbodmkq84r" path="res://assets/menus/Buttons/Normal/start_normal.png" id="3_imvie"]
+[ext_resource type="Texture2D" uid="uid://by2km8vup6vsk" path="res://assets/menus/Buttons/Selected/start_pressed.png" id="4_ng0o5"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ovrgc"]
 

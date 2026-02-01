@@ -15,6 +15,10 @@ run/main_scene="uid://2rgj5osq15u6"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BackgroundMusic="*uid://cntsu38iedowe"
+
 [debug]
 
 gdscript/warnings/unassigned_variable=2

@@ -12,7 +12,7 @@ script = ExtResource("1_o2e2i")
 
 [node name="FinalGameMenu" parent="." unique_id=1364435161 instance=ExtResource("2_o2e2i")]
 
-[node name="victorySfx" type="AudioStreamPlayer" parent="." unique_id=914826534]
+[node name="victorySfx" type="AudioStreamPlayer" parent="." unique_id=1826257576]
 stream = ExtResource("4_0e43i")
 
 [connection signal="game_won" from="WinningArea" to="." method="_on_winning_area_game_won"]

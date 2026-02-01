@@ -26,9 +26,6 @@ func pause() -> void:
 	await get_tree().process_frame
 	resume_button.grab_focus()
 
-func _on_resume_pressed() -> void:
-	resume()
-
 func _on_restart_pressed() -> void:
 	resume()
 	get_tree().reload_current_scene()

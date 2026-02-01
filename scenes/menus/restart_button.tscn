@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://yphue1yihc4m"]
+
+[ext_resource type="Texture2D" uid="uid://co2hp0435pe7r" path="res://assets/menus/Buttons/Normal/restart_normal.png" id="1_q8ovx"]
+[ext_resource type="Texture2D" uid="uid://c4uxert5f0c3x" path="res://assets/menus/Buttons/Selected/restart_pressed.png" id="2_qjt6q"]
+[ext_resource type="Script" uid="uid://cyxdaof5txr0g" path="res://scenes/menus/restart_button.gd" id="3_nrgjs"]
+
+[node name="Restart" type="TextureButton" unique_id=1923891886]
+texture_normal = ExtResource("1_q8ovx")
+texture_hover = ExtResource("2_qjt6q")
+texture_focused = ExtResource("2_qjt6q")
+script = ExtResource("3_nrgjs")
+
+[connection signal="pressed" from="." to="." method="_on_restart_pressed"]
